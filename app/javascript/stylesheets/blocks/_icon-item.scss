@@ -1,0 +1,127 @@
+.icon-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+
+  @include media('desktop') {
+    padding-left: toRem(130);
+    min-height: toRem(118);
+    display: table;
+  }
+
+  @include media('tablet') {
+    padding-left: toRem(76);
+    min-height: toRem(75);
+  }
+
+  @include media('mobile') {
+    padding-left: toRem(75);
+    min-height: toRem(75);
+  }
+
+  & + & {
+    @include media('desktop') {
+      margin-top: toRem(55);
+    }
+
+    @include media('tablet') {
+      margin-top: toRem(30);
+    }
+
+    @include media('mobile') {
+      margin-top: toRem(20);
+    }
+  }
+
+  &__list {
+    @include media('desktop') {
+      margin-top: toRem(68);
+    }
+
+    @include media('tablet') {
+      margin-top: toRem(33);
+    }
+
+    @include media('mobile') {
+      margin-top: toRem(-4);
+    }
+  }
+
+  &__list-pretext {
+    @include media('desktop') {
+      margin-top: toRem(31);
+      margin-bottom: toRem(-18);
+      width: toRem(480);
+    }
+
+    @include media('tablet') {
+      margin-top: toRem(33);
+      margin-bottom: toRem(39);
+      width: toRem(306);
+    }
+
+    @include media('mobile') {
+      margin-top: toRem(0);
+      margin-bottom: toRem(20);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+
+    @include media('desktop') {
+      width: toRem(121);
+      top: toRem(-5);
+      left: toRem(-7);
+    }
+
+    @include media('tablet') {
+      width: toRem(78);
+      top: 0;
+      left: toRem(-6);
+    }
+
+    @include media('mobile') {
+      width: toRem(82);
+      top: toRem(-6);
+      left: toRem(-11);
+    }
+  }
+
+  &__icon-img {
+    display: block;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 600;
+
+    @include media('desktop') {
+      font-size: toRem(24);
+      line-height: 160%;
+    }
+
+    @include media('tablet') {
+      font-size: toRem(16);
+      line-height: 160%;
+    }
+
+    @include media('mobile') {
+      font-size: toRem(14);
+      line-height: 160%;
+    }
+  }
+
+  &__text {
+    &.unexpected-mod-1 {
+      @include media('desktop') {
+        margin-right: toRem(-20);
+      }
+    }
+  }
+}

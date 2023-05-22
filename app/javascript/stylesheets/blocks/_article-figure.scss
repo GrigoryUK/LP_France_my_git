@@ -1,0 +1,47 @@
+.article-figure {
+  &__wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    @include media('desktop') {
+      max-height: toRem(840);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+
+      @include media('desktop') {
+        padding-bottom: 58.333333%;
+      }
+
+      @include media('tablet') {
+        padding-bottom: 67.708333%;
+      }
+
+      @include media('mobile') {
+        padding-bottom: 112.5%;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--to-right {
+      object-position: right;
+    }
+
+    &--to-left {
+      object-position: left;
+    }
+  }
+}

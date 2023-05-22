@@ -1,0 +1,516 @@
+.container-secondary {
+  @include mbAll(110, 70, 50);
+  padding-top: 130px;
+
+  @include tablet {
+    padding-top: 70px;
+  }
+
+  @include mobile {
+    padding-top: 30px;
+  }
+
+  &.lang-ge {
+    --font-primary: var(--font-georgian);
+    --font-secondary: var(--font-georgian-serif);
+  }
+
+  &.lang-ar {
+    --font-primary: var(--font-armanian);
+    --font-secondary: var(--font-armanian);
+  }
+
+
+
+  .blockC.main {
+    position: relative;
+    padding-left: 60px;
+
+    .blockC__texts {
+      position: relative;
+      z-index: 1;
+    }
+
+    @include tablet {
+      padding-left: 0;
+    }
+
+    &.main-ge {
+
+      .subtitleC.premain {
+        font-family: var(--font-georgian-serif);
+      }
+
+      .subtitleC.main {
+        font-family: var(--font-georgian-serif);
+      }
+
+
+    }
+
+    &.main-ar {
+      .subtitleC.premain {
+        font-family: var(--font-armanian);
+      }
+
+      .subtitleC.main {
+        font-family: var(--font-armanian);
+      }
+    }
+
+    &.loirevalley--main {
+
+      .titleC.main {
+
+        @include mobile {
+          text-align: center;
+          margin-top: -4rem;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .subtitleC.main {
+        margin-bottom: 20px;
+      }
+
+
+      .subtitleC.premain {
+        max-width: 600px;
+      }
+
+      .image-main {
+        top: 0rem;
+        right: 2rem;
+
+        @include tablet {
+          top: auto;
+          right: auto;
+          max-width: 576px;
+        }
+
+        @include mobile {
+          max-width: 420px;
+        }
+      }
+    }
+
+    .image-main {
+      position: absolute;
+      z-index: 0;
+      right: 0;
+      top: 0;
+
+      @include tablet {
+        right: auto;
+        top: auto;
+        position: relative;
+
+      }
+    }
+  }
+}
+
+.container-loirevalley {
+
+  .ContainerC.one {
+    @include mbAll(130, 70, 56);
+  }
+
+  .ContainerC.two {
+    @include mbAll(130, 110, 300);
+  }
+
+  .ContainerC.three {
+
+    .subtitleC-1 {
+      @include mbAll(90, 56, 32);
+    }
+
+    .textC-1 {
+      @include mbAll(100, 70, 56);
+    }
+  }
+
+  .ContainerC.five {
+
+    .subtitleC-1 {
+      @include mbAll(38, 32, 24);
+    }
+
+    .textC-1 {
+      @include mbAll(122, 70, 56);
+    }
+
+    .subtitleC-2 {
+      @include mbAll(60, 44, 32);
+    }
+  }
+
+  .ContainerC.seven {
+
+    .ContainerC-1 {
+      @include mbAll(100, 56, 44);
+
+      .textC-2 {
+        @include mbAll(100, 70, 44);
+      }
+    }
+
+    .ContainerC-2 {
+
+      .textC-1 {
+        @include mbAll(100, 70, 44);
+      }
+
+      .textC-2 {
+        @include mbAll(90, 70, 44);
+      }
+    }
+
+
+  }
+}
+
+.container-occitania {
+
+  .blockC.occitania--main {
+
+    .image-main {
+      top: -3rem;
+
+      @include tablet {
+        top: 0;
+        margin-bottom: -3rem;
+      }
+
+      @include mobile {
+        max-width: 130%;
+      }
+    }
+
+    .subtitleC.main {
+      margin-bottom: 20px;
+    }
+  }
+
+  .blockC.main-ge {
+
+    .subtitleC.main {
+
+      span {
+        margin-left: 1em;
+      }
+    }
+
+
+
+    .subtitleC.premain {
+
+      span {
+        display: block;
+        &:nth-child(2) {
+          margin-left: 2em;
+        }
+      }
+    }
+  }
+
+  .blockC.main-ar {
+
+    .subtitleC.premain {
+      max-width: 640px;
+    }
+  }
+
+
+
+  .ContainerC.one {
+    @include mbAll(160, 54, 70);
+  }
+
+  .ContainerC.two {
+    @include mbAll(200, 130, 300);
+  }
+
+  .ContainerC.five {
+
+    .descC-1 {
+      @include mbAll(64, 44, 32);
+    }
+  }
+
+  .ContainerC.nine {
+    @include mbAll(64, 44, 32);
+    .textC-1 {
+      @include mbAll(126, 80, 54);
+    }
+  }
+
+  .ContainerC.ten {
+
+    .subtitleC-1 {
+      @include mbAll(80, 80, 44);
+    }
+  }
+}
+
+.container-aquitaine {
+
+  &.lang-ar {
+
+    .ContainerC.seven {
+
+      .descC-1 {
+        @include mbAll(0, 0, 0);
+      }
+
+    }
+  }
+
+  .blockC.aquitaine--main {
+
+
+    .titleC.main {
+
+      h1 {
+        line-height: 0.7;
+
+        @include mobile {
+          margin-bottom: 1.6rem;
+        }
+      }
+
+      span {
+        display: block;
+        &:nth-child(2) {
+          margin-left: 0.1em;
+        }
+      }
+    }
+  }
+
+  .blockC.main-ar {
+
+    .titleC.main {
+      margin-bottom: 2rem;
+    }
+
+    .subtitleC.main {
+
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+
+    }
+
+    .subtitleC.premain {
+      max-width: 730px;
+    }
+
+    .image-main {
+      top: -2rem;
+      right: 4rem;
+
+      @include mobile {
+        top: auto;
+        right: auto;
+        max-width: 130%;
+        margin-bottom: -3rem;
+      }
+    }
+
+  }
+
+  .blockC.main-ge {
+
+    .subtitleC.main {
+
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      span {
+        display: block;
+        margin-left: 12rem;
+
+        @include mobile {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .subtitleC.premain {
+      max-width: 730px;
+    }
+
+    .image-main {
+      top: -2rem;
+      right: 4rem;
+
+      @include mobile {
+        top: auto;
+        right: auto;
+        max-width: 130%;
+        margin-bottom: -3rem;
+      }
+    }
+
+
+  }
+
+  .ContainerC.one {
+    @include mbAll(108, 70, 32);
+  }
+
+  .ContainerC.two {
+    @include mbAll(110, 90, 300);
+  }
+
+  .ContainerC.three {
+
+    .textC-1 {
+      @include mbAll(70, 60, 32);
+    }
+
+    .subtitleC-2 {
+      @include mbAll(60, 60, 44);
+    }
+
+
+  }
+
+  .ContainerC.five {
+
+    .textC-1 {
+      @include mbAll(70, 60, 32);
+    }
+
+    .textC-2 {
+      @include mbAll(60, 44, 32);
+    }
+  }
+
+  .ContainerC.seven {
+
+    .descC-1 {
+      @include mbAll(64, 44, 32);
+    }
+
+    .descC-2 {
+      @include mbAll(64, 44, 32);
+    }
+
+    .descC-3 {
+
+      .subtitleC-1 {
+        @include mbAll(80, 60, 24);
+      }
+
+    }
+
+  }
+
+  .ContainerC.nine {
+
+    .descC-1 {
+      @include mbAll(64, 44, 32);
+    }
+
+    .descC-2 {
+
+      .subtitleC-1 {
+        @include mbAll(80, 60, 24);
+      }
+    }
+  }
+}
+
+.container-paris {
+
+  .blockC.paris--main {
+
+    .image-main {
+      top: -2rem;
+      right: 1rem;
+
+      @include tablet {
+        top: auto;
+        right: auto;
+      }
+
+      @include mobile {
+        max-width: 130%;
+        margin-bottom: -1rem;
+      }
+    }
+
+  }
+
+  .blockC.main-ge {
+
+    .subtitleC.main {
+      margin-bottom: 1.6rem;
+
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
+
+    .subtitleC.premain {
+
+      span {
+        display: block;
+
+        &:nth-child(2) {
+          margin-left: 2em;
+        }
+      }
+    }
+
+  }
+
+  .blockC.main-ar {
+
+    .subtitleC.premain {
+      max-width: 578px;
+    }
+
+  }
+
+  .ContainerC.one {
+    @include mbAll(200, 110, 56);
+  }
+
+  .ContainerC.two {
+    @include mbAll(170, 110, 300);
+  }
+
+  .ContainerC.three {
+
+    .textC-1 {
+      @include mbAll(90, 60, 32);
+    }
+  }
+
+  .ContainerC.five {
+
+
+    .descC-1 {
+      @include mbAll(64, 44, 32);
+    }
+  }
+
+  .ContainerC.nine {
+
+    .descC-1 {
+      @include mbAll(64, 44, 32);
+
+      .textC-1{
+        @include mbAll(136, 70, 56);
+      }
+    }
+
+
+
+    //.subtitleC-2 {
+    //  @include mbAll(136, 70, 56);
+    //}
+  }
+}

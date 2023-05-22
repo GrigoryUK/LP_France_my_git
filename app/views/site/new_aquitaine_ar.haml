@@ -1,0 +1,220 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: var(--color-aqua);
+      --accent-text-color: #ffffff;
+      --accent-special-color: var(--color-aqua);
+      --font-georgian: 'Noto Sans Georgian', sans-sarif;
+      --font-georgian-serif: 'Noto Serif Georgian', sans-sarif;
+      --font-armanian: 'Noto Sans Armenian', sans-sarif;
+      --menu-burger-background: #3c9da8;
+    }
+%body{style: "background-color: var(--accent-background-color);"}
+  .site-container
+    .header--new
+      %header.header
+        .container.header__container
+          %button.header__nav-toggle
+            %span.header__nav-toggle-line
+          %nav.header__nav
+            .header__nav-in
+              %a.header__nav-link{href: occitania_ar_url} OCCITANIA
+              %a.header__nav-link.header__nav-link--active{href: new_aquitaine_ar_url} NEW AQUITAINE
+              %a.header__nav-link{href: paris_region_ar_url} PARIS REGION
+              %a.header__nav-link{href: loirevalley_ar_url} LOIRE VALLEY
+              %a.header__nav-link.header__nav-link--home.header__nav-link--icon{href: root_url}
+                MAIN PAGE
+                %span.header__nav-link-icon
+    .container-secondary.container-aquitaine.aquitaine-ar.lang-ar
+      .ContainerC.max-1140.one
+        .blockC.main.aquitaine--main.main-ar
+          .blockC__texts
+            .titleC.main
+              %h1
+                %span
+                  New
+                %span
+                  Aquitaine
+            .subtitleC.main
+              %span
+                Նոր Ակվիտանիա
+            .subtitleC.premain
+              Հեծանվային արահետներ, գինու
+              համտեսում թանգարանում և
+              հանրահայտ ոստրեները
+          %img.image-main{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-606-1.png")}/
+      .ContainerC.max-1140.two
+        .descC.withoutFon.descC-1
+          .textC.columnW
+            .colC
+              %p
+                Նոր Ակվիտանիան (Nouvelle-Aquitaine) Ֆրանսիայի վերջին վարչական բաժանման արդյունքում դարձավ ամենամեծ տարածաշրջանը, որը ձգվում է հարավում գտնվող Պիրենեյներից մինչև հյուսիսում գտնվող Լուարայի հովիտը:
+            .colC
+              %p
+                Մշակույթների, բնատեսարանների և տեսարժան վայրերի բազմազանությունը բավական է մեկ տասնյակ հանգստի և երազանքի ճամփորդություններ կազմելու համար։
+      .ContainerC.max-1140.three
+        .descC.whiteFon.withImg.descC-1
+          .ContainerC.padding-60
+            %img.image-map{alt: "", src: asset_pack_url("media/images/icons/icon-map.png")}/
+            .subtitleC.secondary.max-640.subtitleC-1
+              Տարածաշրջանի օդանավակայանները
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  Նոր Ակվիտանիայի գլխավոր օդանավակայանը գտնվում է Բորդո քաղաքում
+                  %strong (Bordeaux-Mérignac Airport):
+                  %a{href: "https://wwws.airfrance.am/", target: "_blank"} Air France
+                  ավիաընկերության ինքնաթիռները Փարիզից օրական մինչև 7 չվերթ են կատարում դեպի Բորդո։ Կան նաև ուղիղ չվերթներ Փարիզից օրական երեք անգամ դեպի Բիարից (Biarritz), թռիչքի տևողությունը 1 ժամ 20 րոպե է։
+                  Բորդո-Մերինյակ օդանավակայանը եզակի է նրանով, որ հենց իր տարածքում կա փոքրիկ խաղողի այգի:
+              .ColC
+                %p
+                  Ամեն տարի աշխատակիցներն այնտեղ բերք են հավաքում և գինի պատրաստում։ Ճիշտ է, դուք չեք կարողանա այն գնել. գինին նախատեսված է օդանավակայանի հանդիսավոր միջոցառումների համար։
+                %p
+                  Փարիզից դեպի Բորդո մեքենայով ճանապարհը կկազմի 5 ժամ, TGV արագընթաց գնացքով կարելի է հասնել 2 ժամում։
+            .subtitleC.secondary.max-950.subtitleC-2
+              Ո՞ր քաղաքներում է առավելապես հարմար ապրել:
+            .textC.columnW.textC-2
+              .colC
+                %p
+                  %strong
+                    %a{href: bordeaux_url, target: "_blank"} Բորդոն (Bordeaux)
+                  տարածաշրջանի մայրաքաղաքն է՝ կացության բազմաթիվ հնարավորություններով, և ռազմավարական դիրք է, որտեղից հարմար է կարճատև ուղևորություններ իրականացնել տարածաշրջանով:
+                %p
+                  %strong Բիարիցը (Biarritz)
+                  կամերային քաղաք է, որն ունի յուրահատուկ ճարտարապետություն, երկար ավազե լողափեր, հիանալի գնումների հնարավորություն և ողջ Ֆրանսիայում հայտնի սերֆինգի դպրոցներ: Սա կատարյալ վայր է ֆրանսիական Պիրենեյները տեսնելու և բասկերի մշակույթին ծանոթանալու համար:
+                %p
+                  %strong Սառլա-լա-Կանեդան (Sarlat-la-Canéda)
+                  հնագույն քաղաք է, որը հայտնի է իր տրյուֆելների առևտրով:
+                  Անցյալ դարի 60-ական թվականներին տեղական իշխանությունների ջանքերի շնորհիվ քաղաքային միջավայրը պահպանվեց իր սկզբնական տեսքով։ Երեկոյան կարելի է սալահատակ փողոցներով զբոսնել գազի լապտերների լույսի ներքո և հիանալ քարե տանիքներով կիսափայտե տներով։ Այստեղ նաև խորհուրդ ենք տալիս ֆուա-գրա փորձել:
+              .colC
+                %p
+                  %strong Լա Ռոշելը (La Rochelle)
+                  նավահանգստային քաղաք է Բիսկայան ծոցի ափին, որը տպավորիչ է միջնադարյան ամրություններով և յուրահատուկ ճարտարապետությամբ։ Քաղաքից մի քանի կիլոմետր հեռավորության վրա գտնվում է Ռե կղզին (Isle of Ré)՝ հիասքանչ ավազե լողափերով. գերազանց վայր խաղաղ հանգստի համար: Այստեղից կարող եք նաև նավով հասնել հայտնի Ֆորտ Բոյար (Fort Boyard)։
+      .ContainerC.four
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-1734-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-big-1-mobile.jpg")}/
+      .ContainerC.max-1140.five
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-650.subtitleC-1
+              Երթուղիների տարբերակներ
+            .textC.rowW.textC-1
+              %p
+                %strong Երկար երթուղի՝
+                Bordeaux → La Rochelle → Cognac → Limoges → Sarla → Lascaux Cave → Saint-Emilion → Po → Bayonne
+              %p
+                %strong Երկար ճանապարհ
+                Bordeaux → Blay → Royan → La Rochelle → Cognac → Saint-Emilion
+              %p
+                Ֆրանսիայում ճանապարհորդելը հազվադեպ է սահմանափակվում մեկ տարածաշրջանով, ուստի անպայման ուսումնասիրեք ուրիշ տարածաշրջանների մեր ուղեցույցները՝ Փարիզ-Իլ-դը-Ֆրանսի, Լուարայի հովիտի և Օկսիտանիայի, որոնք կօգնեն ձեզ պլանավորել ամենահագեցած և հիշարժան ճամփորդությունը։
+            .subtitleC.secondary.max-975.subtitleC-2
+              Գինու սիրահարներին
+            .textC.rowW.textC-2
+              %p
+                Տեսնել, թե ինչպես է աճում խաղողը լեգենդար գինեգործական շրջաններից մեկում, անգին է: Առավել ևս, երբ յուրաքանչյուր գինեգործարան կոչվում է դղյակ, որի կառուցմանը հայտնի ճարտարապետ է մասնակցել և որը շրջապարված է գեղատեսիլ բլուրներով։ Տարվա յուրաքանչյուր ժամանակը բերում է իր գույներն ու ճամփորդության իր ռիթմը, սակայն գլխավորը մնում է նույնը՝ յուրահատուկ գինիներ համտեսելու հնարավորությունը։
+            .textC.columnW.textC-3
+              .colC
+                %p
+                  %strong Արմանյակ (Armagnac)․
+                  Գասկոն (Gascogne) նահանգը ոչ միայն դ'Արտանյանի ծննդավայրն է, այլև այն վայրը, որտեղ արտադրվում է արմանյակը: Այն կոնյակի մի քիչ պակաս հայտնի «եղբայրն» է։ Գասկոնում արժե շրջել արմանյակի արտադրություննեով և ինքնուրույն համտեսելով այս ըմպելիքը, փնտրել երկու եղբայրների միջև տարբերությունը, որը իսկապես առկա է:
+                %p
+                  %strong Մեդոկ (Médoc)
+                  Հետևեք Route des Chateaux du Medoc-ին և կտեսնեք ոչ միայն աշխարհի ամենահայտնի խաղողի այգիները, այլև գողտրիկ ֆրանսիական գյուղերը:
+              .colC
+                %p
+                  %strong Բորդոն
+                  հայտնի է հսկայական «Գինու քաղաք» (Cité du Vin) թանգարանով՝ մուլտիմեդիա կենտրոնով և համտեսներով:
+                %p
+                  %strong Սանտ-Էմիլիոնը (Saint-Émilion)
+                  միջնադարյան քաղաք և գինեգործության նշանավոր կենտրոն է: Այս տարածաշրջանի խաղողի այգիներն առաջինն են ընդգրկվել ՅՈՒՆԵՍԿՕ-ի Համաշխարհային Ժառանգության ցանկում։
+      .ContainerC.six
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-1577-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-big-2-mobile.jpg")}/
+      .ContainerC.max-1140.seven
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-860.subtitleC-1
+              Զբաղմունքներ
+            .textC.rowW.textC-1
+              %p
+                %strong Ուղևորվել հեծանիվով ճամփորդության
+              %p
+                Նոր Ակվիտանիան դրախտ է հեծանվորդների համար: Օվկիանոսի երկայնքով հարյուրավոր կիլոմետրանոց հեծանվային ուղիներ կան՝ ազգային զբոսայգիների և գեղատեսիլ քաղաքների միջով: La Vélodyssée-ն՝ Ֆրանսիայում ամենաերկար հեծանվային երթուղին, անցնում է հենց Ատլանտյան օվկիանոսի ափով: Նոր Ակվիտանիաի տարածքով նաև անցնում է Ատլանտյան օվկիանոսը և Միջերկրական ծովը միացնող հայտնի «Canal des Deux Mers»-ի հեծանվային երթուղու մի մասը։
+              %p
+                %strong Նվաճել Պիլատի ավազաթումբը (Dune du Pilat)
+              %p
+                Պիլատի ավազաթուբը Եվրոպայի ամենամեծ ավազաթումբն է՝ նրա լայնությունը 500 մետր է, իսկ երկարությունը՝ գրեթե 2,7կմ։ Ավազաթումբը բաց է այցելուների համար ամբողջ տարի՝ դուք կարող եք բարձրանալ գագաթը կամ լողալ օվկիանոսում նրա ստորոտում:
+              %p
+                %strong Զվարճանալ Ֆուտուրոսկոպ մուլտիմեդիա զբոսայգում։
+              %p
+                Ֆրանսիայի ամենահայտնի թեմատիկ զբոսայգիներից մեկը գտնվում է Պուատիե (Poitiers) քաղաքի մոտ: 110 հեկտար տարածքի վրա տեղակայված է ֆուտուրիստական զբոսայգի՝ 25 տեսարժան վայրերով։ Չնայած զբոսայգին բացվել է 1987 թվականին, այն անընդհատ թարմացվում և համալրվում է տեսարժան վայրերով։ Ինտերակտիվ զբոսանքները այցելուներին ընկղմում են ֆանտաստիկ աշխարհներ՝ տեսողական տեխնոլոգիաների և գործողություններին արձագանքող սենսորների օգնությամբ: Բացի տեսարժան վայրերից զբոսայգին հետաքրքիր է մետաղից և ապակուց պատրաստված նեոֆուտուրիզմի ոճի տաղավարներով։
+              %p
+                %strong Տեսնել հայտնի Ֆորտ Բոյարը
+              %p
+                Այս ամրոցը, որը գտնվում է Օլերոն (Oléron) և Իլ դ'Էքս (Île-d’Aix) կղզիների միջև, հայտնի է դարձել համանուն հեռուստաշոուի շնորհիվ։ Ծովում ամրոց կառուցելու նպատակներ կային դեռևս 17-րդ դարում, բայց այն ժամանակ դա դեռ տեխնիկապես իրագործելի չէր։ Ճակատագրի հեգնանքով, երբ 1857 թվականին ամրոցը կառուցվեց, այն այլևս անհրաժեշտ չէր հրետանու զարգացման պատճառով. հարևան կղզիներից թնդանոթային կրակը հեշտությամբ փակում էր նրանց միջև գտնվող նեղուցը, ուստի ամրոցը վերածվեց բանտի:
+              %p
+                1913 թվականից ամրոցը լքված է մնացել, և միայն 1980-ականներին, երբ հեռուստատեսությունը հետաքրքրվեց դրանով, սկսվեց ամրոցի վերականգնումը։ Այժմ անհնար է ամրոց մտնել, բայց կարելի է հեռվից հիանալ դրանով։ Ժամանցային նավակները դեպի ամրոց մեկնում են Լա Ռոշելից և այլ նավահանգստային քաղաքներից:
+      .ContainerC.eight
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-big-3.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-big-3-mobile.jpg")}/
+      .ContainerC.max-1140.nine
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-860.subtitleC-1
+              Է՞լ ինչ կարելի է տեսնել:
+            .textC.rowW.textC-1
+              %p
+                %strong Լիմոժը (Limoges)
+                արվեստի և պատմության քաղաք է տարածաշրջանի հյուսիս-արևելքում: Այստեղից հարմար է ուղևորվել դեպի Դորդոնի հովիտ, որն անվանում են «մարդկության օրրան»՝ առաջին մարդկանց բազմաթիվ վայրերի պատճառով։ Դորդոնում է գտնվում հայտնի Լասկո քարանձավը (Grotte de Lascaux) ՝ «նախնադարյան գեղանկարչության Սիքստինյան կապելլան»։
+              %p
+                %strong Արկաշոնի ծոցը (Bassin d’Arcachon)
+                հսկայական ծանծաղ ծով֡ածոց է, որը տեղացի ձկնորսներն օգտագործում են ոստրեների ձկնորսության համար: Արկաշոնի ոստրեները հայտնի են ողջ Ֆրանսիայում և դելիկատես են համարվում:
+              %p
+                %strong Բիարից (Biarritz)․
+                Art Deco առողջարանային քաղաք՝ գեղեցիկ հյուրանոցներով և լողափերով, որոնք ձգվում են քաղաքի սահմաններից դուրս: Գոլֆստրիմի ալիքներն ու տաք հոսանքը թույլ են տալիս սերֆինգով զբաղվել տարվա ութ-ինը ամիսների ընթացքում, ուստի այստեղ են գալիս մարզիկներ ողջ Եվրոպայից։ Այստեղ շատ են սերֆինգի դպրոցները, որտեղ կարելի է մեկանգամյա դաս կամ ամբողջ դասընթաց անցնել:
+              %p
+                %strong Փարոս Կապ-Ֆեռռեում (Cap Ferret)․
+                Անմոռանալի փորձ է 258 աստիճան բարձրանալ, որպեսզի այդ բարձրությունից տեսնել Արկաշոնի ծոցը և Ատլանտյան օվկիանոսը։
+        .descC.whiteFon.descC-2
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-860.subtitleC-1
+              Ստուգման ցուցակ
+          .ContainerC.padding-30.ContainerC-2
+            .blockC.features
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-sunset.svg")}/
+                %p
+                  Դիմավորել մայրամուտը Պիլատի ավազաթմբի վրա:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-pepper.svg")}/
+                %p
+                  Գնել Էսպելետտեի պղպեղը։
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-goose.svg")}/
+                %p
+                  Սարլայում համտեսել դորդոնյան ֆուա-գրան տեղական սպիտակ գինիով։
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-cup.svg")}/
+                %p
+                  Գնել ճենապակյա բաժակ Լիմոժում։
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-home.svg")}/
+                %p
+                  Զբոսնել Արկաշոնի հիասքանչ վիլլաների միջով, այնուհետև հանգստանալ ավազե լողափին:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-wine.svg")}/
+                %p
+                  Մի բաժակ գինի խմել Գինու թանգարանում՝ վայելելով Բորդոյի տեսարանը:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-oysters.svg")}/
+                %p
+                  Փորձել ոստրեներ Կապ Ֆերեում, գնումներ կատարել Բիարիցում:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-ancestors.svg")}/
+                %p
+                  Տեսնել հին մարդկանց նկարները Լասկո քարանձավում:
+    = render partial: 'shared/footerAr'
+    = render partial: 'shared/footer_main_ar'          

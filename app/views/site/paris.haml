@@ -1,0 +1,336 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: #444A55;
+      --accent-text-color: #ffffff;
+      --accent-authors-color: #000000;
+      --accent-special-color: #CC4D47;
+      --menu-burger-background: #737C8B;
+    }
+
+= render partial: 'shared/header'
+%main.article-main
+  %section.article-intro.article-intro--paris
+    .container.article-intro__container
+      %img.article-intro__img.hide--mobile{alt: "", src: asset_pack_url("media/images/placeholders/paris/cover.png")}/
+      %img.article-intro__img.show--mobile{alt: "", src: asset_pack_url("media/images/placeholders/paris/cover-mobile.png")}/
+      .article-intro__info
+        %h1.article-intro__title Paris
+        .article-intro__subtitle
+          %span.article-intro__subtitle-line It's the one
+          %span.article-intro__subtitle-line and only
+      .article-intro__text.columns
+        %p Even those who have never been to Paris are familiar with it through Dumas novels, Toulouse-Lautrec paintings, Piaf songs, Gaultier fashion shows, and an inexhaustible library of great film directors. On the other hand, it is hard to write a detailed guide to this city unless you are willing to read a book with as many volumes as the Great Soviet Encyclopedia. Even if it's your first time in Paris, you have to see the Joconde in the Louvre, watch the restoration of Notre Dame de Paris on the Cité island, climb the 237 steps to the Sacré Coeur basilica, see another contemporary artist's installation across the street from the Centre Pompidou, and finally, get lost in the Luxembourg Garden as Diderot  did.
+        %p However, keep in mind that Paris is not a city of quests where you must rush from point A to point B in a hurry.
+        %p No, Paris is not merely about locations. Instead, it is a vibe that can be felt somewhere between places. Therefore, it would be best for you to take things easy, relax, and look at the city not through the eyes of a tourist searching for iconic images from French New Wave films and postcard views, but rather through the eyes of people who live there right now.
+        %p Nevertheless, there are complexities involved here as well. The residents of Paris arrondissements are ready to argue until the bitter end over whether the bourgeois Saint-Germain, the liberal Marais, or the idle Latin Quarter represent the true Paris. Even though the city of 2.5 million inhabitants is relatively small, it contains enough land to accommodate an entire European country and therefore appears horizonless.
+  %section.article-block.article-pane.article-pane--with-map
+    .container.article-pane__container
+      %img.article-pane__map{alt: "", src: asset_pack_url("media/images/placeholders/paris/map-en.png")}/
+      .article-pane__content
+        %h2 Paris cultural code
+        .columns.columns--wide-image-in-footer
+          %p
+            If you believe the proverb "seeing Paris and dying then," you will find some truth in it. It could be said about going to museums during the tourist season. Keep in mind that you should always book tickets to high-profile institutions online. Also, don't forget that there are museums dedicated to practically all of the many types of artists, singers, and writers that lived in Paris, so make sure to check those out.The Salvador Dali house museum in Montmartre, for example, has sculptures of skinny-legged elephants. Edith Piaf's flat in the
+            %span.special Ménilmontant
+            arrondissement is open to the public. The Musée Yves Saint Laurent is sure to be a hit with those who are passionate about fashion, and the Musée Balzac, which is housed in the author's seminal home, will appeal to fans of literature as well as a wider audience.
+          %p
+            Paris has always been a world  centre for contemporary art, with the Salon des Independents, the international artists' colony The Beehive, and the first Surrealist exhibition. It makes no difference whether we are discussing current events or events from two centuries ago. It's all about Paris, which, with true French airiness, strikes a balance between the new and the eternal. . From traditional art at the Louvre to abstract sensuality at the Museum of Romantic Life, there is a lot to see  in Paris. Exhibitions at the Musée d'Orsay and the Grand Palais offer new perspectives on classic works, such as "The Black Models: From Géricault to Matisse," which explores the history of black people in art. Louis Vuitton Fondation and the Centre Pompidou are popular not only as cultural and museum destinations, but also as urban landmarks. Well, the International Contemporary Art Fair (FIAC) takes place in Paris every October, making it one of the most important contemporary art fairs.
+          %p
+            What else is there? You can descend into the spooky catacombs of Paris or try to figure out what's what at the Museum of Fakes. Along with works of art and branded goods, there are also items that customs and police have seized. You can escape the heat of the day in the grand winter garden at the Musée Jacquemar-André or ride the bike merry-go-round at the Museum of Fair Art, which has a real circus with wooden horses. If you're looking for even more romance, head to Montmartre, which is home to
+            %span.special La Belle Epoque
+            artists, night butterflies from Place Pigalle, and the legendary Moulin Rouge cabaret. Don't be lazy; look for Dalida's house and bust on Rue d'Orchampt. Touching the sculpture's breasts is said to bring good luck.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/text-1.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-1-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-1-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-1.jpg')}
+        %img.article-figure__img.article-figure__img--to-right{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/paris/figure-1.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Architecture is Paris calling card
+        .columns.columns--wide-image-in-footer
+          %p Eiffel Tower metalwork, Notre-Dame-de-Paris gargoyles, and Opera Garnier baroque vignettes – the architecture of Paris is so well-known from literature and film that tourists view the city as a kind of open-air museum. That assessment of Paris is, for the most part, spot on. Baron Georges-Eugène Haussmann, who created Paris by demolishing the city's mediaeval core, was the first person in charge of how the city began to look. This was the 19th century.
+          %p The Baron not only gave Paris a new look, but he also completely changed its layout and installed sewers and plumbing. After he changed things, there aren't many wooden houses left in the city (if you're lucky, you'll find a few in the Marais). However, the unique views emerged, and the term "Haussmann Building" was coined as a result of his renovations. These are the same houses you've seen in pictures before: large windows, high ceilings, third-floor balconies, rough rusticated panelling, and a maid's room on the roof. Now, these teeny rooms are rented out to students, who share a bathroom with their neighbors. It's sort of like a French take on the concept of a shared flat.
+          %p There are many different kinds of buildings in Paris, but they all work well together. 
+          %p The pyramids of the Louvre feel right at home around the Palais and Tuileries gardens, while the Centre Pompidou, despite appearing too vibrant, fits the mood of the Marais quarter. The Parisian mosque is nestled in the Latin Quarter, and the Arc de Triomphe looks like it's winking at the Egyptian obelisk on the Place de la Concorde. The Opéra Bastille and the Philharmonie de Paris are comparable in size to their more mature counterpart, the Opéra Garnier, whereas the Art Deco-styled Hotel Molitor is the result of the restoration of an iconic swimming pool of the same name, which stood abandoned and became a canvas for graffiti in the 1990s. On the other hand, Molitor is found in the district of Boulogne-Billancourt, which is known for its impressive architecture. It is also situated close to the newly constructed Roland Garros courts, the brutalist Parc des Princes stadium where Paris Saint-Germain play, and the City of Music on Seguin Island.
+          %p Well, yes, the French know how to combine things that don’t seem to go together. This shows once again how important it is to both honor tradition and keep up with the times. Still, the scandal that the Eiffel Tower caused when it opened in 1889 is fresh in our minds. 
+          %p The people of Paris felt that the Iron Lady didn’t fit the style of the city and that she made the citizens look like they had bad taste. No matter what, Parisian architecture continues to pass down its best parts from one generation to the next, changing its shape but never meaning.
+          %figure.figure
+            %img.article-figure__img--to-right{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/text-2.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-2-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-2-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-2.jpg')}
+        %img.article-figure__img.article-figure__img--to-left{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/paris/figure-2.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2.paris-title Paris is best understood on foot
+        .columns.columns--two-images-in-footer
+          %p In Paris, what is the best way to see all the city's architectural gems? The only recommended solution is to walk around Paris on foot. Honoré de Balzac discovered this in his essay "The Theory of Walking" in the 19th century, and Owen Wilson's protagonist in the melodrama Midnight in Paris strolled through the city while travelling through time. Anyone with a creative mind can do it; therefore, take a U-turn away from the well-trodden tourist routes, take the most scenic route possible (even if it is more winding), and remember that flaneuring is an unrivalled way to find lofty ideas and inspiration.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/text-3.jpg")}/
+          %p
+            The wonderful French word
+            %span.special flâner
+            means to wander around the city aimlessly. Because the French prefer flâner in a flamboyant and noble manner, the city administration is constantly updating and improving the infrastructure, increasing not only the number of bicycle lanes but also the number of sideways.In Paris, there are a lot of parks, and each one has its special features. The Luxembourg Garden, for example, where one of the capital's four Statues of Liberty is hidden among trees, is popular with tourists and locals alike; Parc des Buttes-Chaumont appears to be closed to tourists and foreigners, and Monceau Park seems to be designed exclusively for children.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/text-4.jpg")}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Gastronomy is Paris second name
+        .columns
+          %p
+            You're getting hungry as you flaneur through the streets and parks. Instead of scanning the area with your eyes for a café, go to the nearest supermarket. It should be remembered that France is a major agricultural power? Lots of cheese, thick-crusted baguettes, fresh vegetable salads, organic chocolate, and an excellent wine list. You can buy camembert or fresh seafood at the
+            %span.special Montorgueil
+            market or
+            %span.special La Grande Epicerie
+            Gourmet Corner. The local cavistes are great places to stock up on wine. Do not be surprised by the high prices; the French are used to paying more for higher-quality goods, which explains why markets in Paris are frequently more expensive than shops.
+          %p To fit in with the lives of the locals, you'll need to rethink your eating habits, as the French eat at set times. In Paris, for example, the first batches of fresh croissants appear by 7 a.m. The bistro is open for lunch service between the hours of noon and 2:00 p.m., and at 7:00 p.m., you should make a reservation at the restaurant for dinner.
+          %p Make a reservation at the world-famous chef Alain Ducasse's floating restaurant if you're looking for something more. As the gastronomic boat cruises along the river route, guests are treated to nighttime views of the city and Michelin-recommended dishes. You don't think it's only for tourists? No, not really. The people of Paris are very proud of their heroes. The chefs are knighted, and the local food is, naturally, a UNESCO heritage site.
+          %p
+            In contrast to the common belief, the French do not typically consume frog legs. Instead, they prefer to munch on snails. That's why you should try them at a tried-and-true establishment like
+            = succeed "," do
+              %span.special Roger la Grenouille.
+            which knows how to cook them so they taste good. 
+          %p
+            At
+            %span.special La poule au Pot
+            , you'll find a timeless dish prepared to perfection, complete with silverware, the most delicate mash, a colorful history, and a renowned chef. The Astair restaurant, which is in one of Paris's coziest passages, serves traditional French food at prices that aren't too high. 
+          %p
+            The best place to try the food on your own is in the old quarter Marais. Are you a frequent visitor to Paris? Then proceed to the 11th arrondissement.
+
+          %p 
+            The
+            %span.special Pianovins
+            haute cuisine restaurant, opened by the chef and sommelier after 25 years of working together at the legendary
+            %span.special Guy Savoy
+            is one of the most interesting places here.
+          %p
+            Don't even think that, with their French snobbery, Parisian chefs ignore world cuisines. Legendary chef Joël Robuchon pioneered the trend for Japanese and Asian cuisine in the early 2000s, and it has only grown in popularity since then.  Even the Japanese will be surprised by the food here, whether at the upscale 
+            %span.special RAN
+            with its baroque interior or the inexpensive and authentic Kodawari restaurant, where there is always a line.
+          %p
+            In Italian restaurants, the majority of chefs are immigrants from Italy who have settled in Paris. Even in August, when all of Paris is on vacation, there is a line at the establishments of the
+            %span.special Mamma Group
+            chain that offer affordable prices. And because of its decor, one of Pink Mama's restaurants has become a star on Instagram. Owen Wilson's favorite restaurant,
+            %span.special La Stresa
+            , and the Venetian
+            %span.special Mori Venice Bar
+            , both mentioned in the Michelin guide, are recommended for sophisticated Italian meals.
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-3-mobile.jpg')}
+          %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-3-tablet.jpg')}
+            %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-3.jpg')}
+              %img.article-figure__img{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/paris/figure-3.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Fashion capital shopping
+        .columns.columns--img-right
+          %p
+            It sounds like a cliche, but it's true: Paris is the shopping capital of the world, and many of the shops here have a long history. The most well-known has been, of course, the
+            %span.special Colette
+            on rue Saint-Honoré, where you could get both sunglasses and a T-shirt from a collaboration with Chanel for €30. Madame Colette did not want to sell the boutique or give it to her grandchildren when she retired. She was very French and thought that no one could keep up with the concept. So the woman decided to rent out the legendary space to
+            %span.special Yves Saint Laurent
+            house, and Anthony Vaccarello opened a flagship shop with souvenirs, vintage furniture, and a café there.
+          %p
+            Shopping in the ultra-chic Marais neighborhood is ideal for those seeking the unusual and exclusive. In the  
+            %span.special Frankie Shop
+            , you can be the first to buy what will be trendy next week, and if you want to look like a local woman in 
+            %span.special Rouje
+            , you should wear feminine things with a whiff of sexy vibe.
+          %p
+            %span.special Maison Kitsune
+            at the Tuileries Garden sells comfortable Japanese-style clothing and serves the perfect Matcha. Anyway, the chic and classy Montaigne and Saint-Honoré avenues, as well as large department stores are open too. In his novel The Ladies' Paradise, Émile Zola mentions one such chic place, the historical 
+            = succeed "." do
+              %span.special Le Bon Marche
+            Now, they sell new French brands that not many people have heard of yet. If that isn't enough, there's also
+            = succeed "," do
+              %span.special Le BHV Marais
+            = succeed "," do
+              %span.special Galeries Lafayette
+            and the massive
+            %span.special La Vallée Village
+            outlet near Disneyland Paris for you to visit.
+          %p
+            The best souvenirs don't come from newsstands or street ruins. Instead, they can be found in museum gift shops. Sure, the best gift from an unfamiliar city is a book purchased from a bookseller on the Seine. It may be corny to say "A Moveable Feast" or "The Little Prince" about Paris, but it's very 
+            = succeed "." do
+              %span.special comme il faut
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/text-5.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-4-mobile.jpg')}
+          %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-4-tablet.jpg')}
+            %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/paris/figure-4.jpg')}
+              %img.article-figure__img{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/paris/figure-4.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Paris environs
+        .columns
+          %p
+            %span.special Escapade
+            is a French word that means "escape from the hustle and bustle of a big city." It's a tradition that the French hold in high regard, and perhaps even a trait of their personality. It's recommended that you embrace it.
+          %p Yes, Versailles is a must-see on the suburban itinerary, but we'd like to surprise you with something a little less obvious. For example, Claude Monet worked and lived in Giverny, a small town an hour's drive from the capital but already in Normandy. When you see his manor house and garden, you can see right away where the maestro got his ideas.
+          %p Chantilly is known as the birthplace of whipped cream (congrats, you now know how to order it in French!). But most importantly, it has a medieval Castle with a gallery that, according to critics, is the best in France after the Louvre. Francois Vatel was the chateau's maitre d', and Gérard Depardieu and Uma Thurman starred in a great film about him. The grounds and garden around the chateau would have made the landscape designers at Versailles green with envy.
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Must-Do in Paris
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-1.png")}/
+            .icon-item__text
+              Eat
+              %span.special Bertillon
+              ice cream on the island of St Louis (Île Saint-Louis). There are 90 flavours in total, but because the ice cream is made from natural ingredients, the variety is seasonal.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-2.png")}/
+            .icon-item__text
+              Spend some time at the Saint Ouen flea market and buy some antique items.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-3.png")}/
+            .icon-item__text
+              %span.special Place Pigalle
+              's nice shop has a variety of interesting items for sale for both yourself and those you care about.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-4.png")}/
+            .icon-item__text
+              Kiss in front of the wall
+              %span.special Le Mur des je t'aime
+              where the phrase "I love you" is written in all the world's official languages, including Braille.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-5.png")}/
+            .icon-item__text
+              Go to
+              %span.special Opéra Garnier
+              or a show or a tour to see Marc Chagall's paintings all over the dome.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-6.png")}/
+            .icon-item__text
+              Drink some wine at one of the literary cafés, such as 
+              = succeed "." do
+                %span.special Café des fleurs
+              Many of the twentieth century's most brilliant thinkers and doers were regulars, and their works were created here!
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-7.png")}/
+            .icon-item__text
+              %span.special Place des Vosges
+              the capital's oldest square, is a great place to grab a cup of coffee and a fresh croissant.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-8.png")}/
+            .icon-item__text
+              %a{href: 'https://www.rugbyworldcup.com/2023?utm_source=france-advisor.com&utm_medium=link'}The 10th Rugby World Cup
+              will take place in 2023. Fans are waiting for 48 matches of the game of "knights of the oval ball", which is almost 200 years old. Part of the meetings will take place in Paris (in Lyon, in Marseille, in Nice, in Bordeaux).
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-1-10.png")}/
+            .icon-item__text
+              Combine shopping, a delicious lunch, and a sightseeing tour with a visit to 
+              = succeed "," do
+                %span.special Passage des Panoramas
+              an ancient passageway lined with fantastic French bistros (
+              %span.special Canard & Champagne
+              for an aperitif (L'apéro) or 
+              %span.special Aster
+              for dinner).
+
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 One more item to consider
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-2-1.png")}/
+            .icon-item__title
+              How to get there
+            .icon-item__text
+              Flying from Yerevan or Tbilisi is the fastest option. The flight will take you about five hours and 20 minutes.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-2-4.png")}/
+            .icon-item__title
+              How to spend less
+            .icon-item__text
+              %p
+                Paris Official City Passlib for museums and events
+                %a.link{href: "https://booking.parisinfo.com/", target: "_blank"} booking.parisinfo.com
+                \. It ranges from €45 for a single day with limited access (no public transportation) to €165 for five days. You can save money on an Eiffel Tower ticket if you pay an extra €20 when you buy it.
+              %p
+                Paris Région Pass visitparisregion.com. If you're interested in seeing more of the Paris region, the Paris Région Pass will also allow you to do so. The price starts at €43.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-2-5.png")}/
+            .icon-item__title
+              Flight cost
+            .icon-item__text
+              A Yerevan – Paris – Yerevan flight begins at
+              %a.link{href: "https://wwws.airfrance.am/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=EVN:A%3EPAR:C-PAR:C%3EEVN:A&bookingFlow=LEISURE", target: "_blank"} 390 EUR.
+              A Tbilisi – Paris – Tbilisi flight begins at
+              %a.link{href: "https://www.airfrance.ge/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=TBS:A%3EPAR:C-PAR:C%3ETBS:A&bookingFlow=LEISURE", target: "_blank"} 312 EUR.
+              To be the first to know about our special deals we advise you to subscribe to Air France newsletter in
+              %a.link{href: "https://www.airfrance.am/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Armenia
+              and
+              = succeed "." do
+                %a.link{href: "https://www.airfrance.ge/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"}  Georgia
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-2-2.png")}/
+            .icon-item__title
+              Where to stay
+            .icon-item__text
+              %p
+                The arrondissements 5, 6, and 7 are home to the Parisian ambience and measured lifestyle. The 5th arrondissement is home to plane-trees, terraced cafés, and the magnificent Place de la Contrescarpe, where Hemingway lived. The Luxembourg Garden, with its quiet alleys, grand cafés, galleries, and Parisians resembling those seen in movies, is located in the 6th arrondissement. Keep an eye out for the window view of the Eiffel Tower, as well as Parisian style and Art Nouveau architecture in the 7th arrondissement. At Canal Saint-Martin in the 10th arrondissement, you'll find trendy young people, cool bars, comic book shops, and a student vibe.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/paris/icon-2-3.png")}/
+            .icon-item__title
+              Useful links
+            .icon-item__text
+              %p
+                %a.link{href: "https://ru.france.fr/ru ", target: "_blank"} France.fr
+                — french news and useful information for tourists
+              %p
+                %a.link{href: "https://wwws.airfrance.am/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.am
+                — Air France homepage for Armenian travelers
+              %p
+                %a.link{href: "https://www.airfrance.ge/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.ge
+                — Air France homepage for Georgian travelers
+              %p
+                %a.link{href: "https://www.parisinfo.com/", target: "_blank"} Parisinfo.com
+                — everything for tourists in Paris in Russian: travel guides, arrondissement tips, City Pass.
+              %p
+                %a.link{href: "https://www.visitparisregion.com/fr", target: "_blank"} Visitparisregion.com
+                — Regional Tourism Committee Paris Région.
+  %section.article-block.article-authors
+    .container.article-authors__container
+      .article-authors__list
+        .article-authors__item
+          %b Illustrations:  Aleksandra Baranovskaya 
+        .article-authors__item
+          %b Text: Maria Kozhuhovskaya, Andrey Sakov
+
+  = render partial: 'article_form'
+  = render partial: 'shared/footer'

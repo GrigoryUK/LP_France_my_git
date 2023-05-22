@@ -1,0 +1,23 @@
+$font-text: "Open Sans", sans-serif;
+$font-accent: "Six Hands Condensed", cursive;
+
+//media
+$break-mobile-small: 359px;
+$break-mobile: 767px;
+$break-tablet: 1023px;
+$break-desktop-small: 1439px;
+$break-desktop-medium: 1919px;
+$break-desktop-oversize: 2560px;
+
+//common colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-footnote: #2c4e8d;
+$color-gray: #a2a1a1;
+
+:root {
+	--color-red: #ac5350;
+	--color-blue: #2d4e8d;
+	--color-aqua: #61b1c0;
+	--color-brown: #8f7d6c;
+}

@@ -1,0 +1,238 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: var(--color-blue);
+      --accent-text-color: #ffffff;
+      --accent-special-color: var(--color-blue);
+      --font-georgian: 'Noto Sans Georgian', sans-sarif;
+      --font-georgian-serif: 'Noto Serif Georgian', sans-sarif;
+      --font-armanian: 'Noto Sans Armenian', sans-sarif;
+      --menu-burger-background: #4361A1FF;
+    }
+%body{style: "background-color: var(--accent-background-color);"}
+  .site-container
+    .header--new
+      %header.header
+        .container.header__container
+          %button.header__nav-toggle
+            %span.header__nav-toggle-line
+          %nav.header__nav
+            .header__nav-in
+              %a.header__nav-link.header__nav-link--active{href: occitania_ge_url} OCCITANIA
+              %a.header__nav-link{href: new_aquitaine_ge_url} NEW AQUITAINE
+              %a.header__nav-link{href: paris_region_ge_url} PARIS REGION
+              %a.header__nav-link{href: loirevalley_ge_url} LOIRE VALLEY
+              %a.header__nav-link.header__nav-link--home.header__nav-link--icon{href: root_url}
+                MAIN PAGE
+                %span.header__nav-link-icon
+    .container-secondary.container-occitania.occitania-ge.lang-ge
+      .ContainerC.max-1140.one
+        .blockC.main.occitania--main.main-ge
+          .blockC__texts
+            .titleC.main
+              %h1
+                %span Occitania
+            .subtitleC.main
+              %span
+                ოქსიტანია
+            .subtitleC.premain
+              %span სამეფო სასახლეები,
+              %span თემატური პარკები
+          %img.image-main{alt: "", src: asset_pack_url("media/images/Occitania/image-655-1.png")}/
+      .ContainerC.max-1140.two
+        .descC.withoutFon.descC-1
+          .textC.columnW
+            .colC
+              %p
+                ოქსიტანია — საფრანგეთის ყველაზე სამხრეთ რეგიონი, რომელიც გადაჭიმულია ხმელთაშუა ზღვიდან ცენტრალური მასივის
+                მთებამდე. ეს არის ადგილი განსაცვიფრებელი ბუნებით და შუა საუკუნეების ციხესიმაგრეებით.
+            .colC
+              %p
+                ოქსიტანია საუკეთესო ადგილია საფრანგეთის ისტორიის შესასწავლად: აქ თანაარსებობს ათასობით წლის წინანდელი
+                მომლოცველობის მარშრუტები რომის იმპერიის დროინდელი ვენახებით და კათარელთა უძველესი ციტადელებით.
+      .ContainerC.max-1140.three
+        .descC.whiteFon.withImg.descC-1
+          .ContainerC.padding-60
+            %img.image-map{alt: "", src: asset_pack_url("media/images/icons/icon-map.png")}/
+            .subtitleC.secondary.max-700.subtitleC-1
+              რეგიონალური აეროპორტები
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  ოქსიტანიის მთავარი აეროპორტია
+                  %strong Toulouse-Blagnac,
+                  რომელიც ტულუზის ცენტრიდან სულ რამდენიმე
+                  კილომეტრში მდებარეობს. პარიზიდან ყოველდღე Air France -ის 9 თვითმფრინავი ასრულებს რეისს და ბილეთის
+                  ღირებულება 65 ევროდან იწყება.
+                  Air France-ის თვითმფრინავები ასევე დაფრინავენ მონპელიეს
+                  %strong Mediterranée
+                  \-ის აეროპორტში,
+                  დაახლოებით 9 რეისი დღეში.
+                %p
+                  ტულუზის აეროპორტის მახლობლად მდებარე
+                  %strong Aeroscopia
+                  მუზეუმში არის
+                  %a{href: "https://www.airfrance.ge/", target: "_blank"} Air France-ის
+                  საკუთრებაში არსებული კონკორდის
+                  თვითმფრინავი. ის და საბჭოთა Tu-144 იყო ერთადერთი ზებგერითი სამგზავრო თვითმფრინავი მსოფლიოში. ფრანგული
+                  თვითმფრინავების გამოყენება 2003 წელს შეწყდა საწვავის გაძვირების გამო.
+              .ColC
+                %p
+                  პარიზიდან ტულუზამდე (700 კმ) მანქანით მგზავრობა დაახლოებით შვიდ საათს გრძელდება. მგზავრობა შესაძლებელია
+                  მატარებლითაც: მგზავრობას დაახლოებით ექვსი საათი სჭირდება და ბილეთის ღირებულება 15 ევროდან იწყება.
+      .ContainerC.four
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/Occitania/image-1442-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/Occitania/image-big-1-mobile.jpg")}/
+      .ContainerC.max-1140.five
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-975.subtitleC-1
+              რომელ ქალაქებია ყველაზე კომფორტული საცხოვრებლად
+            .textC.rowW.textC-1
+              %p
+                %strong ტულუზა -
+                რეგიონის დედაქალაქია, «ვარდისფერი ქალაქი» უნიკალური არქიტექტურული მემკვიდრეობით.
+                ტულუზა არის ამოსავალი წერტილი ოქსიტანიის შესასწავლად, გარდა ამისა, მოსახერხებელია მთავარ
+                ღირსშესანიშნაობებამდე მისასვლელად.
+              %p
+                %strong მონპელიე
+                ოქსიტანიის თანამედროვე ხელოვნების ცენტრია. შესანიშნავი მუზეუმები გამოჩენილი
+                კურატორებით, მაგალითად MoCo-ს მართავს ხელოვნების ისტორიკოსი ნიკოლას ბურიო.
+              %p
+                %strong კარკასონი -
+                ქალაქი ცნობილი ციხე-სიმაგრით, რომელიც მდებარეობს ქალაქის ძველ ნაწილში ბორცვზე
+                და რომელმაც სახელი მისცა საკულტო სამაგიდო თამაშს.
+        .descC.whiteFon.descC-2
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-650.subtitleC-1
+              მარშრუტის იდეები:
+            .textC.rowW.textC-1
+              %p
+                %strong გრძელი მარშრუტი:
+                Toulouse → Lourdes → Auch → Caors → Rocamadour → Fijac → Conque → Rhodes →
+                Albi → Montsegur → Colières → Perpignan → Carcassonne → La Grande Motte → Ec Mort → Montpellier → Nimes.
+              %p
+                %strong მოკლე მარშრუტი:
+                Toulouse → Carcassonne → Beziers → Montpellier → Millau → Albi → Toulouse.
+              %p
+                %strong მარშრუტი მდინარის ნავით სამხრეთ არხის გავლით:
+                Toulouse → Carcassonne → Narbonne.
+              %p
+                საფრანგეთის გარშემო მოგზაურობა იშვიათად შემოიფარგლება ერთი რეგიონით. აუცილებლად შეისწავლეთ გზამკვლევები
+                მეზობელი რეგიონებისთვის: New Aquitaine, Auvergne — Rhone — Alpes, Provence — Alpes — Côte d’Azur ეს
+                დაგეხმარებათ დაგეგმოთ ყველაზე მრავალფეროვანი და დასამახსოვრებელი მოგზაურობა.
+      .ContainerC.six
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/Occitania/image-2004-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/Occitania/image-big-2-mobile.jpg")}/
+          .ContainerC.max-1140.author
+            .author-container
+              %span Illustrations:
+              %span Polina Parygina
+      .ContainerC.max-1140.seven
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-650.subtitleC-1
+              აქტივობები
+            .textC.rowW.textC-1
+              %p
+                %strong გასეირნება სამხრეთ არხის გასწვრივ.
+              %p
+                %strong Canal du Midi
+                ან სამხრეთ არხი რომელიც გადაჭიმულია 240 კილომეტრზე ტულუზადან ხმელთაშუა ზღვის ქალაქ სეტემდე. ეს არის ერთ-ერთი ულამაზესი და გრძელი არხი საფრანგეთში რომელიც შედის იუნესკოს მსოფლიო მემკვიდრეობის სიაში. აქ მრავალად არის შუასაუკუნეების და რომაული არქიტექტურული ძეგლები, კათარელთა ციხესიმაგრეები (ქრისტიანი ერეტიკოსები, რომლებიც გაანადგურეს მე-13 საუკუნეში) და რა თქმა უნდა, ულამაზესი პეიზაჟები. ღვინის და გასტრონომიის მოყვარულებისთვისაც საინტერესოა არხის გასწვრივ მოგზავურობა, სადაც გზად ყველანაირი ადგილობრივი წარმოების პროდუქტი შეხვდებათ. არხის გასწვრივ არის ადგილები, სადაც სპეციალური ნებართვის გარეშე შეგიძლიათ ნავის დაქირავება.
+              %p
+                %strong მოგზაურობა ციხესიმაგრეებში.
+              %p
+                ოქსიტანიაში შემორჩენილია ათობით ციხე და ციხესიმაგრე, მათ შორის ყველაზე ცნობილია კარკასონი, რომლის დასაცავად აშენდა 52 კოშკი და 3 კილომეტრიანი ციხის კედელი. ციხე-ქალაქი ეკუთვნოდა ვიკონტ რაიმონდ-როჯერ ტრანკაველის. ვიკონტი თანაუგრძნობდა დევნილ კათარებს და ნება დართო მათ შეეფარებინათ თავის ქალაქში, მაგრამ მრავალდღიანი ალყის შემდეგ ქალაქი აიღეს და კათარელები განადგურდნენ. მე-19 საუკუნის შუა ხანებში ციხე აღადგინეს დიდი არქიტექტორის ეჟენ ვიოლე-ლე-დუკის ხელმძღვანელობით. კათარის ციხეები რეგიონში დაკავშირებულია თემატური მარშრუტებით, გირჩევთ განსაკუთრებული ყურადღება მიაქციოთ მათ რომლებიც მთიან რაიონებში მდებარეობს. მაგალითად, Monsegur-ის ციხე, რომელიც კლდეზე დგას და საიდანაც თავბრუდამხვევი ხედები იშლება. ასევე გირჩევთ ეწვიოთ Peyrepertuis-ის და Queribus ის ციხეებს, რომლებიც ერთმანეთთან ახლოს მდებარეობს.
+              %p
+                %strong ტური- ხმელთაშუა ზღვის სანაპიროები.
+              %p
+                სანაპირო ტური შეიძლება დაიწყოს Colors-ში და გადახვიდეთ ჩრდილოეთით. ქალაქს აქვს ციხესიმაგრის კომპლექსი, სამხრეთ გორაზე კი დგას Saint-Elme -ის ციხე .შემდეგ — Argeles-sur-Mer ამავე სახელწოდების ოთხკილომეტრიანი პლაჟით .შემდეგ Saint Cyprien სადაც პლაჟის გარდა არის შესანიშნავი აკვაპარკი. ისიამოვნეთ Canet-en-Roussillon-ის ქვიშიანი სანაპიროთი, რადგან Le Barcares-მდე, რომელიც 15 კილომეტრშია სხვა საკურორტო ქალაქები აღარ შეგხვდებათ. ოქსიტანიის სამხრეთ კურორტების სანაპირო ტური შეიძლება დასრულდეს Leucat -ში. რა თქმა უნდა, პლაჟები შემდეგაც შეგხვდებათ, მაგრამ იქ არ იქნება განვითარებული ტურისტული ინფრასტრუქტურა. თუ ეს არ არის საკმარისი თქვენთვის, გაემგზავრეთ ჩრდილოეთით, სადაც ნახავთ უფრო დიდ საკურორტო ქალაქებს. Montpellie -ეს ქვემოთ არის La Grande Motte, რომელიც აღსანიშნავია, როგორც თანამედროვე საკურორტო არქიტექტურის მაგალითი.
+              %p
+                %strong არქიტექტურული შედევრების მონახულება.
+              %p
+                ოქსიტანიაში ბევრი უძველესი და შუა საუკუნეების ადგილია შემორჩენილი, რომლებსაც თანამედროვე მოგზაურის გაოცებაც კი შეუძლიათ. Pont du Gare- დღემდე შემორჩენილია ყველაზე მაღალი რომაული აკვედუკი. Rocamadour- კლდეზე აგებული მომლოცველთა ქალაქი. ეპისკოპოსის რეზიდენცია ქალაქ ალბში რომელიც იყო ჯვაროსნული ლაშქრობების შეკრების ცენტრი კათარების წინააღმდეგ და ახლა კი სამხრეთ გოთური სტილის ცნობილი ძეგლია.
+      .ContainerC.eight
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/Occitania/image-1538-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/Occitania/image-big-3-mobile.jpg")}/
+      .ContainerC.max-1140.nine
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-700.subtitleC-1
+              რეგიონალური აეროპორტები
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  %strong> La Grande Mott
+                   — ზღვისპირა კურორტი მონპელიეს მახლობლად უნიკალური არქიტექტურით, რომელიცმე-20 საუკუნის კულტურულ მემკვიდრეობად არის აღიარებულია. კურორტის შენობების დაპროექტებისას, არქიტექტორი ჟან ბალადური შთაგონებული იყო მექსიკის ტეოტიუაკანის პირამიდებით და ბრაზილიელი ოსკარ ნიმეიერის მოდერნისტული შენობებით. შედეგად გამოვიდა ბეტონის თეთრი პირამიდული სახლების გასაოცარი სერია. ბრწყინვალე აქრიტექტურა, თოვლივით თეთრი პლაჟები და 300 მზიანი დღე წელიწადში — აი რატომ არის ეს ადგილი ესეთი პოპულარული.
+              .ColC
+                %p
+                  %strong> Rocamadour
+                   — შუა საუკუნეების თვალწარმტაცი ქალაქი კლდეზე, მდინარე Alzou -ს ხეობაში. საფრანგეთში პილიგრიმობის ერთ-ერთი ყველაზე მნიშვნელოვანი ცენტრია. ქალაქი დაარსდა მე-12 საუკუნეში წმინდა ამადურის საფლავის გარშემო. აქ მთავარი ღირსშესანიშნაობებია შუა საუკუნეების სამლოცველოები, მათ შორის ღვთისმშობლის სამლოცველო საოცარი შავი მადონით.
+                %p
+                  %strong> ნიმის ამფითეატრი (ნიმის არენა)
+                   — ამ უძველესი ქალაქის ისტორიული ნაწილის მთავარი ღირსშესანიშნაობაა. ჩვენს წელთაღრიცხვამდე პირველ
+            .subtitleC.secondary.max-700.subtitleC-2
+              კვება ოქსიტანიაში
+            .textC.columnW.textC-2
+              .ColC
+                %p
+                  რა თქმა უნდა, ზღვის პროდუქტები: ხამანწკებისთვის გაემგზავრეთ
+                  %strong Bouzig -ში.
+                  აქ შეგიძლიათ დააგემოვნოთ მოლუსკები «ფერმიდან». უფრო სამხრეთით არის ანჩოუსების დედაქალაქი, Colours. ბევრი ფრანგი არ თვლის ანჩოუსს ავთენტურად, თუ ისინი აქ არ დაიჭირეს და არ მოიხარშეს.
+              .ColC
+                %p
+                  ასევე ყურადღება უნდა მიაქციოთ გრისეტებს — ძირტკბილას და ნარბონის თაფლისგან დამზადებულ ტრადიციულ ტკბილეულს;
+                  %strong კასულეტი («Carcassonne Stew»);
+                  პელარდონის თხის ყველი — უძველესი თხის ყველი ევროპაში.
+      .ContainerC.max-1140.ten
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-700.subtitleC-1
+              შემაჯამებელი სია
+          .ContainerC.padding-30.ContainerC-2
+            .blockC.features
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-photo.svg")}/
+                %p
+                  გადაიღეთ სურათი ტულუზაში ტერაკოტას შენობების ფონზე.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-plane.svg")}/
+                %p
+                  იოცნებეთ ზებგერითი ფრენაზე კონკორდის გვერდით დგომისას. აეროს მოყვარულებს შეუძლიათ დაჯავშნონ ტური Airbus-ის ობიექტზე ტულუზასთან ახლოს.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-galary.svg")}/
+                %p
+                  გაეცანით თანამედროვე ხელოვნებას MoCo ცენტრში მონპელიეში.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-ustritsi.svg")}/
+                %p
+                  დააგემოვნეთ ხამანწკები Bouzig-ში.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-castle.svg")}/
+                %p
+                  წარმოიდგინეთ კარკასონის ციხესიმაგრის შუა საუკუნეების ალყა მის სიმაგრეებზე დგომისას.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-bread.svg")}/
+                %p
+                  ეწვიეთ სოფელ Cucunean, სადაც შეგიძლიათ დააგემოვნოთ უძველესი ჯიშის ხორბლისგან დამზადებული პური Queribus -ის ციხეზე ასვლამდე.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-sunset.svg")}/
+                %p
+                  გაირუჯეთ კურორტ La Grande Mott-ის სანაპიროებზე და დატკბით მისი არქიტექტურით.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-fly.svg")}/
+                %p
+                  პილიგრიმებთან ერთად აიარეთ 216 საფეხური Rocamadour -ის საკურთხევლისკენ.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-most.svg")}/
+                %p
+                  გაიარეთ მიიოს ვიადუკზე, ერთ-ერთ ყველაზე მაღალი საკაბელო ხიდი მსოფლიოში.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-galary.svg")}/
+                %p
+                  იხილეთ ტულუზ-ლოტრეკის ნამუშევრების უმდიდრესი კოლექცია Albi -ში.
+    = render partial: 'shared/footerGe'
+    = render partial: 'shared/footer_main_ge'              

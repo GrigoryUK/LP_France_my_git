@@ -1,0 +1,25 @@
+.form {
+  &__input {
+    &--invalid {
+      border-bottom-color: #FF0B0B;
+    }
+  }
+
+  &__msg {
+    color: #FF0B0B;
+    display: none;
+  }
+
+  &__input--invalid ~ &__msg {
+    display: block;
+  }
+
+  &__btn {
+    cursor: pointer;
+
+    &--disabled {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<style>
+  body {
+    --accent-background-color: #CC4D47;
+    --accent-text-color: #ffffff;
+    --accent-authors-color: #7D3532;
+    --accent-special-color: var(--accent-background-color);
+    --menu-burger-background: #DCBEC4;
+  }
+</style>
+
+<body style="background-color: var(--accent-background-color);">
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__social">
+        <a href="#" class="header__social-link header__social-link--wa">${require('./assets/inline/social-wa-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tw">${require('./assets/inline/social-tw-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tg">${require('./assets/inline/social-tg-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--fb">${require('./assets/inline/social-fb-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--vk">${require('./assets/inline/social-vk-hover.svg')}</a>
+      </div>
+
+      <button class="header__nav-toggle">
+        <span class="header__nav-toggle-line"></span>
+      </button>
+
+      <nav class="header__nav">
+        <div class="header__nav-in">
+          <a class="header__nav-link" href="/lyon.html">ЛIОН</a>
+          <a class="header__nav-link header__nav-link--active" href="/bordeaux.html">БОРДО</a>
+          <a class="header__nav-link" href="/paris.html">ПАРИЖ</a>
+          <a class="header__nav-link" href="/nice.html">НIЦЦА</a>
+          <a class="header__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+
+          <a class="header__nav-link header__nav-link--home header__nav-link--icon" href="/index.html">
+            НА ГОЛОВНУ <span class="header__nav-link-icon">${require('./assets/inline/menu-main-hover.svg')}</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article-main">
+
+    <section class="article-intro article-intro--bordeaux">
+      <div class="container article-intro__container">
+        <img class="article-intro__img hide--mobile" src="./assets/images/placeholders/bordeaux/cover.png" alt="">
+        <img class="article-intro__img show--mobile" src="./assets/images/placeholders/bordeaux/cover-mobile.png" alt="">
+
+        <div class="article-intro__info">
+          <h1 class="article-intro__title">Бордо</h1>
+
+          <div class="article-intro__subtitle">
+            <span class="article-intro__subtitle-line">квартали-музеї,</span>
+            <span class="article-intro__subtitle-line">сімейні виноробні</span>
+            <span class="article-intro__subtitle-line">та навіть піщана гора</span>
+          </div>
+        </div>
+
+        <div class="article-intro__text columns">
+          <p>Якщо в Париж їдуть, щоби побачити місто та померти від краси, згідно з відомим заповітом (так робити не треба), то Бордо варто відвідати для того, щоби долучитися до справжнього французькому гедонізму. Зі столиці до центру історичної області Аквітанія — лише година літаком, а швидкісним поїздом TGV доїхати можна за дві години.</p>
+          <p>Бордо часто називають «маленьким Парижем», але Бордо точно нічим іншим не прикидається.</p>
+          <p>Портове місто зі своїми незліченними виноградниками, старовинною архітектурою, відзначеною ЮНЕСКО, увагою до деталей, культом їжі і відомих напоїв став втіленням <span class="special">art de vivre</span>, тобто мистецтва жити. А ще ідеальною декорацією для романтичних фільмів, у яких із перших же кадрів вгадується безтурботна французька провінція.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane article-pane--with-map">
+      <div class="container article-pane__container">
+        <img class="article-pane__map" src="./assets/images/placeholders/bordeaux/map.png" alt="">
+        <div class="article-pane__content">
+          <h2>Захмеліти</h2>
+
+          <div class="columns">
+            <p>Навіть якщо в Бордо ви ніколи не були, з його головною пам’яткою напевно знайомі, чули про неї та можливо навіть нею напробувались. Цілком заслужено Бордо здобув статус винної столиці світу, що для містечка з населенням близько 250 тисяч осіб — дивовижний показник.</p>
+            <p>Тільки в околицях розташовані тисячі виноробних підприємств, багато з яких можна відвідати та навіть приєднатися до сімейної вечері зі спадкоємцями виноробні (приготуйтеся до того, що в Бордо застілля тривають щонайменше три години). А можна орендувати невелику лозу та щорічно отримувати дивіденди у пляшках за умови, що в запасі у вас є кілька років на очікування.</p>
+            <p>Ми ж радимо почати знайомство з винною культурою регіону з музею, у якому катарсис, як і істину, шукають у вині.</p>
+            <p>Проєкт <span class="special">La Cité du Vin</span> («Місто вина») — винний Гуггенхайм і Лувр виноробства. Повз будівлю на березі річки Гаронни ви точно не пройдете: схожа на гігантський дзеркальний декантер, вона нагадує музей сучасного мистецтва. Власне, це він і є, але з поправкою на індустрію. Настільки феєрично історію вина ще не розповідали ніде.</p>
+            <p>Дуже детально, з проєкціями, ароматами, звуками й максимальною залученістю тут покажуть процес виробництва напою, посадять за інтерактивний стіл типових жителів регіону, відправлять на човні голографічною річкою з торговцями вином і зачарують різними історіями про сп’яніння так, що й без келиха червоного можна захмеліти. Звісно, попри високу технологічність експозиції, є тут і справжні артефакти — дегустацію місцевих вин у Бордо поки ніхто не скасовував.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-1-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-1-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-1.jpg')}">
+          <img loading="lazy" class="article-figure__img article-figure__img--to-right" src="${require('./assets/images/placeholders/bordeaux/figure-1.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Об’їстися</h2>
+
+          <div class="columns columns--img-right">
+            <p>З гастрономією в Бордо немає ніяких проблем. Сміливо заходьте у будь-який заклад з краєвидом на набережну — від камерного домашнього бістро до найстаріших їдалень міста та ресторану кінотеатру Utopie у будівлі колишньої церкви. У якості їжі та вина не сумнівайтеся: все локальне або ж видобуто неподалік. Переконатися в цьому легко на міському ринку <span class="special">Marché des Capucins</span>, куди краще прийти ближче до обіду, щоб відчути дух місця. Галасливі ряди з фермерськими продуктами, дегустація сирів і дуже багато морепродуктів. Свіжі аркашонські устриці їжте не відходячи від прилавка. Порада: після дегустацій в <span class="special">La Cité du Vin</span> зайдіть перекусити в модний гастрономічний простір неподалік — ринок Бакалан <span class="special">Les Halles de Bacalan</span>. 85 відсотків продуктів ринку — місцеві, їх привозять із південного заходу Франції.</p>
+            <p>Потім скуштуйте місцеву фуа-гра, про яку цілою країною ходять легенди, або спробуйте традиційне касуле — густу чи то юшку, чи то запіканку з квасолею, зеленню і м’ясом, приготовлену у глиняному горщику. Завершіть трапезу кавою та поласуйте місцевим канеле — десертом із м’якого, ніжного тіста із додаванням рому та ванілі і хрусткою карамельною скоринкою.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/bordeaux/text-1.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-2-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-2-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-2.jpg')}">
+          <img loading="lazy" class="article-figure__img article-figure__img--to-right" src="${require('./assets/images/placeholders/bordeaux/figure-2.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Прикупитися</h2>
+
+          <div class="columns columns--img-left">
+            <p>Французькі блошині ринки викликають екстаз у цінителів прекрасного. На них можна знайти що завгодно: від значків і статуеток до гігантських гобеленів та різьбленого трюмо, яке пам’ятає життя трьох-чотирьох поколінь. У Бордо теж є свій <span class="special">Brocante</span>, і це місце обов’язково треба відвідати як безтурботним туристам, так і колекціонерам із серйозними намірами й бюджетами. Французи безмежно цінують речі, знайомі з доглядом за ними та реставрацією. Відвідавши «барахолки», ви переконаєтеся в цьому особисто.</p>
+            <p>Так, навряд чи ви виявите тут живописні полотна доби Просвітництва — за ними варто йти в музей або у великі антикварні салони. А ось відмінний сувенір року свого народження відшукаєте напевно. Тільки не потрібно на французьких брокантах грайливо торгуватися, ніби ви на турецькому базарі — не зрозуміють. Торг доречний лише після довгої прелюдії, та однаково будьте готові до того, що за пів ціни ніхто нічого не продасть.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/bordeaux/text-2.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Прогулятися</h2>
+
+          <div class="columns columns--img-right">
+            <p>Взагалі, Бордо — дивовижний приклад поєднання історичної спадщини з духом сьогодення. Причому таке, у якому ані перше, ані друге не страждає. Наприклад, площа Водне дзеркало — гігантський простір перед будівлею Фондової біржі зі складною системою фонтанів і розпилювачів. Раз на 20 хвилин з-під землі підіймаються парові хмари, і в центрі міста утворюється такий хамам по-французьки. Коли краплі води осідають, площа з темно-сірого граніту стає величезним монолітним дзеркалом, у якому відбивається міська архітектура, небо із землею міняються місцями, а голова від усієї цієї краси йде обертом без будь-якого вина.</p>
+            <p>Ще один приклад міксу традицій і сучасності — простір Дарвін <span class="special">Darwin</span> на набережній Кері між Кам’яним мостом і мостом Шабан-Дельмас. Раніше тут були військові казарми й панувала муштра, а тепер тут центр нанобізнесу Бордо з купою кав’ярень, магазинчиків, шоурумів і галерей. Стіни й закутки Darwin являють собою довідник вуличного міського мистецтва й маніфест усвідомленого споживання. З дозволу влади графітники і вуличні художники розписують кожен доступний сантиметр кластера, а між усією цією красою під французький хіп-хоп катаються скейтери.</p>
+            <p>Тут також проходять відкриті лекції про перероблення й сонячну енергію, про заняття йогою. Втомившись від пошуків актуального прекрасного, можна, наприклад, зайти в бістро <span class="special">Magasin Général</span> з одним з кращих бранчів на правому березі та оцінити меню з біопродуктів, сидячи на меблях, збитих з винних ящиків та дошок для серфінгу. Для тих, хто готовий поринути в мистецтво максимально, зовсім нещодавно відкрився центр діджитал-арту <span class="special">Les Bassins de Lumières</span>. Розташований він у гігантському просторі бункера, побудованого німцями під час Другої світової війни на березі Гаронни. Сьогодні на колишній базі підводних човнів можна побродити серед відомих героїв та орнаментів Густава Клімта, що оточують відвідувачів на 360 градусів.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/bordeaux/text-3.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure hide--mobile">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-3-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-3-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/bordeaux/figure-3.jpg')}">
+          <img loading="lazy" class="article-figure__img" src="${require('./assets/images/placeholders/bordeaux/figure-3.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>А поруч що?</h2>
+
+          <div class="columns columns--two-images-in-footer">
+            <p>У самому Бордо цілком реально провести кілька днів і не занудьгувати. Але якщо є можливість виїхати за місто не тільки на виноградники, наполегливо радимо це зробити. Можна взяти напрокат машину або побудувати нескладну логістику з громадським транспортом (тут із цим усе добре) і рушити, наприклад, в Аркашон, на батьківщину відомих устриць усього в годині їзди від міста.</p>
+            <p>ЕЯкщо Бордо — квінтесенція всього французького з усім супутнім, то вже за 65 кілометрів від міста ви відчуєте себе десь поза межами країни. Мова про 130-метрову дюну Піла, одну з найвищих піщаних дюн у Європі, філію повноцінної пустелі у Франції, яка тут зустрічається з океаном. Перевершує її хіба що бархан Сарикум у Дагестані, що сягає 262–265 метрів у висоту.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/bordeaux/text-4.jpg" alt="">
+            </figure>
+            <p>Перш ніж оглядати околиці дюни, відвідайте прилегле рибальське селище Гюжан-Местрас або знаменитий Кап-Ферре, прикупіть устриць, не забудьте сир, щоб влаштувати з усіма цими смаколиками пікнік та помилуватися заходом сонця.</p>
+            <p>Інший напрямок, що вартий вашої уваги — середньовічне містечко Сент-Емільйон, куди кожну годину відправляються поїзди з вокзалу Сен-Жан. Тут прекрасно збереглися каплиці, собори, а також є цілий розсип виноробницьких замків і будинків знаті. Для прогулянок серед цієї величі заплануйте повний день, щоби робити паузи для різного роду дегустацій.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/bordeaux/text-5.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Це точно потрібно зробити в Бордо</h2>
+
+          <div class="icon-item__list-pretext">
+            <p>Ось кілька лайфхаків, які зроблять перебування в Бордо й околицях ще приємнішим.</p>
+          </div>
+
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-1-1.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Придивіться до архітектури
+              </div>
+              <div class="icon-item__text">
+                Щонайменше пара жителів Бордо натякне вам, що архітектуру будівель парижани запозичили у їхнього міста. Це схоже на правду, у всякому разі будови в центрі Бордо роблять його мінікопією центру французької столиці.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-1-2.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Шукайте сходи
+              </div>
+              <div class="icon-item__text">
+                Дюна Піла — підступний об’єкт: зручним для підйому пологим боком вона повернута до океану, а до туристів звернений крутий схил. Отже забиратися на вершину краще спеціальною драбинкою, а ось вниз легко спуститися по піску.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-1-3.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Дозуйте делікатеси
+              </div>
+              <div class="icon-item__text">
+                Дегустація вина нон-стоп — справа благородна, але тільки якщо не заїдати його весь цей час фуа-гра та устрицями. У першому випадку ви збільшите навантаження на печінку (самі французи вживають фуа-гра раз на рік під Різдво), у другому — вранці в дзеркалі виявите мішки під очима через надлишок білкової їжі.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-1-4.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Придбайте ніж для відкривання устриць
+              </div>
+              <div class="icon-item__text">
+                Не те щоб це було обов’язковим пунктом програми — на ринках вам завжди відкриють устриці швидко й безкоштовно, але він стане просто ідеальним сувеніром.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>І ще дещо важливе</h2>
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-2-1.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Як дістатися
+              </div>
+              <div class="icon-item__text">
+                Найшвидший спосіб опинитися в Бордо — купити квитки на один із рейсів <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a> з Києва з пересадкою в Парижі. Можна також доїхати з Парижа швидкісним поїздом (2 години) або автобусом (близько 8 годин).
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-2-2.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Вартість вхідного квитка в La Cité du Vin
+              </div>
+              <div class="icon-item__text">
+                Із City Pass безкоштовно. Квиток для дорослого — 20 євро, на сайті можна подивитися знижки для різних категорій гостей <a class="link" target="_blank" href="https://www.laciteduvin.com/en/plan-your-visit/offers-prices/tickets">laciteduvin.com</a>
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-2-3.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Вартість перельоту
+              </div>
+              <div class="icon-item__text">
+
+                Вартість перельоту Київ — Бордо — Київ з короткою пересадкою в Парижі починається від 191 євро. Підписавшись на розсилку <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a>&nbsp;i&nbsp;<a class="link" target="_blank" href="https://ru.france.fr/ru">Atout&nbsp;France</a>, ви отримаєте не тільки унікальні гайди усіма регіонами Франції, а ще і промокод на знижку 75 гривень на перельоти <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a>. Шукайте вікно підписки нижче.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-2-4.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Про City Pass
+              </div>
+              <div class="icon-item__text">
+                Перевірений спосіб заощадити на відвідуванні понад 20 міських музеїв і громадському транспорті — купити City Pass на 24, 48 або 72 години. Ціни починаються від 29 євро, купити можна онлайн на <a class="link" target="_blank" href="https://www.visiter-bordeaux.com/en/bordeaux-citypass.html">visiter-bordeaux.com</a>
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/bordeaux/icon-2-5.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Корисні посилання
+              </div>
+              <div class="icon-item__text">
+                <p><a class="link" target="_blank" href="https://www.france.fr/fr">france.fr</a> новини Франції та корисна інформація для туристів</p>
+                <p><a class="link" target="_blank" href="https://wwws.airfrance.ua/">wwws.airfrance.ua</a> бронювання та купівля авіаквитків найбільшої французької авіакомпанії</p>
+                <p><a class="link" target="_blank" href="https://www.bordeaux-tourisme.com/">bordeaux-tourisme.com</a> — усе про туризм у Бордо: поради, маршрути, головні свята і фестивалі</p>
+                <p><a class="link" target="_blank" href="https://www.nouvelle-aquitaine-tourisme.com/en">nouvelle-aquitaine-tourisme.com</a> — головна інформація про регіон Нова Аквітанія</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-authors">
+      <div class="container article-authors__container">
+        <div class="article-authors__list">
+
+          <div class="article-authors__item">
+            <b>Iлюстрації:</b> Александра Миткалова
+          </div>
+
+          <div class="article-authors__item">
+            <b>Aвтор тексту:</b> Полина Парыгина
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="article-form">
+      <div class="article-form__social">
+        <a href="#" class="article-form__social-link article-form__social-link--wa"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tw"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tg"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--fb"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--vk"></a>
+      </div>
+
+      <div class="article-form__nav">
+        <div class="article-form__nav-in">
+          <a class="article-form__nav-link" href="/lyon.html">ЛIОН</a>
+          <a class="article-form__nav-link article-form__nav-link--active" href="/bordeaux.html">БОРДО</a>
+          <a class="article-form__nav-link" href="/paris.html">ПАРИЖ</a>
+          <a class="article-form__nav-link" href="/nice.html">НIЦЦА</a>
+          <a class="article-form__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+        </div>
+      </div>
+
+      <div class="container article-form__container">
+
+        <div class="article-form__center">
+         <div class="article-form__title">
+            Щоб отримати PDF-гіди по регіонах Франції і промокод на знижку в 50 доларів на політ до Франції залиште вашу пошту. Умови - за <a href="pdf/01.pdf" download="download">посиланням</a>.
+          </div>
+
+          <form class="mainpage-form__form form__form" action="" novalidate>
+            <div class="mainpage-form__form-wrapper">
+              <label class="mainpage-form__label form__label">
+                <input class="mainpage-form__input form__input" type="email" name="email" placeholder="ваш email" data-error-msg="Некоректний email" required>
+                <div class="mainpage-form__msg form__msg"></div>
+              </label>
+
+              <button class="mainpage-form__btn form__btn" type="submit">Відправити</button>
+            </div>
+
+            <label for="mainpage-form__сheckbox" class="mainpage-form__label-checkbox form__label">
+              <input type="checkbox" class="form__input mainpage-form__input-checkbox" id="mainpage-form__checkbox" name="mainpage-form__checkbox" data-error-msg="Сheck me" required value="check">
+              <div class="mainpage-form__сheckbox-text">Я даю згоду на обробку моїх персональних даних та отримання інформаційних матеріалів про Францію і її регіони,  спецпропозиції і новини Air France.
+                <br><a href="pdf/Agreement_france-advisor.pdf" download="download" class="mainpage-form__сheckbox-link">Детальніше</a>
+              </div>
+              <div class="mainpage-form__msg form__msg form__msg-checkbox"></div>
+            </label>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__logos">
+        <a class="footer__logos-link footer__logos-link--explore" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-explore-france.png" alt="">
+        </a>
+
+        <a class="footer__logos-link footer__logos-link--airfrance" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-air-france.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

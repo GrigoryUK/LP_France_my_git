@@ -1,0 +1,16 @@
+%form.form__form{class: "mainpage-form__form", action: "#", novalidate: ""}
+  %input{name: "city", type: "hidden", value: params[:action]}/
+  %input{name: "lang", type: "hidden", value: "ua"}/
+  %div{class: "mainpage-form__form-wrapper"}
+    %label.form__label{class: "mainpage-form__label"}
+      %input.form__input{class: "mainpage-form__input", "data-error-msg" => "Некоректний email", name: "email", placeholder: "ваш email", required: "", type: "email"}/
+      .form__msg{class: "mainpage-form__msg"}
+    %button.form__btn{class: "mainpage-form__btn", type: "submit"} Відправити
+
+  %label.form__label{class: "mainpage-form__label-checkbox"}
+    %input.form__input{class: "mainpage-form__input-checkbox", "data-error-msg" => "Сheck me", name: "agreement", required: "", type: "checkbox"}/
+    %div{class: "mainpage-form__сheckbox-text"}
+      Я&nbsp;даю згоду на&nbsp;обробку моїх персональних даних та&nbsp;отримання інформаційних матеріалів про Францію і&nbsp;її&nbsp;регіони, спецпропозиції і&nbsp;новини Air France.
+      %br
+      %a{class: "mainpage-form__сheckbox-link", download: "download", href: "/pdf/Agreement_france-advisor.pdf"} Детальніше
+    .form__msg{class: "mainpage-form__msg mainpage__msg-checkbox"}

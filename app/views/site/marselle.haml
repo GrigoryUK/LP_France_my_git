@@ -1,0 +1,228 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: #2D4E8D;
+      --accent-text-color: #ffffff;
+      --accent-authors-color: #101D37;
+      --accent-special-color: var(--accent-background-color);
+      --menu-burger-background: #8AA8DC;
+    }
+
+
+= render partial: 'shared/header'
+%main.article-main
+  %section.article-intro.article-intro--marselle
+    .container.article-intro__container
+      %img.article-intro__img.hide--mobile{alt: "", src: asset_pack_url("media/images/placeholders/marselle/cover.png")}/
+      %img.article-intro__img.show--mobile{alt: "", src: asset_pack_url("media/images/placeholders/marselle/cover-mobile.png")}/
+      .article-intro__info
+        %h1.article-intro__title Marseille
+        .article-intro__subtitle
+          %span.article-intro__subtitle-line art,
+          %span.article-intro__subtitle-line navette cookies,
+          %span.article-intro__subtitle-line  and bouillabaisse
+      .article-intro__text.columns
+        %p
+          "Only a short distance remains, and I'll be in Provence!" Do you remember that song? This is all about Marseille, the Mediterranean's largest port, with its cliffs jutting out into the sea and dazzling sunshine. Even with all of this, Marseille is not a picture-perfect representation of France; rather, it is the principal port city of France, with a rich history and an eclectic mix of cultures, preferences, human types and architectural styles.
+        %p
+          For centuries, Marseille has been a bouillabaisse pot, simmering the cultures of African and Middle Eastern immigrants in a European broth. 
+        %br
+        %p
+          Though its soldiers were responsible for giving the Marseillaise its name, this city is still a cultural stronghold where any change helps to highlight the city's rich history. Some tourists might find Marseille noisy, but we know there's a lot to do there for those who like the aesthetic look of the port, which was praised by the author Jean Genet, and for families who want to take a stroll through the old streets.
+
+  %section.article-block.article-pane.article-pane--with-map
+    .container.article-pane__container
+      %img.article-pane__map{alt: "", src: asset_pack_url("media/images/placeholders/marselle/map-en.png")}/
+      .article-pane__content
+        %h2 In search of culture
+        .columns
+          %p Start exploring Marseille with a walk along Pannier district, located north of the Old Port (Le Vieux Port). The old city district is now rightly compared likened to Montmartre of Paris, and the neighborhood’s marginal status is now confined to local legend.
+          %p The narrow side streets are scattered everywhere, winding haphazardly down an incline like a basket (in French, "panier" means "basket"), and they connect pieces of Baroque, Renaissance, and Gothic architecture. It's brimming with superb galleries and open studios of painters, many of whom have turned Pannier's walls into canvases. Indeed, if you want to see some street art, you should come here.
+          %p The Museum of Civilizations of Europe and the Mediterranean (MuCEM) may be the most compelling reason to visit Marseille, even just for a day. Rudy Ricciotti, a French architect of Algerian ancestry, designed it as part of the "European Capital of Culture" project. MuCEM is one of the TOP 50 most visited museums in the world. It opened in 2013 to tell the story of how different cultures have affected Marseille's history, from the Roman Empire's conquests to the present day. 
+          %p You can get here by going straight across the bridge from Pannier. You're in the right place if you see a huge cube made of tracery concrete and glass next to the Old Fort Saint-Jean. In MuCEM you can spend hours strolling through the complex system of exhibition halls and peering into multimedia rooms telling, for example, how major geographical discoveries were made.  
+          %p African art and contemporary interpretations of it can be found here. Take, for instance, an installation of flapping inflatable fish under a bridge; it calls to mind the silver sets in Andy Warhol's Factory.
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-1-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-1-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-1.jpg')}
+        %img.article-figure__img.article-figure__img--to-right{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/marselle/figure-1.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        .columns.columns--img-right
+          %p
+            Gentrification, or rehabilitation as it is known in French, is an initiative that is being pursued actively and fruitfully by the municipal government of Marseille. One striking example is
+            %span.special La Friche Belle de Mai
+            industrial complex. Once a tobacco factory, it is now a huge art cluster with studios, galleries, and food markets. It has become a haven for street artists as well as musicians, skaters, and theatregoers. You can spend the day in a young art gallery and the night dancing to a French neo-disco on a rooftop.
+          %p
+            The Radiant City (Ville Radieuse), a residential complex created by the renowned Le Corbusier in 1947-1952, is a must-see for anyone who appreciates architecture in its original form and meaning. The flats are occupied by Marseille's elite, but don't be intimidated: everyone knows exactly what's going on and is ready to share the riches. Flat 601, which has been inactive for over half a century, is now open to the public. After about an hour of "living" there, go up to the former rooftop gym, which is now the MaMo Art Centre 
+            %span.special Marseille Modulor
+            \.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/text-1.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-2-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-2-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-2.jpg')}
+        %img.article-figure__img.article-figure__img--to-right{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/marselle/figure-2.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Bouillabaisse and more
+        .columns.columns--img-left
+          %p The famed bouillabaisse, or Marseille soup, is the principal gastronomic icon of Provence. It's simply legendary. Aphrodite is said to have cooked this soup for Hephaestus, her lover, so that he would be energized and always ready to take on new challenges. Locals, on the other hand, referred to the soup as "cheap," because it was made up of all the fish that had gone unsold during the day at the market.
+          %p The bouillabaisse has a ten-seafood base and is served with a platter of white bread croutons and a garlic rouille sauce. Don't be startled if the waiter serves you a pot so large that Not even two people can handle it.  For €2 you’ll get this soup at one of the dozens of unassuming cafes in the harbour. Want something special? Some restaurants add lobster to bouillabaisse, but the price is about the same as one night in a good hotel.
+          %p The sweet course. Navette cookies, in the shape of a miniature boat with a crispy top and a soft dough inside, may be found in every cafe in the Old Town. It's an ideal snack for a hot summer day, with an orange aroma to accompany a cup of iced tea or milk.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/text-2.jpg")}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Marseille environs
+        .columns.columns--img-right
+          %p
+            Even if you've never been to France, there's a good chance that you're already quite familiar with the sights that Marseille has to offer. You can find them in all of the world's best museums, and paintings from the 20th century are full of them. See for yourself at
+            = succeed "," do
+              %span.special Aix-en-Provence
+            then expand on your impressions in
+            = succeed "." do
+              %span.special l’Estaque
+            Aix is Paul Cézanne's birthplace and the primary town of his life; it is where he grew up, created, married, and died, and where he eternally documented the beauty of these places for the world to behold. Cézanne, in turn, made L'Estaque famous: at the turn of the century, Cézanne spurred artists ranging from André Derain to Pierre Auguste Renoir to flock to the small port town. Look at the plaques that say L'Estaque Painter's Walking Trail (Chemin des Peintres) to compare the real-time landscapes.
+
+          %p
+            Don't get scared of lengthy walks or high places? Visit the calanques, which are Provencal fjords and little coves. They can be found all along the coast between Marseille and Cassis, where the
+            %span.special Parc National des Calanques
+            is located. This is a great place to have a picnic, trekking, and realizing that even the most brilliant artists will have difficulty competing with nature.
+          
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/text-3.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-3-mobile.jpg')}
+          %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-3-tablet.jpg')}
+            %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/marselle/figure-3.jpg')}
+              %img.article-figure__img.article-figure__img--to-left{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/marselle/figure-3.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Must-Do in Marseille
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-1-1.png")}/
+            .icon-item__text
+              Grab a cup of coffee on Marseille's major cannabis-named avenue, La Canebiere. In the past, cannabis was grown here on a large scale, and its fibres were used to make ropes.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-1-2.png")}/
+            .icon-item__text
+              Find a mini-train with nearly toy-like carriages in the harbour 
+              = succeed "." do
+                %span.special Petit Train
+              It will take you to the Cathedral of Notre-Dame de la Garde (Basilique Notre-Dame de la Garde), which is on the top of the tallest hill in Marseille.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-1-5.png")}/
+            .icon-item__text
+              You can't leave Marseille without picking up some famous Marseille soap as a memento, and you can get it at any of the shops in the area. You can also take home tinctures of local flowers or pastis, a local anise-flavored aperitif.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-1-4.png")}/
+            .icon-item__text
+              Take a boat to the Isle of If to see the Chateau d'If, which was used to hold political prisoners for more than 200 years and was known for the elaborate ways in which they were tortured. In his novel The Count of Monte Cristo, Alexandre Dumas put the main character in this place. Now, 
+              = succeed "," do
+                %span.special Le Défi de Monté-Cristo
+              swim race is held once a year, and people from all over the world come to take part.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-1-6.png")}/
+            .icon-item__text
+              %a{href: 'https://www.rugbyworldcup.com/2023?utm_source=france-advisor.com&utm_medium=link'}The 10th Rugby World Cup
+              will take place in 2023. Fans are waiting for 48 matches of the game of "knights of the oval ball", which is almost 200 years old. Part of the meetings will take place in Paris (in Lyon, in Marseille, in Nice, in Bordeaux).
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 What's more
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-2-1.png")}/
+            .icon-item__title
+              How to get there
+            .icon-item__text
+              Air France flights from Yerevan / Tbilisi are the quickest way to get to Marseille. You can also take a train from Paris to Marseille (just over 3 hours).
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-2-2.png")}/
+            .icon-item__title
+              City Pass
+            .icon-item__text
+              Buy a City Pass for 24 to 72 hours and you'll certainly save money on all of Marseilles museums and public transportation. Prices start from €24, you can buy City Pass at
+              %a.link{href: "https://www.marseille-tourisme.com/en/experience/citypass-marseille/", target: "_blank"} marseille-tourisme.com
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-2-3.png")}/
+            .icon-item__title
+              Flight cost
+            .icon-item__text
+              The cost of a flight from Yerevan to Marseille and back with a short stopover in Paris starts from
+              %a.link{href:"https://wwws.airfrance.am/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=EVN:A%3EMRS:A-MRS:A%3EEVN:A&bookingFlow=LEISURE", target:"_blank"} 320 EUR.
+              The cost of a flight from Tbilisi to Marseille and back with a short stopover in Paris starts from
+              %a.link{href:"https://www.airfrance.ge/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=TBS:A%3EMRS:A-MRS:A%3ETBS:A&bookingFlow=LEISURE", target:"_blank"} 279 EUR.
+              To be the first to know about our special deals we advise you to subscribe to Air France newsletter in
+              %a.link{href: "https://www.airfrance.am/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Armenia
+              and
+              = succeed "." do
+                %a.link{href: "https://www.airfrance.ge/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"}  Georgia
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-2-4.png")}/
+            .icon-item__title
+              MuCEM admission cost
+            .icon-item__text
+              An adult ticket costs €11, while a family ticket costs €18. Checking the website
+              %a.link{href: "https://www.mucem.org/en/hours-and-prices", target: "_blank"} mucem.org
+              is the best way to find out about deals and prices.
+
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-2-5.png")}/
+            .icon-item__title
+              Bouillabaisse prices
+            .icon-item__text
+              In the most upscale restaurants, a bowl of the simplest classic fish soup can cost more than €150, whereas you can enjoy it in the harbor for just €2.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/marselle/icon-2-6.png")}/
+            .icon-item__title
+              Useful links
+            .icon-item__text
+              %p
+                %a.link{href: "https://ru.france.fr/ru", target: "_blank"} France.fr
+                — French news and useful information for tourists
+              %p
+                %a.link{href: "https://wwws.airfrance.am/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.am
+                — Air France homepage for Armenian travelers 
+              %p
+                %a.link{href: "https://www.airfrance.ge/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.ge
+                — Air France homepage for Georgian travelers
+              %p
+                %a.link{href: "https://www.marseille-tourisme.com/", target: "_blank"} Marseille-tourisme.com
+                — all about tourism in Bordeaux: tips, routes, major holidays and festivals
+              %p
+                %a.link{href: "https://provence-alpes-cotedazur.com/", target: "_blank"} Provence-alpes-cotedazur.com
+                — regional tourism committee website.
+  %section.article-block.article-authors
+    .container.article-authors__container
+      .article-authors__list
+        .article-authors__item
+          %b Illustrations:  Polina Parygina 
+        .article-authors__item
+          %b Text: Andrey Sakov
+  = render partial: 'article_form'
+  = render partial: 'shared/footer'

@@ -1,0 +1,197 @@
+/* stylelint-disable */
+
+@use "sass:math";
+
+@mixin media($val) {
+  @if $val == "tablet" {
+    @media screen and (min-width: $break-mobile+1) and (max-width: $break-tablet) {
+      @content;
+    }
+  } @else if $val == "mobile" {
+    @media screen and (max-width: $break-mobile) {
+      @content;
+    }
+  } @else if $val == "mobile-small" {
+    @media screen and (max-width: $break-mobile-small) {
+      @content;
+    }
+  } @else if $val == "mobile-large" {
+    @media screen and (min-width: $break-mobile-small+1) and (max-width: $break-mobile) {
+      @content;
+    }
+  } @else if $val == "tablet-and-mobile" {
+    @media screen and (max-width: $break-tablet) {
+      @content;
+    }
+  } @else if $val == "desktop" {
+    @media screen and (min-width: $break-tablet+1) {
+      @content;
+    }
+  } @else if $val == "desktop-and-tablet" {
+    @media screen and (min-width: $break-mobile+1) {
+      @content;
+    }
+  } @else if $val == "desktop-small" {
+    @media screen and (min-width: $break-tablet+1) and (max-width: $break-desktop-small) {
+      @content;
+    }
+  } @else if $val == "desktop-medium" {
+    @media screen and (min-width: $break-desktop-small+1) and (max-width: $break-desktop-medium) {
+      @content;
+    }
+  } @else if $val == "desktop-big" {
+    @media screen and (min-width: $break-desktop-medium+1) {
+      @content;
+    }
+  } @else if $val == "desktop-medium-and-big" {
+    @media screen and (min-width: $break-desktop-small+1) {
+      @content;
+    }
+  } @else if $val == "desktop-medium-and-small" {
+    @media screen and (min-width: $break-tablet+1) and (max-width: $break-desktop-medium) {
+      @content;
+    }
+  } @else if $val == "desktop-oversize" {
+    @media screen and (min-width: $break-desktop-oversize+1) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $val) {
+      @content;
+    }
+  }
+}
+
+@mixin h1 {
+  margin: 0;
+}
+
+@mixin h2 {
+  margin: 0;
+}
+
+@function toRem($val) {
+  @return #{math.div($val, 16)}rem;
+}
+
+@function toHeaderRem($val) {
+  @return calc(#{math.div($val, 16)} * var(--size-multiplier));
+}
+
+@mixin for-desktop {
+  @media (min-width: (1025px)) {
+    @content;
+  }
+}
+
+@mixin big-desktop {
+  @media (max-width: (1440px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media (max-width: (768px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (576px)) {
+    @content;
+  }
+}
+
+@mixin mbAll($desk, $tablet, $mobile) {
+  margin-bottom: #{$desk}px;
+
+  @include tablet {
+    margin-bottom: #{$tablet}px;
+  }
+
+  @include mobile {
+    margin-bottom: #{$mobile}px;
+  }
+}
+
+@mixin hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@mixin image-set($pathToImage) {
+  background-image: url("#{$pathToImage}.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: image-set(
+    /* stylelint-disable-next-line function-comma-newline-after */ "#{$pathToImage}.avif" type("image/avif"),
+    "#{$pathToImage}.webp" type("image/webp"),
+    "#{$pathToImage}.jpg" type("image/jpg")
+  );
+}
+
+@mixin footerToBottom {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+@mixin mr($value) {
+  &:not(:last-child) {
+    margin-right: $value;
+  }
+}
+
+@mixin ml($value) {
+  &:not(:last-child) {
+    margin-left: $value;
+  }
+}
+
+@mixin mb($value) {
+  &:not(:last-child) {
+    margin-bottom: $value;
+  }
+}
+
+@mixin mt($value) {
+  &:not(:last-child) {
+    margin-top: $value;
+  }
+}
+
+@mixin pseudo() {
+  content: "";
+  display: block;
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<style>
+  body {
+    --accent-background-color: #7D7369;
+    --accent-text-color: #ffffff;
+    --accent-authors-color: #4F4842;
+    --accent-special-color: var(--accent-background-color);
+    --menu-burger-background: #AC9885;
+  }
+</style>
+
+<body style="background-color: var(--accent-background-color);">
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__social">
+        <a href="#" class="header__social-link header__social-link--wa">${require('./assets/inline/social-wa-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tw">${require('./assets/inline/social-tw-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tg">${require('./assets/inline/social-tg-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--fb">${require('./assets/inline/social-fb-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--vk">${require('./assets/inline/social-vk-hover.svg')}</a>
+      </div>
+
+      <button class="header__nav-toggle">
+        <span class="header__nav-toggle-line"></span>
+      </button>
+
+      <nav class="header__nav">
+        <div class="header__nav-in">
+          <a class="header__nav-link header__nav-link--active" href="/lyon.html">ЛIОН</a>
+          <a class="header__nav-link" href="/bordeaux.html">БОРДО</a>
+          <a class="header__nav-link" href="/paris.html">ПАРИЖ</a>
+          <a class="header__nav-link" href="/nice.html">НIЦЦА</a>
+          <a class="header__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+
+          <a class="header__nav-link header__nav-link--home header__nav-link--icon" href="/index.html">
+            НА ГОЛОВНУ <span class="header__nav-link-icon">${require('./assets/inline/menu-main-hover.svg')}</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="article-main">
+
+    <section class="article-intro article-intro--lyon">
+      <div class="container article-intro__container">
+        <img class="article-intro__img hide--mobile" src="./assets/images/placeholders/lyon/cover.png" alt="">
+        <img class="article-intro__img show--mobile" src="./assets/images/placeholders/lyon/cover-mobile.png" alt="">
+
+        <div class="article-intro__info">
+          <h1 class="article-intro__title">Ліон</h1>
+
+          <div class="article-intro__subtitle">
+            <span class="article-intro__subtitle-line">гурманський рай,</span>
+            <span class="article-intro__subtitle-line">фестивалі нон-стоп</span>
+            <span class="article-intro__subtitle-line">і зустріч із Маленьким принцем</span>
+          </div>
+        </div>
+
+        <div class="article-intro__text columns">
+          <p>Поміж усіх французьких міст Ліон — це такий загадковий сноб на гучній вечірці. Про себе голосно не заявляє, тримається осторонь, але якщо дізнатися його трохи краще, то є ризик зачаруватися і навіть полюбити. Адже в Ліоні достатньо всього, за що ми любимо Францію. Дух країни прихований тут у напівтонах і деталях.</p>
+          <p>Ліон — третє за чисельністю населення місто країни в межиріччі Рони й Сони. Самі французи активно переїжджають сюди жити, адже вже не перший рік </p>
+          <p>різні рейтинги визнають Ліон найкращим для цього місцем. Уздовж набережних неспішно прогулюються пенсіонери, велодоріжками котять до ділового центру бізнесмени або роз’їжджають студенти місцевих коледжів та університетів. Ліон, до речі, визнана студентська столиця Франції, тому готуйтеся ввечері в одному з барів натрапити на гучну компанію підлітків із різних кінців світу. Але давайте все по черзі.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane article-pane--with-map">
+      <div class="container article-pane__container">
+        <img class="article-pane__map" src="./assets/images/placeholders/lyon/map.png" alt="">
+        <div class="article-pane__content">
+          <h2>Що їсти</h2>
+
+          <div class="columns">
+            <p>Для любителів французької кухні Ліон — чемпіон серед чемпіонів, а для гурманів — взагалі знакове місто. Попри те, що в мішленівських ресторанах, якими викладені сузір’я на карті міста, можна мізки покуштувати (буквально), висока гастрономія в Ліоні трапляється в кожній другій булочній. Там хрустку ковбаску в булочці та андуйет подадуть вам такими, якими їх би приготувала ліонська кухарка 100 років тому.</p>
+            <p>Про зоряні ресторани інформація є в кожному гастрономічному гайді, ми ж радимо зайти в один із двадцяти розкиданих старовинним містом ліцензійних бушонів. Це невеликі і порівняно бюджетні ліонські ресторанчики з історією та традиціями. оказом цьому стануть великі ситні порції м’ясної піджарки, хрустких ковбасок, ароматних сирів,</p>
+
+            <p>свіжого хліба з часниковою олією та невгамовний дзвін келихів із вином, яке походить зі знаменитих виноградників, що на півночі від міста.</p>
+            <p>Обов’язково прокладіть маршрут вашої прогулянки містом через критий ринок, який з 2006 року має ім’я всесвітньо відомого шеф-кухаря, засновника нової кухні Поля Бокюза. Вранці тут товчуться шефи кращих міських ресторанів упереміш із домогосподарками й цінителями гастрономії, для яких <span class="special">Les Halles de Lyon-Paul Bocusee</span> — культове місце. Пройдіться ринковими рядами та перекусіть в&nbsp;одному&nbsp;з&nbsp;кафе стравами локальної кухні: ліонськими кнелями зі щуки, сирною закускою «Мізки&nbsp;ткача»&nbsp;на сметані та білому вині або ковбасками в бріоші по-ліонськи. І свіжими устрицями, звісно ж.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/lyon/figure-1-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/lyon/figure-1-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/lyon/figure-1.jpg')}">
+          <img loading="lazy" class="article-figure__img" src="${require('./assets/images/placeholders/lyon/figure-1.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Де гуляти</h2>
+
+          <div class="columns columns--img-right">
+
+            <p>Обов’язково проведіть день у Старому місті, яке вже давно занесено в список Всесвітньої спадщини ЮНЕСКО. Район <span class="special">Vieux Lyon</span> іби законсервували сотні років тому. Будьте готові просити допомоги в онлайн-карт, адже розташування середньовічних вуличок нагадує лабіринт, вихід із якого знайдуть лише місцеві.</p>
+            <p>Якщо побачите відчинені двері з темним довгим проходом, то не соромтеся в них заглянути. Швидше за все, це вхід у знамениті ліонські трабулі — системи переходів між будинками і вулицями, найдавніші з яких побудовані ще в IV столітті. Часто вони з’єднують двори колишніх торговців шовком і чимось схожі на петербурзькі проходи між дворами-колодязями. Але трапляється, що трабулі можуть самі утворювати цілий двір із кількома рівнями, як у випадку зі знаменитим <span class="special">La Cour des Voraces</span>.Ліонський офіс туризму навіть випустив спеціальну аплікацію <span class="special">Traboules</span>, у якій на карті можна знайти все трабулі міста.</p>
+            <p>Побачити зовсім інший Ліон, та і взагалі Францію недалекого майбутнього, можна в районі <span class="special">Confluence</span>: хмарочоси зі скла та бетону, будинки на сонячних батареях та експериментальний міський транспорт без водіїв.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/lyon/text-1.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/lyon/figure-2-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/lyon/figure-2-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/lyon/figure-2.jpg')}">
+          <img loading="lazy" class="article-figure__img article-figure__img--to-left" src="${require('./assets/images/placeholders/lyon/figure-2.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>На що дивитися</h2>
+
+          <div class="columns columns--two-images-in-footer">
+            <p>Саме в Ліоні бере свій початок історія світового кінематографу. Тут брати Люм’єр почали експерименти з рухомими картинками на екрані, залишивши після себе купи артефактів від перших кінодекорацій до першого в історії кіна. Усе це дбайливо зібрано в Музеї братів Люм’єр на території колишньої родинної фабрики, де буде цікаво і студентам кіношкіл, і дітям — фанатам мультфільмів студії Pixar.</p>
+            <p>Футуристичний будинок у місці зустрічі річок Рони та Сони — Музей злиття. Будова нагадує пробитий метеоритом зореліт, і в ньому ви ризикуєте застрягти надовго: він зберігає понад два мільйони експонатів про загадки і спадщину людства. Тут скелети динозаврів і метеорити, африканські релігійні маски й обладунки самураїв. А ще, наприклад, антологія холодної зброї ескімосів.</p>
+            <p>Один із найбільш приголомшливих оглядових майданчиків, де можна й чудове панорамне фото</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/lyon/text-2.jpg" alt="">
+            </figure>
+
+            <p>Ліона зробити, й нерви полоскотати, розташований на даху центру сучасного мистецтва <span class="special">La Sucrière</span>.</p>
+            <p>Тут, між іншим, проходить один із найпрестижніших європейських оглядів мистецтва, Ліонська бієнале. Але і в інші дні відкриті тимчасові виставки, діє постійна експозиція.</p>
+            <p>Цілий день можна провести в парку «Тет д’Ор». Прикладом для його створення в XIX столітті послужив паризький Булонський ліс, що відчувається в розмаху. Крім самого парку з великим озером, на березі якого добре влаштувати пікнік, знайдете ботанічний сад Ліона з двома сотнями видів півоній і навіть зоопарком. Останній спочатку замислювався як ферма, яка наочно познайомить туристів із місцевою фауною. Сьогодні ж зоопарк поширився, і в ньому є тварини, яких, на жаль, вже не зустріти в природному середовищі.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/lyon/text-3.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/lyon/figure-3-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/lyon/figure-3-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/lyon/figure-3.jpg')}">
+          <img loading="lazy" class="article-figure__img" src="${require('./assets/images/placeholders/lyon/figure-3.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <div class="columns columns--two-images-in-footer">
+            <p>Крім усього іншого, Ліон знаменитий системою громадського транспорту, тому подивитися місто можна, наприклад, проїхавши першою лінією знаменитим ліонським тролейбусом (що для Франції рідкість!). А якщо у вас є вільний день і водійське посвідчення, радимо взяти напрокат машину та доїхати до містечка Сент-Юз, де розташоване одне з найвідоміших у країні виробництв — завод «Револь». Ви напевно бачили знамениті м’яті кавові стаканчики, які можуть пережити не одне століття. Ні, ми зараз не про пластик — уся продукція «Револь» вироблена з кераміки і відмінно поєднує сучасну естетику з традиційним ремеслом.</p>
+            <p>Ще залишилися сили й час? Тоді розвертайтеся і вирушайте у Фірміні, маленьке провінційне містечко в годині їзди від Ліона. Тут ви швидко знайдете багатоповерховий житловий будинок, спортивний комплекс зі стадіоном і басейном, а також церкву за проєктом легендарного Ле Корбюзьє.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/lyon/text-4.jpg" alt="">
+            </figure>
+            <p>У Ліоні люблять і вміють фестивалити, тому перед поїздкою перевірте, що планується в місті. Можна потрапити на бієнале сучасного мистецтва, фестиваль електронної музики <span class="special">Nuits Sonores</span>, пивний фестиваль, джазовий, фестиваль шовку та навіть китайської гастрономії (ну, а чом би й ні?).</p>
+            <p>Але, мабуть, найвідоміший фестиваль Ліона — свято світла, що проходить щорічно на початку грудня. На три дні центральні фасади й десятки мостів займають мультимедійні художники з усього світу. Розкидають на будинки відеопроєкції і висвічують усе приховане, трансформуючи місто на гігантський цифровий калейдоскоп, який змінить вас назавжди.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/lyon/text-5.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Це точно потрібно зробити в Ліоні</h2>
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-1-1.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Знайти пам’ятник Антуану де Сент-Екзюпері та найвідомішому його персонажу. Письменник, журналіст, військовий льотчик і автор «Маленького принца» народився в Ліоні.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-1-2.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Побачити усічену копію Ейфелевої вежі, а якщо точніше, її верховинного ярусу. Вежу побудував за власні кошти городянин П’єр Ге в 1894 році на пагорбі Фурв'єр і відкрив там ресторан. Доступ на оглядовий майданчик вежі зараз закритий.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-1-3.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Покружляти околицями Ліона. Внесіть у маршрут затишне сільце Перуж, яке входить в асоціацію найкрасивіших сіл країни <span class="special">Le Plus Beaux Villages de France</span>, і&nbsp;не забудьте заїхати в область Божоле — якраз там роблять ті самі молоді вина, які заведено пити в листопаді на свято <span class="special">Le Beaujolais Nouveau est arrivé.</span>
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-1-4.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Перед визитом в Лион выучить слово «мурализм», то есть «монументальная живопись на зданиях». Ведь кроме того, что Лион — фестивальная и гастрономическая столица Франции, это еще и центр мурализма. Самая интересная фреска-мурал <span class="special">Fresque des Lyonnais Celebres</span> площадью около 800 квадратных метров изображает знаменитых жителей города от ткача Жозе-Мари Жаккара (это он дал имя жаккардовой ткани) до футболиста Бернара Лакомба.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-1-5.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Перечитати роман-фантасмагорію з невимовною назвою «Ґарґантюа та Пантаґрюель». Він був написаний у Готель Дьйо, зараз це пам’ятник архітектури, а в період створення роману в XVI столітті тут був притулок і лікарня. Якраз там працював лікарем автор сатири Франсуа Рабле.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>І ще дещо важливе</h2>
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-2-1.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Как добраться
+              </div>
+              <div class="icon-item__text">
+                Найшвидший спосіб опинитися в Ліоні — летіти літаком авіакомпанії <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a> з Києва з пересадкою в Парижі. З Парижа також можна доїхати до Ліона поїздом, час у дорозі складе близько 2 годин.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-2-2.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Куди не запізнитися
+              </div>
+              <div class="icon-item__text">
+                Ринок <span class="special">Les Halles Paul Bocuse</span> працює із 7:00 до 19:00 з понеділка до суботи, а в неділю за скороченим графіком — до 13:00. Ресторанчики зазвичай зачиняються о 22:30, у неділю — о 16:30.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-2-3.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Корисні посилання
+              </div>
+              <div class="icon-item__text">
+                <p><a class="link" href="https://ru.france.fr/ru" target="_blank">france.fr</a> новини Франції та корисна інформація для туристів</p>
+                <p><a class="link" href="https://wwws.airfrance.ua/" target="_blank">wwws.airfrance.ua</a> бронювання та купівля авіаквитків найбільшої французької авіакомпанії</p>
+                <p><a class="link" href="https://www.lyon-france.com/" target="_blank">lyon-france.com</a> інформація для жителів і туристів Ліона від історії до найближчих гастрономічних лекцій і фестивалів</p>
+                <p><a class="link" href="https://www.auvergnerhonealpes-tourisme.com/" target="_blank">auvergnerhonealpes-tourisme.com</a> сайт регіонального Комітету з туризму</p>
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-2-4.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Де жити
+              </div>
+              <div class="icon-item__text">
+                Як і в Парижі, у Ліоні є поділ на міські округи — арондісмани. Зараз їх дев’ять, перший і другий вважаються серцем Ліона. Якщо не хочете витрачати час на довгі прогулянки, то зупинитися краще в них.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-2-5.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                На чому заощадити
+              </div>
+              <div class="icon-item__text">
+                Якщо плануєте провести в Ліоні більше ніж один день, є сенс придбати картку Lyon City Card за 24,90 євро на однойменному сайті. Вона дає право на безкоштовний проїзд громадським транспортом та відвідування багатьох музеїв, знижки в ресторанах.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/lyon/icon-2-6.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Вартість перельоту
+              </div>
+              <div class="icon-item__text">
+                Вартість перельоту Київ — Ліон — Київ з короткою пересадкою в Парижі починається від 160 євро. Підписавшись на розсилку <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a> и&nbsp;<a href="https://ru.france.fr/ru" target="_blank" class="link">Atout&nbsp;France</a>, ви отримаєте не тільки унікальні гайди усіма регіонами Франції, а ще і промокод на знижку 75 гривень на перельоти <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a>. Шукайте вікно підписки нижче.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-authors">
+      <div class="container article-authors__container">
+        <div class="article-authors__list">
+
+          <div class="article-authors__item">
+            <b>Iлюстрації:</b> Саша Барановская
+          </div>
+
+          <div class="article-authors__item">
+            <b>Aвтор тексту:</b> Полина Парыгина
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="article-form">
+      <div class="article-form__social">
+        <a href="#" class="article-form__social-link article-form__social-link--wa"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tw"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tg"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--fb"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--vk"></a>
+      </div>
+
+      <div class="article-form__nav">
+        <div class="article-form__nav-in">
+          <a class="article-form__nav-link article-form__nav-link--active" href="/lyon.html">ЛIОН</a>
+          <a class="article-form__nav-link" href="/bordeaux.html">БОРДО</a>
+          <a class="article-form__nav-link" href="/paris.html">ПАРИЖ</a>
+          <a class="article-form__nav-link" href="/nice.html">НIЦЦА</a>
+          <a class="article-form__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+        </div>
+      </div>
+
+      <div class="container article-form__container">
+
+        <div class="article-form__center">
+          <div class="article-form__title">
+            Щоб отримати PDF-гіди по регіонах Франції і промокод на знижку в 50 доларів на політ до Франції залиште вашу пошту. Умови - за <a href="pdf/01.pdf" download="download">посиланням</a>.
+          </div>
+
+        <form class="mainpage-form__form form__form" action="" novalidate>
+          <div class="mainpage-form__form-wrapper">
+            <label class="mainpage-form__label form__label">
+              <input class="mainpage-form__input form__input" type="email" name="email" placeholder="ваш email" data-error-msg="Некоректний email" required>
+              <div class="mainpage-form__msg form__msg"></div>
+            </label>
+
+            <button class="mainpage-form__btn form__btn" type="submit">Відправити</button>
+          </div>
+
+          <label for="mainpage-form__сheckbox" class="mainpage-form__label-checkbox form__label">
+            <input type="checkbox" class="form__input mainpage-form__input-checkbox" id="mainpage-form__checkbox" name="mainpage-form__checkbox" data-error-msg="Сheck me" required value="check">
+            <div class="mainpage-form__сheckbox-text">Я даю згоду на обробку моїх персональних даних та отримання інформаційних матеріалів про Францію і її регіони, спецпропозиції і новини Air France.
+              <br><a href="pdf/Agreement_france-advisor.pdf" download="download" class="mainpage-form__сheckbox-link">Детальніше</a>
+            </div>
+            <div class="mainpage-form__msg form__msg form__msg-checkbox"></div>
+          </label>
+        </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__logos">
+        <a class="footer__logos-link footer__logos-link--explore" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-explore-france.png" alt="">
+        </a>
+
+        <a class="footer__logos-link footer__logos-link--airfrance" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-air-france.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

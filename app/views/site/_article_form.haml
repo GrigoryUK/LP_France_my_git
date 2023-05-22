@@ -1,0 +1,48 @@
+%section.article-form
+  .article-form__social
+    %a.article-form__social-link.article-form__social-link--wa{href: "#"}
+    %a.article-form__social-link.article-form__social-link--tw{href: "#"}
+    %a.article-form__social-link.article-form__social-link--tg{href: "#"}
+    %a.article-form__social-link.article-form__social-link--fb{href: "#"}
+    %a.article-form__social-link.article-form__social-link--vk{href: "#"}
+  .article-form__nav
+    .article-form__nav-in
+      %a.article-form__nav-link{href: lyon_url, class: (params[:action] == 'lyon' ? 'article-form__nav-link--active' : '')}
+        Lyon
+      %a.article-form__nav-link{href: bordeaux_url, class: (params[:action] == 'bordeaux' ? 'article-form__nav-link--active' : '')}
+        Bordeaux
+      %a.article-form__nav-link{href: paris_url, class: (params[:action] == 'paris' ? 'article-form__nav-link--active' : '')}
+        Paris
+      %a.article-form__nav-link{href: nice_url, class: (params[:action] == 'nice' ? 'article-form__nav-link--active' : '')}
+        Nice
+      %a.article-form__nav-link{href: marselle_url, class: (params[:action] == 'marselle' ? 'article-form__nav-link--active' : '')}
+        Marseille
+  -# .container.article-form__container
+  .article-form__container
+    .article-form__center.article-form__wide.article-form__new
+      .article-form__title
+        Discover different parts of France 
+        this summer and autumn, 
+        %span.blue Air France
+        can take you there in a blink of an eye
+
+      .article-new__container 
+        .article-new__block 
+          Subscribe on  🇦🇲  newsletter 
+          %a{href: "https://www.airfrance.am/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: '_blank'} here,
+          and check the best deals
+          %a{href: "https://wwws.airfrance.am/deals?originCode=EVN&originType=CITY&tripType=ALL&cabin=ECONOMY&zoneCode=EUR&utm_source=france-advisor.com&utm_medium=link", target: '_blank'} here.
+        .article-new__block 
+          Subscribe on  🇬🇪  newsletter 
+          %a{href: "https://www.airfrance.ge/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: '_blank'} here,
+          and check the best deals
+          %a{href: "https://www.airfrance.ge/deals?originCode=TBS&originType=AIRPORT&tripType=ALL&cabin=ECONOMY&zoneCode=EUR&utm_source=france-advisor.com&utm_medium=link", target: '_blank'} here.
+        
+      -# .article-form__title.form__base
+      -#   Щоб отримати PDF-гіди по регіонах Франції і промокод на знижку в 50 доларів на політ до Франції залиште вашу пошту. Умови - за
+      -#   = succeed "." do
+      -#     %a{href: "pdf/01.pdf", download:"download"} посиланням
+      -# .article-form__title.form__success.hidden
+      -#   Готово! Лист із&nbsp;промокодом і&nbsp;посиланнями на&nbsp;гіди по&nbsp;всіх регіонах Франції надійде протягом п&rsquo;яти хвилин. Будь ласка, перевірте папку &laquo;Спам&raquo;.
+      -# = render partial: 'form', locals: {prefix: 'article'}
+    

@@ -1,0 +1,134 @@
+.footerC {
+  position: relative;
+  background: url('~images/icons/icon-plane-footer.svg') no-repeat top left / 80% auto;
+
+  @include big-desktop {
+    background: url('~images/icons/icon-plane-footer.svg') no-repeat bottom left / 100% auto;
+  }
+
+  @include tablet {
+    background: url('~images/icons/icon-plane-footer.svg') no-repeat bottom left / 80% auto;
+
+  }
+
+  @include mobile {
+    background: url('~images/icons/icon-plane-footer.svg') no-repeat bottom left / 150% auto;
+
+  }
+
+
+  &.footerGe {
+    font-family: var(--font-georgian);
+  }
+  &.footerAr {
+    font-family: var(--font-armanian);
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 250px;
+    display: flex;
+
+    @include tablet {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      flex-direction: column;
+    }
+
+    @include mobile {
+      padding-top: 0px;
+      padding-bottom: 70px;
+      flex-direction: column-reverse;
+    }
+
+
+  }
+
+  a {
+
+    @include hover {
+      text-decoration: none;
+    }
+  }
+
+  &__decr {
+    max-width: 700px;
+
+    @include tablet {
+      max-width: 60%;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 130%;
+    margin-bottom: 50px;
+
+    @include tablet {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+      margin-bottom: 1.4rem;
+    }
+
+    a {
+      color: $color-footnote;
+
+      @include hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 564px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 130%;
+
+
+    @include tablet {
+      font-size: 20px;
+      max-width: 100%;
+    }
+
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    transform: translate(5%, -31%);
+
+    @include tablet {
+      position: absolute;
+      right: 0;
+      top: 2rem;
+      transform: none;
+    }
+
+    @include mobile {
+      margin-top: 30px;
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+    img {
+      max-width: 482px;
+
+      @include tablet {
+        max-width: 300px;
+      }
+    }
+  }
+}

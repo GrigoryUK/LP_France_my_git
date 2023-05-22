@@ -1,0 +1,215 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: var(--color-aqua);
+      --accent-text-color: #ffffff;
+      --accent-special-color: var(--color-aqua);
+      --font-georgian: 'Noto Sans Georgian', sans-sarif;
+      --font-georgian-serif: 'Noto Serif Georgian', sans-sarif;
+      --font-armanian: 'Noto Sans Armenian', sans-sarif;
+      --menu-burger-background: #3c9da8;
+    }
+%body{style: "background-color: var(--accent-background-color);"}
+  .site-container
+    .header--new
+      %header.header
+        .container.header__container
+          %button.header__nav-toggle
+            %span.header__nav-toggle-line
+          %nav.header__nav
+            .header__nav-in
+              %a.header__nav-link{href: occitania_ge_url} OCCITANIA
+              %a.header__nav-link.header__nav-link--active{href: new_aquitaine_ge_url} NEW AQUITAINE
+              %a.header__nav-link{href: paris_region_ge_url} PARIS REGION
+              %a.header__nav-link{href: loirevalley_ge_url} LOIRE VALLEY
+              %a.header__nav-link.header__nav-link--home.header__nav-link--icon{href: root_url}
+                MAIN PAGE
+                %span.header__nav-link-icon
+    .container-secondary.container-aquitaine.aquitaine-ge.lang-ge
+      .ContainerC.max-1140.one
+        .blockC.main.aquitaine--main.main-ge
+          .blockC__texts
+            .titleC.main
+              %h1
+                %span
+                  New
+                %span
+                  Aquitaine
+            .subtitleC.main
+              %span
+                ახალი
+              %span
+                აკვიტანიის
+              %span
+                რეგიონი
+            .subtitleC.premain
+              კილომეტრები ველობილიკებისთვის, დეგუსტაციები ღვინის მუზეუმში და ცნობილი ხამანწკები
+          %img.image-main{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-606-1.png")}/
+      .ContainerC.max-1140.two
+        .descC.withoutFon.descC-1
+          .textC.columnW
+            .colC
+              %p
+                ახალი აკვიტანია (nouvelle aquitaine) -საფრანგეთის რეგიონი, ძალიან შთამბეჭდავია ამ სიტყვის სრული მნიშვნელობით. ვეყნის უახლესმა ადმინისტრაციულმა დაყოფამ ახალი აკვიტანია აქცია უდიდეს რეგიონად, რომლის საზღვრები ვრცელდება სამხრეთით პირენეებიდან ჩრდილოეთით ლუარის ველამდე.
+            .colC
+              %p
+                ულტურათა მრავალფეროვნება, პეიზაჟების და ატრაქციონების სიმრავლე საკმარისი იქნება მრავალი არდადეგებისა და საოცნებო მოგზაურობისთვის.
+      .ContainerC.max-1140.three
+        .descC.whiteFon.withImg.descC-1
+          .ContainerC.padding-60
+            %img.image-map{alt: "", src: asset_pack_url("media/images/icons/icon-map.png")}/
+            .subtitleC.secondary.max-640.subtitleC-1
+              რეგიონალური აეროპორტები
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  ახალი აკვიტანიის მთავარი აეროპორტია
+                  %strong Bordeaux-Mérignac Airport.
+                  ავიაკომპანია Air France –სი დღეში შვიდ რეისს ასრულებს პარიზიდან. პირდაპირი რეისებია პარიზიდან Biarritz მიმართულებითაც, ფრენის დრო 1 საათი და 20 წუთია.
+              .ColC
+                %p
+                  %strong Bordeaux-Mérignac -
+                  აეროპორტი უნიკალურია იმით, რომ იქვე მის ტერიტორიაზე არის პატარა ვენახი. თანამშრომლები იქ ყოველწლიურად იღებენ ყურძენის მოსავალს და ღვინოს ამზადებენ. მაგრამ ღვინის შეძენა შეუძლებელია. ის განკუთვნილია მხოლოდ აეროპორტის გალა ღონისძიებებისთვის. პარიზიდან ბორდომდე მანქანით მგზავრობის დრო დაახლოებით ხუთი საათია; TGV-ს ჩქაროსნული მატარებლით კი ორი საათი.
+            .subtitleC.secondary.max-950.subtitleC-2
+              რომელ ქალაქებია ყველაზე კომფორტული საცხოვრებლად
+            .textC.columnW.textC-2
+              .colC
+                %p
+                  %strong>
+                    %a{href: bordeaux_url, target: "_blank"} ბორდო (Bordeaux)
+                   — რეგიონის დედაქალაქი აქ საცხოვრებლის ფართო არჩევანია. სტრატეგიული წერტილია, საიდანაც შეგიძლიათ დაგეგმოთ მოკლე მარშუტები მთელ რეგიონის გარშემო.
+                %p
+                  %strong> ბიარიცი (Biarritz)
+                   — ქალაქი უნიკალური არქიტექტურით, გრძელი ქვიშიანი პლაჟებით და სერფინგის სკოლებით, რომლებიც ცნობილია მთელ საფრანგეთში. იდეალური ადგილია მათთვის, ვისაც სურს ნახოს საფრანგეთის პირენეები და გაეცნოს ბასკურ კულტურას.
+                %p
+                  %strong Sarla la Caneda
+                  სარლატ-ლა-კანედა უძველესი ქალაქია, რომელიც ცნობილია ტრიუფელის ვაჭრობით.სამოციან წლებში ადგილობრივი ხელისუფლების ძალისხმევით ურბანული გარემო პირვანდელი სახით შენარჩუნდა. საღამოობით, გაზის ნათურების შუქზე მოკირწყლულ ქუჩებზე სეირნობისას, შეგიძლიათ დატკბეთ ნახევრად ხის, ქვის სახურავიანი სახლების ცქერით. ასევე გირჩევთ დაგემოვნოთ ფუა გრა.
+              .colC
+                %p
+                  %strong ლა როშელი (La Rochelle)-
+                  საპორტო ქალაქი ბისკაის ყურის სანაპიროზე, რომელიც შთამბეჭდავია შუა საუკუნეების სიმაგრეებითა და უნიკალური არქიტექტურით. რამდენიმე კილომეტრში არის კუნძული Ré რე, თავისი ბრწყინვალე ქვიშიანი პლაჟებით რომელიც იდეალური ადგილია დასასვენებლად. ნავსადგურიდან შეგიძლიათ ნავით გაისეირნოთ ცნობილ Boillard Fort-ში.
+      .ContainerC.four
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-big-3.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-big-3-mobile.jpg")}/
+      .ContainerC.max-1140.five
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-650.subtitleC-1
+              მარშრუტის იდეები:
+            .textC.rowW.textC-1
+              %p
+                %strong გრძელი მარშრუტი:
+                Bordeaux → La Rochelle → Cognac → Limoges → Sarla → Lascaux Cave → Saint-Emilion → Po → Bayonne.
+              %p
+                %strong მოკლე მარშრუტი:
+                Bordeaux → Blay → Rouilland → La Rochelle → Cognac → Saint-Emilion.
+              %p
+                საფრანგეთში მოგზაურობა იშვიათად შემოიფარგლება მხოლოდ ერთი პროვინციით, ამიტომ აუცილებლად გაეცანით ჩვენს გზამკვლევებს მეზობელ რეგიონებში: «Loire Lands „Centre — Loire Valley“, „Auvergne — Rhone — Alpes“ and „Occitanie“ ეს დაგეხმარებათ დაგეგმოთ ყველაზე მრავალფეროვანი და დასამახსოვრებელი მოგზაურობა.
+            .subtitleC.secondary.max-975.subtitleC-2
+              ღვინის მოყვარულები:
+            .textC.rowW.textC-2
+              %p
+                ფასდაუდებელია იმის ხილვა თუ როგორ იზრდება ვენახი ერთ-ერთ ლეგენდარულ მეღვინეობის რეგიონში, განსაკუთრებით მაშინ, როდესაც თითოეულ ღვინის ქარხანას შატო ჰქვია, რომლის შექმნა ცნობილი არქიტექტორის დამსახურებაა და რომლის ირგვლივაც თვალწარმტაცი ბორცვებია მოფენილი. აქ ყოველ სეზონს მოაქვს თავისი ფერები და ხიბლი მოგზაურობაში, მაგრამ რაც უცვლელი რჩება — ეს არის უნიკალური ღვინოების დაგემოვნების შესაძლებლობა.
+            .textC.columnW.textC-3
+              .colC
+                %p
+                  %strong> არმანიაკი (Armagnac)
+                   — გასკონიის პროვინცია.ის არა მხოლოდ დ'არტანიანის დაბადების ადგილია, არამედ Armagnac-ის წარმოების ადგილიც. ეს კონიაკი შედარებით ნაკლებად ცნობილია. გასკონისს პროვინციაში შეგიძლიათ არმანიაკის სახლებში გასეირნება, თავად დააგემოვნოთ სასმელი და იპოვოთ განსხვავება ორ ძმას შორის — ის კი ნამდვილად არის!
+                %p
+                  %strong> მედოკი (Medoc)
+                   — მიჰყევით Route des Chateaux du Medoc-ის მარშუტს და მოინახულეთ არა მხოლოდ მსოფლიოს ყველაზე პოპულარული ვენახები, არამედ მყუდრო ფრანგული სოფლებიც.
+              .colC
+                %p
+                  %strong> ბორდო (Bordeaux)
+                   — განთქმულია უზარმაზარი ღვინის მუზეუმით, მულტიმედიური ცენტრით და დეგუსტაციებით.
+                %p
+                  %strong> Saint-Émilion
+                   — შუა საუკუნეების ქალაქი და ღვინის წარმოების ცნობილი ცენტრი. მისი ვენახები პირველი აღმოჩნდა იუნესკოს მსოფლიო მემკვიდრეობის სიაში.
+      .ContainerC.six
+        .imageC.big
+          %img{alt: "", src: asset_pack_url("media/images/NewAquitaine/image-1577-1.jpg")}/
+      .ContainerC.max-1140.seven
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-860.subtitleC-1
+              აქტივობები
+            .textC.rowW.textC-1
+              %p
+                %strong დაგეგმეთ ველოსიპედით მოგზაურობა.
+              %p
+                ახალი აკვიტანია -ველოსიპედისტების სამოთხეა. ოკეანის გასწვრივ არის ასობით კილომეტრიანი ველოსიპედის ბილიკი, ეროვნული პარკებისა და თვალწარმტაცი ქალაქების გავლით.
+                %strong La Vélodyssée,
+                ყველაზე გრძელი ველოსიპედის მარშრუტი საფრანგეთში ატლანტის სანაპიროზე. ახალი აკვიტანიაც არის ნაწილი ცნობილი ფრანგული ველომარშრუტისა The Canal of the Two Seas «ორი ზღვის არხი», რომელიც აკავშირებს ატლანტიკასა და ხმელთაშუა ზღვას.
+              %p
+                %strong დაიპყარით პილატის დიუნა.
+              %p
+                %strong> Dune du Pilat
+                 — ყველაზე დიდი ქვიშის დიუნა ევროპაში, რომლის სიგანე 500 მეტრია ხოლო სიგრძე თითქმის 2,7 კილომეტრი. დიუნა ღიაა ვიზიტორებისთვის მთელი წლის განმავლობაში. თქვენ შეგიძლიათ მის მწვერვალზე ასვლა ან მის ძირში ოკეანეში ბანაობა.
+                მოინახულეთ ცნობილი- პორტ ბოიარდი.
+              %p
+                %strong> Fort Boyer
+                 — ეს ციხესიმაგრე, რომელიც მდებარეობს Oléron და Ile d’Aix კუნძულებს შორის, ცნობილი გახდა ამავე სახელწოდების სატელევიზიო შოუს წყალობით. ციხისიმაგრის აშენება ჯერ კიდევ მე-17 საუკუნეში სურდათ, მაგრამ ტექნიკურად იმ დროისთვის ეს ჯერ კიდევ არ იყო შესაძლებელი. ბედის ირონიით, 1857 წელს ციხესიმაგრის აშენების დროისთვის არტილერიის განვითარების გამო მისი საჭიროება აღარ იყო — მეზობელ კუნძულებზე ქვემეხებიდან ცეცხლმა ადვილად გადაკეტა მათ შორის სრუტე — ამიტომ ციხესიმაგრე ციხედ გადაკეთდა.1913 წლიდან ციხე ავარიული მდგომარეობაში იყო. მხოლოდ 1980-იან წლებში, როდესაც ციხით ტელევიზია დაინტერესდა, დაიწყო მისი აღდგენა. ახლა ციხესიმაგრეში შევსვლა არ შეიძლება, მხოლოდ შორიდან ტკბობა შეგიძლიათ. La Rochelle-[დან და სხვა საპორტო ქალაქებიდან ციხე-სიმაგრეში ნავებით მიდიან.
+              %p
+                %strong არქიტექტურული შედევრების მონახულება.
+              %p
+                ოქსიტანიაში ბევრი უძველესი და შუა საუკუნეების ადგილია შემორჩენილი, რომლებსაც თანამედროვე მოგზაურის გაოცებაც კი შეუძლიათ. Pont du Gare- დღემდე შემორჩენილია ყველაზე მაღალი რომაული აკვედუკი. Rocamadour- კლდეზე აგებული მომლოცველთა ქალაქი. ეპისკოპოსის რეზიდენცია ქალაქ ალბში რომელიც იყო ჯვაროსნული ლაშქრობების შეკრების ცენტრი კათარების წინააღმდეგ და ახლა კი სამხრეთ გოთური სტილის ცნობილი ძეგლია.
+        .descC.whiteFon.descC-2
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-860.subtitleC-1
+              კიდევ რა არის სანახავი?
+            .textC.columnW.textC-1
+              .colC
+                %p
+                  %strong> Limoges
+                   — ხელოვნებისა და ისტორიის ქალაქი რეგიონის ჩრდილო-აღმოსავლეთში. აქედან მარტივია მისვლა -დორდონის ველამდე, რომელიც ცნობილია როგორც «კაცობრიობის აკვანი» .დორდონში არის ცნობილი ლასკოს გამოქვაბული-» ქვის ხანის კლდის ნახატები, სიქსტის კაპელა „
+                %p
+                  %strong Arcachon Bay
+                  (არკაშონის აუზი) არის უზარმაზარი ყურე, ადგილობრივი მეთევზეებისთვის თევზსაჭერი ადგილებით. . არკაშონის ხამანწკები ცნობილია მთელ საფრანგეთში და ითვლება დელიკატესად.
+              .colC
+                %p
+                  %strong> Biarritz
+                   — ზღვისპირა საკურორტო ქალაქი ულამაზესი სასტუმროებითა და სანაპიროებით.გოლფსტრიმის ტალღები და თბილი დინება, წელიწადში ცხრა თვე სერფინგის საშულებას იძლევა, ამიტომ ქალაქი იზადავს სპორტსმენებს მთელი ევროპიდან. სანაპიროზე უამრავი სერფინგის სკოლაა და შეგიძლიათ გაიაროთ ერთჯერადი გაკვეთილები ან აიღოთ მთელი კურსი.
+                %p
+                  %strong Cap Ferrat.
+                  მხოლოდ 258 საფეხურის ავლაა საჭირო იმისათვის რომ იხილოთ უნიკალური ხედი არკაშონის და ატლანტის ყურეზე, წარმოუდგენელი სიმაღლიდან.
+        .descC.whiteFon.descC-3
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-860.subtitleC-1
+              შემაჯამებელი სია
+          .ContainerC.padding-30.ContainerC-2
+            .blockC.features
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-sunset.svg")}/
+                %p
+                  შეხვდით მზის ჩასვლას პილატის დიუნაზე.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-pepper.svg")}/
+                %p
+                  იყიდეთ სანელებელი: Espelette –ს წიწაკა
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-goose.svg")}/
+                %p
+                  მიირთვით დორდონის ფუა-გრა Sarla -ში, ადგილობრივი თეთრი ღვინით.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-cup.svg")}/
+                %p
+                  შეიძნეთ ფაიფურის ჭიქა ლიმოჟში.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-home.svg")}/
+                %p
+                  გაისეირნეთ არკაშონის დიდებულ ვილებს შორის და ინებივრეთ ქვიშიან სანაპიროზე.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-wine.svg")}/
+                %p
+                  მიირთვით ჭიქა ღვინო ღვინის მუზეუმში და დატკბით ბორდოს ხედით.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-oysters.svg")}/
+                %p
+                  დააგემოვნეთ ხამანწკები Le Cap Ferré-ში, საყიდლებისთვის კი ეწვიეთ ბიარიც-ს
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-ancestors.svg")}/
+                %p
+                  იხილეთ უძველესი ნახატები ლასკოს გამოქვაბულში.
+    = render partial: 'shared/footerGe'
+    = render partial: 'shared/footer_main_ge'             

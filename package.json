@@ -1,0 +1,23 @@
+{
+  "name": "lp_france",
+  "private": true,
+  "dependencies": {
+    "@activeadmin/activeadmin": "^2.9.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "^5.4.3",
+    "babel-polyfill": "^6.26.0",
+    "normalize-css": "^2.3.1",
+    "swiper": "^4.5.0",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/preset-env": "^7.4.4",
+    "glob": "^7.1.4",
+    "rimraf": "^2.6.3",
+    "yargs": "^13.2.2"
+  }
+}

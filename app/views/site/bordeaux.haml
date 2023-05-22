@@ -1,0 +1,252 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: #CC4D47;
+      --accent-text-color: #ffffff;
+      --accent-authors-color: #7D3532;
+      --accent-special-color: var(--accent-background-color);
+      --menu-burger-background: #DCBEC4;
+    }
+
+= render partial: 'shared/header'
+%main.article-main
+  %section.article-intro.article-intro--bordeaux
+    .container.article-intro__container
+      %img.article-intro__img.hide--mobile{alt: "", src: asset_pack_url("media/images/placeholders/bordeaux/cover.png")}/
+      %img.article-intro__img.show--mobile{alt: "", src: asset_pack_url("media/images/placeholders/bordeaux/cover-mobile.png")}/
+      .article-intro__info
+        %h1.article-intro__title Bordeaux
+        .article-intro__subtitle
+          %span.article-intro__subtitle-line museum districts,
+          %span.article-intro__subtitle-line family wineries
+          %span.article-intro__subtitle-line and even a sand mountain
+      .article-intro__text.columns
+        %p If one goes to Paris to see the city and die of beauty (don't do that), as the famous proverb states, Bordeaux is a must to taste the true French hedonism. The flying time between the capital and the heart of the historic region of Aquitaine is only one hour, while the journey using TGV high-speed train takes two hours.
+        %p Bordeaux is often called "little Paris," but the city definitely does not pretend to be anything else.
+        %p
+          With its countless vineyards, UNESCO-recognized ancient architecture, attention to every detail, the cult of food, and renowned beverages, the port city has become the perfect example of
+          = succeed "," do
+            %span.special art de vivre
+          which means the art of living. It's also an excellent setting for romantic movies, with the tranquil French countryside visible from the first frame.
+  %section.article-block.article-pane.article-pane--with-map
+    .container.article-pane__container
+      %img.article-pane__map{alt: "", src: asset_pack_url("media/images/placeholders/bordeaux/map-en.png")}/
+      .article-pane__content
+        %h2 Get tipsy
+        .columns
+          %p Even if you've never been to Bordeaux, you've probably heard of its main attraction, and you've probably tried it more than once. Bordeaux has rightfully earned the title of world wine capital, an impressive achievement for a city of around 250,000 people.
+          %p There are thousands of wineries just on the outskirts, many of which you can visit and even attend a family dinner with the winery's heirs (be prepared that in Bordeaux the feasts last for at least three hours). Alternatively, if you have a few years to spare, you can rent a small vine that will give you a yearly dividend in bottles.
+          %p We advise you to start exploring the region's wine culture with the museum, where visitors seek catharsis in wine as they do the truth. 
+          %p
+            The City of Wine
+            %span.special La Cité du Vin
+            is a wine Guggenheim and the Louvre of Winemaking. The building on the Garonne River's banks is not to be missed: it resembles a giant mirror decanter and appears to be a modern art museum. In fact, that is a real modern art museum, but with an industrial twist. There is no other place on the planet where the history of wine can be told in such breathtaking detail as it is there.
+          %p The winemaking process will be shown in great detail here. With projections, aromas, sounds, and maximum involvement. Guests will be invited to participate in an interactive table with the typical inhabitants of the region, as well as a holographic riverboat ride with wine merchants. They will whisper various stories about wine intoxication so that you can even get tipsy without a glass of red wine. Sure, even though there is a lot of high-tech at the exhibition, there are also real artifacts, and the wine tasting hasn't been cancelled yet.
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-1-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-1-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-1.jpg')}
+        %img.article-figure__img.article-figure__img--to-right{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/bordeaux/figure-1.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Get fed up
+        .columns.columns--img-right
+          %p
+            Bordeaux has no problem with gastronomy. Visit any of the waterfront restaurants, such as the chamber home bistro, one of the city's oldest restaurants, or the 
+            %span.special Utopie
+            cinema restaurant, which is located in a building that was formerly a church. Don't worry about the quality of the food and wine; everything is made locally or comes from the vicinity. This can be easily determined by going to the city's market, which is called 
+            = succeed "." do
+              %span.special Marché des Capucins
+          %p 
+            We recommend visiting this place at lunchtime to get a feel for the atmosphere. There are busy rows of farm goods, cheese samples, and a lot of seafood. Consume freshly shucked oysters from the Arcachon region without leaving the counter. One tip: After your tastings at
+            = succeed "," do
+              %span.special La Cité du Vin
+            pop in for a bite to eat at a trendy gastronomic space nearby –
+            %span.special Les Halles de Bacalan
+            (the Bacalan market). 85 percent of the market's produce is local and sourced from the south-west France.
+          %p Then switch to the local foie gras, which is legendary throughout the country, or try the traditional cassoulet, a thick soup or casserole with beans, herbs and meat cooked in a clay pot. Drink coffee to wash down your meal, and finish it off with a local canela, a sweet  pastry filled with rum and vanilla and topped with a crispy caramel crust.
+
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/text-1-en.png")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-2-mobile-en.png')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-2-tablet-en.png')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-2-en.png')}
+        %img.article-figure__img.article-figure__img--to-right{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/bordeaux/figure-2-en.png')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Buy something
+        .columns.columns--img-left
+          %p
+            The French flea markets  - a source of ecstasy for aesthetic lovers. There are badges and figurines, as well as giant tapestries and a carved truce commemorating the lives of three or four generations. Bordeaux also has its own
+            %span.special Brocante
+            antique shop, which both casual tourists and serious collectors with big budgets should visit. The French have an inexhaustible sense of awe for things and are adept at caring for and restoring them. A trip to the flea market will show you this right in front of your eyes.
+          %p Yes, you're unlikely to find Enlightenment paintings here; instead, visit a museum or a large antique shop. Well, a great souvenir of your birth year is almost certain to be found here. Just keep in mind that people in French brocantes won't understand you if you try to haggle playfully like you would in a Turkish bazaar. Only after a long prelude should you begin haggling, and still be prepared for the fact that no one is willing to sell anything for less than half its original price.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/text-2-en.jpg")}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Take a walk
+        .columns.columns--img-right
+          %p Bordeaux, in general, is an outstanding illustration of how historical heritage can be combined with the spirit of the present day. When the first and second are combined in this way, neither is harmed. For example, the Miroir d'eau (Water Mirror) is a massive space in front of the Place de la Bourse (Stock Exchange) building that features an elaborate system of fountains and sprays. Clouds of steam rise from the ground every 20 minutes, forming a French-style hammam in the city centre. As the water droplets settle, the dark grey granite square transforms into a massive monolithic mirror in which the local architecture is reflected, the sky and the earth alternate positions, and all of this beauty makes your head spin even without wine.
+          %p
+            The
+            %span.special Darwin
+            site on the Quai des Queyries (Quai des Queyries Embankment) between the Pont de Pierre (Stone Bridge) and the Pont Jacques Chaban Delmas (Chaban-Delmas bridge) is another example of how tradition and modernity work together. It was a military barracks and a bustling marching ground in the past, but now it serves as the nano-business center of Bordeaux and is home to a variety of coffee shops, outlets, showrooms, and galleries. Darwin's walls and corners feature urban street art and promote responsible consumption. Graffiti artists and street artists paint every inch of the cluster with permission from the authorities. Skaters move to the beat of French hip-hop music as they navigate the space between the various stunning artwork pieces.
+          %p
+            There are also public recycling and solar energy lectures, as well as yoga classes. Tired of looking for the latest and greatest, you can stop by the
+            %span.special Magasin Général
+            bistro, which serves one of the best brunches on the right bank, and enjoy the organic food menu while sitting on furniture made of wine crates and surfboards.
+          %p 
+            The digital art center 
+            %span.special Les Bassins de Lumières
+            has recently opened for those who want to immerse themselves in art to the fullest. It is housed in the massive space of a German bunker built on the banks of the Garonne River during WWII. In the massive space of a German bunker built on the banks of the Garonne River during WWII. Today, when people come to the site that used to be a submarine base, they can walk among Gustav Klimt's famous hero characters and decorations, which surround them in all directions, i.e. 360 degrees.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/text-3.jpg")}/
+  %section.article-block.article-figure.hide--mobile
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-3-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-3-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/bordeaux/figure-3.jpg')}
+        %img.article-figure__img{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/bordeaux/figure-3.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 What's next to it?
+        .columns.columns--two-images-in-footer
+          %p Bordeaux is a decent place to spend a few days without becoming bored. Still, if you have the chance to go outside the city for reasons other than the vineyards, we strongly advise you to do so. You can rent a car or do light logistics with public transportation (it's all pretty well-organized here) and head, for example, an hour's drive from the city, to Arcachon, home of the famous oysters.
+          %p If Bordeaux is the quintessence of all things French with all the ins and outs that go with it, then already 65 kilometers away from the city, you feel like you're somewhere out of the country. The 130-metre-high la Dune du Pilat (Pilat Dune) is one of Europe's highest sand dunes, a branch of France's full-fledged desert that meets the sea right here. 
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/text-4.jpg")}/
+          %p It is only surpassed by the Sarykum Barkhan in Dagestan, which stands at 262-265 meters. Before you explore the dunes, go to the nearby fishing village of Gujan-Mestras or the famous Saint-Jean-Cap-Ferrat. Don't forget to buy some oysters and cheese ahead of time so you can have a picnic and watch the sunset with all of these delectable treats.
+          %p Another notable destination is Saint-Émilion, a mediaeval town to which trains depart every hour from Gare de Bordeaux Saint-Jean. There are well-preserved chapels and cathedrals, as well as a few wine-making castles and noblemen's houses. Plan a full day of walking around in this splendour, with breaks for various tastings.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/text-5.jpg")}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Don't forget to do these things in Bordeaux
+        .icon-item__list-pretext
+          %p Here are some tips that will make your trip to Bordeaux and the area around it even more fun.
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-1-4.png")}/
+            -# .icon-item__title
+              Придивіться до архітектури
+            .icon-item__text              
+              Buy an oyster opener. It's not a must-have item on the itinerary; the markets will always open oysters quickly and for free, but having an oyster opener as a souvenir is ideal.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-1-2.png")}/
+            -# .icon-item__title
+              Шукайте сходи
+            .icon-item__text
+              Look for a ladder. Pilat Dune is a tricky location, with a gentle side facing the ocean that is easy to ascend and a steep slope for hikers. So, the safest way to the top is to use a specialized ladder; however, when descending, you can simply walk on the sand if you prefer.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-1-5.png")}/
+            -# .icon-item__title
+              Дозуйте делікатеси
+            .icon-item__text
+              %a.lonk{href:"https://www.rugbyworldcup.com/2023?utm_source=france-advisor.com&utm_medium=link", target: "_blank"}The 10th Rugby World Cup
+              will take place in 2023. Fans are waiting for 48 matches of the game of "knights of the oval ball", which is almost 200 years old. Part of the meetings will take place in Paris (in Lyon, in Marseille, in Nice, in Bordeaux).
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-1-1.png")}/
+            -# .icon-item__title
+              Придбайте ніж для відкривання устриць
+            .icon-item__text
+              Take a closer look at the architecture. At least a couple of people who live in Bordeaux will hint you that the Parisians copied the style of the buildings in their city. Seems true. At the bare minimum, the architecture in the center of Bordeaux is reminiscent of that found in Paris.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-1-3.png")}/
+            -# .icon-item__title
+              Придбайте ніж для відкривання устриць
+            .icon-item__text
+              Consume the deli in moderation. Tasting wine nonstop is a noble pursuit, but only if it is not accompanied by foie gras and oysters. In the first case, you'll put more strain on your liver (the French themselves only eat foie gras once a year around Christmas); in the second, you'll wake up with bags under your eyes from eating too much protein.
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 What's more
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-2-1.png")}/
+            .icon-item__title
+              How to get there
+            .icon-item__text
+              The quickest way to get to Bordeaux is to book a flight on Air France from Yerevan / Tbilisi with a stopover in Paris. Or you can travel by high-speed train (2 hours) or bus from Paris (about 8 hours).
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-2-2.png")}/
+            .icon-item__title
+              An admission ticket to La Cité du Vin
+            .icon-item__text
+              With the City Pass is free. Adult ticket is €20; find information about discounts for different categories of guests at
+              %a.link{href: "https://www.laciteduvin.com/en/plan-your-visit/offers-prices/tickets", target: "_blank"} laciteduvin.com
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-2-3.png")}/
+            .icon-item__title
+              Flight cost
+            .icon-item__text
+              The cost of a flight from Yerevan to Bordeaux and back with a short stopover in Paris starts from
+              %a.link{href:"https://wwws.airfrance.am/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=EVN:A%3EBOD:A-BOD:A%3EEVN:A&bookingFlow=LEISURE", target: "_blank"} 360 EUR.
+              The cost of a flight from Tbilisi to Bordeaux and back with a short stopover in Paris starts from
+              %a.link{href:"https://www.airfrance.ge/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=TBS:A%3EBOD:A-BOD:A%3ETBS:A&bookingFlow=LEISURE", target: "_blank"} 279 EUR.
+              To be the first to know about our special deals we advise you to subscribe to Air France newsletter in
+              %a.link{href: "https://www.airfrance.am/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Armenia
+              and
+              = succeed "." do
+                %a.link{href: "https://www.airfrance.ge/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"}  Georgia
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-2-4.png")}/
+            .icon-item__title
+              About City Pass
+            .icon-item__text
+              Buying a City Pass for 24, 48, or 72 hours is a sure-fire way to save money on public transportation and more than 20 museums in a city.  The cost of one pass starts from €29 and it is available online at 
+              %a.link{href: "https://www.visiter-bordeaux.com/en/bordeaux-citypass.html", target: "_blank"} visiter-bordeaux.com
+
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/bordeaux/icon-2-5.png")}/
+            .icon-item__title
+              Useful links
+            .icon-item__text
+              %p
+                %a.link{href: "https://ru.france.fr/ru", target: "_blank"} France.fr
+                — French news and useful information for tourists
+              %p
+                %a.link{href: "https://wwws.airfrance.am/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.am
+                — Air France homepage for Armenian travelers 
+              %p
+                %a.link{href: "https://www.airfrance.ge/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.ge
+                — Air France homepage for Georgian travelers
+              %p
+                %a.link{href: "https://www.bordeaux-tourisme.com/", target: "_blank"} Bordeaux-tourisme.com
+                — all about tourism in Bordeaux: tips, routes, major holidays and festivals
+              %p
+                %a.link{href: "https://www.nouvelle-aquitaine-tourisme.com/", target: "_blank"} Nouvelle-aquitaine-tourisme.com
+                — main information on the New Aquitaine region.
+
+  %section.article-block.article-authors
+    .container.article-authors__container
+      .article-authors__list
+        .article-authors__item
+          %b Illustrations:  
+          Aleksandra Mitalkova 
+        .article-authors__item
+          %b Text: 
+          Andrey Sakov
+  = render partial: 'article_form'
+  = render partial: 'shared/footer'

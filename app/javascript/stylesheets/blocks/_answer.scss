@@ -1,0 +1,255 @@
+.georgian {
+  --font-primary: 'Noto Sans Georgian', sans-sarif;
+
+
+}
+
+.armenian {
+  --font-primary: 'Noto Sans Armenian', sans-sarif;
+}
+
+.container-default {
+
+  .ContainerC.one {
+
+    @include tablet {
+      margin-bottom: 200px;
+    }
+
+    @include mobile {
+      margin-bottom: 56px;
+    }
+    .blockC.back {
+      margin-bottom: 50px;
+
+      @include tablet {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .blockC.one {
+      display: flex;
+      justify-content: space-between;
+      gap: 44px;
+      margin-bottom: 70px;
+
+      @include tablet {
+        flex-direction: column;
+        margin-bottom: 44px;
+      }
+
+      .titleC {
+        max-width: 382px;
+
+        @include tablet {
+          max-width: 100%;
+        }
+      }
+
+      .textC {
+        max-width: 825px;
+
+        @include tablet {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .blockC.two {
+      display: flex;
+      gap: 64px;
+
+      @include tablet {
+        flex-direction: column;
+      }
+
+
+      .block__links {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        @include tablet {
+          margin-top: 0;
+          flex-direction: row;
+        }
+
+        @include mobile {
+          gap: 2rem;
+          flex-direction: column;
+        }
+      }
+
+      .block__texts {
+        max-width: 790px;
+
+        @include tablet {
+          max-width: 100%;
+        }
+        .subtitleC {
+          margin-bottom: 30px;
+        }
+
+      }
+    }
+  }
+
+
+  .ContainerC.two {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 180px;
+
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 20px;
+      padding-bottom: 100px;
+    }
+
+    @include  mobile {
+      padding-bottom: 70px;
+    }
+    .subtitleC {
+        max-width: 560px;
+    }
+
+    .imageC {
+
+      img {
+        width: 452px;
+
+        @include tablet {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.ContainerC.decor {
+  position: relative;
+
+  background: url('~images/placeholders/index/cloud-desktop.png') no-repeat bottom left / 100% 100%;
+
+  @include tablet {
+    background: url('~images/placeholders/index/cloud-tablet.png') no-repeat top left / auto 100%;
+
+  }
+
+  @include mobile {
+    background: url('~images/placeholders/index/cloud-mobile.png') no-repeat bottom left / 100% auto;
+
+  }
+}
+
+
+.videoC {
+
+  &.primary {
+    position: relative;
+    display: flex;
+    margin-top: 46px;
+    margin-bottom: 80px;
+    padding-bottom: 56.25%;
+
+    iframe {
+      border-radius: 6px;
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      cursor: pointer;
+
+      @include mobile {
+
+      }
+    }
+
+    @include mobile {
+      margin: 2rem 0;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      position: absolute;
+      background: none;
+      top: 38px;
+      left: 10px;
+      border: 2px solid #000000;
+
+      @include tablet {
+        top: 20px;
+      }
+
+      @include mobile {
+        top: 1rem;
+        left: 0.5rem;
+        border: 1px solid #000000;
+      }
+    }
+
+    .fon {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 6px;
+      z-index: 3;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .image-main {
+      border-radius: 6px;
+      max-width: 825px;
+      position: relative;
+
+      @include tablet {
+        max-width: 100%;
+        width: 100%;
+      }
+
+
+
+    }
+
+    .icon-play {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 4;
+      transform: translate(-50%, -50%);
+
+      @include tablet {
+        width: 32px;
+        height: 32px;
+      }
+
+      @include mobile {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @include hover {
+
+      .fon {
+        opacity: 0;
+      }
+    }
+  }
+}
+

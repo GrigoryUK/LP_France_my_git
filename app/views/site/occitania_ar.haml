@@ -1,0 +1,219 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: var(--color-blue);
+      --accent-text-color: #ffffff;
+      --accent-special-color: var(--color-blue);
+      --font-georgian: 'Noto Sans Georgian', sans-sarif;
+      --font-georgian-serif: 'Noto Serif Georgian', sans-sarif;
+      --font-armanian: 'Noto Sans Armenian', sans-sarif;
+      --menu-burger-background: #4361A1FF;
+    }
+%body{style: "background-color: var(--accent-background-color);"}
+  .site-container
+    .header--new
+      %header.header
+        .container.header__container
+          %button.header__nav-toggle
+            %span.header__nav-toggle-line
+          %nav.header__nav
+            .header__nav-in
+              %a.header__nav-link.header__nav-link--active{href: occitania_ar_url} OCCITANIA
+              %a.header__nav-link{href: new_aquitaine_ar_url} NEW AQUITAINE
+              %a.header__nav-link{href: paris_region_ar_url} PARIS REGION
+              %a.header__nav-link{href: loirevalley_ar_url} LOIRE VALLEY
+              %a.header__nav-link.header__nav-link--home.header__nav-link--icon{href: root_url}
+                MAIN PAGE
+                %span.header__nav-link-icon
+    .container-secondary.container-occitania.occitania-ar.lang-ar
+      .ContainerC.max-1140.one
+        .blockC.main.occitania--main.main-ar
+          .blockC__texts
+            .titleC.main
+              %h1
+                %span Occitania
+            .subtitleC.main
+              %span
+                Օկսիտանիա
+            .subtitleC.premain
+              %span
+                ժամանակակից ինքնաթիռներ և Միջնադարի ճարտարապետական հրաշքներ, քաթարների միջնաբերդեր, քրիստոնեական սրբավայրեր
+          %img.image-main{alt: "", src: asset_pack_url("media/images/Occitania/image-655-1.png")}/
+      .ContainerC.max-1140.two
+        .descC.withoutFon.descC-1
+          .textC.columnW
+            .colC
+              %p
+                Օկսիտանիան Ֆրանսիայի ամենահարավային շրջանն է, որը ձգվում է Միջերկրական ծովից մինչև Կենտրոնական լեռնազանգվածը։ Այստեղ գալիս են ապշեցուցիչ բնություն և միջնադարյան ամրոցներ տեսնելու:
+            .colC
+              %p
+                Օկսիտանիան նաև Ֆրանսիայի պատմությանը ծանոթանալու լավագույն վայրն է՝ հազարամյա ուխտագնացների ուղիները այստեղ գոյակցում են Հռոմեական կայսրության ժամանակների խաղողի այգիների և հնագույն քաթարական միջնաբերդերի հետ:
+      .ContainerC.max-1140.three
+        .descC.whiteFon.withImg.descC-1
+          .ContainerC.padding-60
+            %img.image-map{alt: "", src: asset_pack_url("media/images/icons/icon-map.png")}/
+            .subtitleC.secondary.max-700.subtitleC-1
+              Տարածաշրջանի օդանավակայանները
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  Օկսիտանիայի գլխավոր օդանավակայանը՝ Թուլուզ-Բլանյակը
+                  = succeed "," do
+                    %strong (Toulouse-Blagnac)
+                %p
+                  %a{href: "https://wwws.airfrance.am/", target: "_blank"} Air France
+                  ավիաընկերությունը թռիչքներ է կատարում նաև դեպի Մոնպելյե Մեդիտերանե (Montpellier–Méditerranée) օդանավակայան։
+                %p
+                  Թուլուզի օդանավակայանի մոտ գտնվող Աերոսկոպիա թանգարանում տեղադրված է Air France ավիաընկերությանը պատկանող «Կոնկորդ» ինքնաթիռը: Այն և խորհրդային Տու144-ը միակ գերձայնային մարդատար ինքնաթիռներն էին աշխարհում։ Ֆրանսիական ինքնաթիռները հանվել են շահագործումից 2003 թվականին՝ վառելիքի թանկացման պատճառով։
+              .ColC
+                %p
+                  Փարիզից դեպի Թուլուզ (700 կմ) ճանապարհը ավտոմեքենայով տևում է մոտ յոթ ժամ: Այստեղ կարելի է գալ նաև գնացքով. ճանապարհորդությունը կտևի մոտ վեց ժամ, իսկ տոմսի արժեքը սկսվում է 15 եվրոյից։
+      .ContainerC.four
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/Occitania/image-1442-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/Occitania/image-big-1-mobile.jpg")}/
+      .ContainerC.max-1140.five
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-920.subtitleC-1
+              Ո՞ր քաղաքներում է առավելապես հարմար ապրել:
+            .textC.rowW.textC-1
+              %p
+                %strong Թուլուզը (Toulouse)
+                տարածաշրջանի մայրաքաղաքն է, «վարդագույն քաղաք»՝ յուրահատուկ ճարտարապետական ժառանգությամբ: Թուլուզը մեկնարկային կետն է Օկսիտանիան ուսումնասիրելու համար, այստեղ կացության բազմաթիվ հնարավորություններ կան և այստեղից հարմար է հասնել հիմնական տեսարժան վայրեր:
+              %p
+                %strong Մոնպելյե (Montpellier)․
+                ժամանակակից արվեստի կենտրոն Օքսիտանիայում։ Հիանալի թանգարաններ ականավոր համադրողներով, ինչպիսին է, օրինակ՝ MoCo-ն, որը ղեկավարում է արվեստաբան Նիկոլա Բուրիոն:
+              %p
+                %strong Կարկասոնը (Carcassonne)
+                քաղաք է հայտնի բերդով, որը գտնվում է բլրի վրա քաղաքի հին մասում և որի անունով կոչվել է հանրահայտ սեղանի խաղը։
+        .descC.whiteFon.descC-2
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-860.subtitleC-1
+              Երթուղիների տարբերակներ
+            .textC.rowW.textC-1
+              %p
+                %strong Երկար երթուղի`
+                Toulouse → Lourdes → Auch → Caors → Rocamadour → Fijac → Conque → Rhodes → Albi → Montsegur → Colières → Perpignan → Carcassonne → La Grande Motte → Ec Mort → Montpellier → Nimes
+              %p
+                %strong Կարճ երթուղի՝
+                Toulouse → Carcassonne → Beziers → Montpellier → Millau → Albi → Toulouse
+              %p
+                Հանգիստ երթուղի նավով Հարավային ջրանցքի երկայնքով՝ Թուլուզ — Կարկասոն — Նարբոն:
+              %p
+                Ֆրանսիայում ճանապարհորդելը հազվադեպ է սահմանափակվում մեկ տարածաշրջանով, ուստի անպայման ուսումնասիրեք ուրիշ տարածաշրջանների մեր ուղեցույցները՝ Փարիզ-Իլ-դը-Ֆրանսի, Լուարայի հովիտի և Ակվիտանիայի, որոնք կօգնեն ձեզ պլանավորել ամենահագեցած և հիշարժան ճամփորդությունը։
+      .ContainerC.six
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/Occitania/image-2004-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/Occitania/image-big-2-mobile.jpg")}/
+          .ContainerC.max-1140.author
+            .author-container
+              %span Illustrations:
+              %span Polina Parygina
+      .ContainerC.max-1140.seven
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-650.subtitleC-1
+              Զբաղմունքներ
+            .textC.rowW.textC-1
+              %p
+                %strong բոսանք Հարավային ջրանցքի երկայնքով
+              %p
+                Դյու-Միդի կամ Հարավային ջրանցքը (Canal du Midi) ձգվում է 240 կմ Թուլուզից մինչև միջերկրածովյան Սետ քաղաքը։ Սա Ֆրանսիայի ամենագեղատեսիլ և ամենաերկար ջրանցքներից մեկն է, այն ներառված է ՅՈՒՆԵՍԿՕ-ի Համաշխարհային Ժառանգության ցանկում։ Նրա ափերին կարելի է տեսնել միջնադարյան և հռոմեական ճարտարապետության հուշարձաններ, քաթարների (13-րդ դարում կոտորված քրիստոնյա հերետիկոսների) ամրոցներ և, իհարկե, գեղեցիկ տեսարաններ։ Ջրանցքով ճանապարհորդությունը դուր կգա նաև գինու և խոհանոցի սիրահարներին. ամբողջ ճանապարհին հանդիպում են տարբեր տեսակների տեղական արտադրանքներ: Ջրանցքի երկայնքով կան վայրեր, որտեղ կարելի է առանց հատուկ թույլտվության նավակ վարձել, որով կարելի է ինքնուրույն անցնել ջրանցքի մի մասը:
+              %p
+                %strong
+                  Ուղևորություն ամրոցներով
+              %p
+                Օկսիտանիայում պահպանվել են տասնյակ բերդեր և ամրոցներ, որոնցից ամենահայտնին Կարկասոնն է, որի պաշտպանության համար կառուցվել է 52 աշտարակ և 3 կմ երկարությամբ պարիսպ։ Քաղաք-ամրոցը պատկանում էր վիկոնտ Ռայմոնդ-Ռոջեր Տրանկավելին (Raimond-Roger Trencavel)։ Վիկոնտը համակրում էր հալածված քաթարներին և թույլ էր տվել նրանց ապաստանել իր ամրոցում, բայց բազմօրյա պաշարումից հետո քաղաքը գրավվեց, իսկ քաթարները կործանվեցին։ 19-րդ դարի կեսերին ամրոցը վերականգնվել է մեծ ճարտարապետ Էժեն Վիոլե լը Դյուկի ղեկավարությամբ։ Քաթարների ամրոցները տարածաշրջանում միավորված են թեմատիկ երթուղիներով։ Խորհուրդ ենք տալիս հատուկ ուշադրություն դարձնել լեռնային շրջաններում գտնվողներին։ Օրինակ՝ Մոնսեգուր (Monségur) ամրոցը կանգնած է ժայռի վրա, որտեղից բացվում է հիասքանչ տեսարան: Խորհուրդ ենք տալիս տեսնել նաև Պեյրեպերտյուզ (Château de Peyrepertuse) և Կերիբյուս (Château de Quéribus) ամրոցները, որոնք իրարից շատ հեռու չեն գտնվում։
+              %p
+                %strong Շրջայց միջերկրածովյան քաղաքների լողափերով
+              %p
+                Ափով ճանապարհորդությունը կարող է սկսվել Կոլյուրից և շարունակվել դեպի հյուսիս: Քաղաքն ունի ամրոցային համալիր, իսկ հարավային բլրի վրա կանգնած է Սանտ-Էլմ բերդը (Fort Saint-Elme)։ Այնուհետև ճանապարհը շարունակեք դեպի Արժելես-սյուր-Մեր (Argelès-sur-Mer)՝ չորս կիլոմետրանոց լողափով: Դրանից հետո գնացեք դեպի Սեն-Սիպրիեն (Saint Cyprien), որտեղ բացի լողափից կա հիանալի ջրաշխարհ: Վայելեք ավազե լողափը Կանե-ան-Ռուսիյոնում (Canet-en-Roussillon), որից հետո մոտակա ծովափնյա քաղաքը՝ 15 կմ հեռավորության վրա գտնվող Լե Բարկարեսն է (Le Barcarès)։ Օկսիտանիայի ծովափնյա հանգստավայրերով շըջագայությունը կարելի է ավարտել Լեկատում (Leucate): Իհարկե, կան շատ ավելի լողափեր, բայց դրանց շրջակայքում չկա հարմար զբոսաշրջային​​ենթակառուցվածք։ Եթե այսքանը ձեզ չբավարարի, ապա ուղևորվեք դեպի հյուսիս, որտեղ կան էլ ավելի շատ հանգստավայրեր: Մոնպելյեի մոտակայքում այցելեք Լա Գրանդ-Մոտը (Le Grande-Motte), որը ուշագրավ է որպես ժամանակակից առողջարանային ճարտարապետության
+              %p
+                %strong
+                  Այցելություն ճարտարապետական գլուխգործոցներ
+              %p
+                Օկսիտանիայում պահպանվել են բազմաթիվ հնագույն և միջնադարյան տեսարժան վայրեր, որոնք կարող են զարմացնել նույնիսկ ժամանակակից ճանապարհորդին: Պոն դյու Գարը (Pont du Gard) պահպանված հին հռոմեական ջրատարներից ամենաբարձրն է: Ռոկամադուրը (Rocamadour) ժայռի վրա կառուցված ուխտավորների քաղաք է։ Ալբի (Albi) քաղաքում գտնվող եպիսկոպոսական նստավայրը եղել է քաթարների դեմ խաչակրաց արշավանքների կենտրոնը և այժմ հանդիսանում է հարավային գոթական ոճի հայտնի հուշարձան։
+      .ContainerC.eight
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/Occitania/image-1538-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/Occitania/image-big-3-mobile.jpg")}/
+      .ContainerC.max-1140.nine
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-700.subtitleC-1
+              Է՞լ ինչ կարելի է տեսնել:
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  %strong Լա Գրանդ-Մոտը (La Grande Mott)
+                  ծովափնյա հանգստավայր է Մոնպելյեի մոտակայքում՝ յուրահատուկ ճարտարապետությամբ, որը ճանաչվել է որպես 20-րդ դարի մշակութային ժառանգություն: Հանգստավայրի շենքերը նախագծելիս ճարտարապետ Ժան Բալադուրը ոգեշնչվել է Մեքսիկայի Տեոտիուականի բուրգերով և բրազիլացի ճարտարապետ Օսկար Նիմեյերի մոդեռնիստական շենքերով։
+                %p
+                  Արդյունքը եղան բետոնից պատրաստված զարմանալի սպիտակ բրգաձև տները, որոնք հուսալիորեն թուլացնում են ծովից եկող ուժեղ քամին։ Ճարտարապետական շքեղությունը, սպիտակ ավազով լողափերը և տարեկան 300 արևոտ օրերը այս վայրի հանրաճանաչության պատճառն են։
+              .ColC
+                %p
+                  %strong Ռոկամադուրը (Rocamadour)
+                  միջնադարյան գեղատեսիլ քաղաք է Ալզու գետի հովտից վեր բարձրացող ժայռի վրա՝ Ֆրանսիայի կարևորագույն ուխտագնացության կենտրոններից մեկը։ Քաղաքը առաջացել է 12-րդ դարում Սուրբ Ամադուրի դամբարանի շուրջ։ Այստեղ հիմնական տեսարժան վայրերը միջնադարյան մատուռներն են, այդ թվում՝ Notre-Dame, որտեղ գտնվում է զարմանահրաշ Սև Մադոննայի արձանը:
+                %p
+                  %strong Նիմի ամֆիթատրոնը (Arènes de Nîmes)
+                  այս հնագույն քաղաքի պատմական մասի գլխավոր տեսարժան վայրն է, կառուցվել է մ.թ. 1-ին դարում։ Երկու կամարաշարքերով ամֆիթատրոնը հիշեցնում է հռոմեական Կոլիզեյը՝ այստեղ էլ են անցկացվել գլադիատորների մարտեր։
+            .subtitleC.secondary.max-700.subtitleC-2
+              Սնունդը Օկսիտանիայում
+            .textC.columnW.textC-2
+              .ColC
+                %p
+                  Իհարկե, ծովամթերք. ոստրեների համար խորհուրդ ենք տալիս գնալ Բուզիգ (Bouzigues)՝ Միջերկրական ծովի ոստրեների մայրաքաղաք: Խեցեմորթն այստեղ կարելի է համտեսել բառացիորեն «ֆերմայից»:
+                %p
+                  Հարավում անչոուսների մայրաքաղաք Կոլյուրն է։ Շատ ֆրանսիացիներ անչոուսն իսկական են համարում միայն եթե այն բռվնել և պատրաստվել է այստեղ:
+              .ColC
+                %p
+                  Պետք է ուշադրություն դարձնել նաև գրիզետներին՝ ավանդական քաղցրավենիքի, որը պատրաստվում է քաղցրարմատից և Նարբոնի մեղրից; կազուլետ ռագուի («Կարկասոնի ռագու») և Pélardon այծի կաթից պանրի, որը Եվրոպայի ամենահին այծի պանիրն է:
+      .ContainerC.max-1140.ten
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-700.subtitleC-1
+              Ստուգման ցուցակ
+          .ContainerC.padding-30.ContainerC-2
+            .blockC.features
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-photo.svg")}/
+                %p
+                  Լուսանկարվել Թուլուզի հախճապակյա շենքերի ֆոնին:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-plane.svg")}/
+                %p
+                  Կոնկորդի կողքին կանգնած՝ երազել գերձայնային թռիչքի մասին: Ավիավիայի սիրահարները կարող են գրանցվել շրջագայության Airbus-ի գործարանով, որը գտնվում է Թուլուզի մոտակայքում:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-galary.svg")}/
+                %p
+                  Ըմբռնել ժամանակակից արվեստը Մոնտպելյեի MoCo կենտրոնում:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-ustritsi.svg")}/
+                %p
+                  Ճաշակել ոստրեներ Բուզիգում
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-castle.svg")}/
+                %p
+                  Կանգնելով Կարկասոնի ամրոցի պարսպի վրա, պատկերացնել ամրոցի միջնադարյան պաշարումը:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-bread.svg")}/
+                %p
+                  Այցելել Կուկունյան (Cucugnan) գյուղ և համտեսել ցորենի հնագույն տեսակներից պատրաստված հացը՝ նախքան Կերիբյուսի ամրոց բարձրանալը:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-sunset.svg")}/
+                %p
+                  Համաչափ արևայրուք ստանալ Լա Գրանդ-Մոտտում՝ վայելելով դրա ճարտարապետությունը:
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-fly.svg")}/
+                %p
+                  Ուխտավորների հետ 216 աստիճաններով բարձրանալ դեպի Ռոկամադուրի սրբավայր
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-most.svg")}/
+                %p
+                  Անցնել Միյոյի ուղեկամրջով, որն աշխարհի ամենաբարձր մալուխային կամուրջներից մեկնէ
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-galary.svg")}/
+                %p
+                  Տեսնել Տուլուզ-Լոտրեկի գործերի ամենահարուստ հավաքածուն Ալբիում              
+    = render partial: 'shared/footerAr'
+    = render partial: 'shared/footer_main_ar'                

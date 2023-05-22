@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<style>
+  body {
+    --accent-background-color: #39838F;
+    --accent-text-color: #ffffff;
+    --accent-authors-color: #21454B;
+    --accent-special-color: var(--accent-background-color);
+    --menu-burger-background: #70AFB9;
+  }
+</style>
+
+<body style="background-color: var(--accent-background-color);">
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__social">
+        <a href="#" class="header__social-link header__social-link--wa">${require('./assets/inline/social-wa-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tw">${require('./assets/inline/social-tw-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tg">${require('./assets/inline/social-tg-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--fb">${require('./assets/inline/social-fb-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--vk">${require('./assets/inline/social-vk-hover.svg')}</a>
+      </div>
+
+      <button class="header__nav-toggle">
+        <span class="header__nav-toggle-line"></span>
+      </button>
+      <nav class="header__nav">
+        <div class="header__nav-in">
+          <a class="header__nav-link" href="/lyon.html">ЛIОН</a>
+          <a class="header__nav-link" href="/bordeaux.html">БОРДО</a>
+          <a class="header__nav-link" href="/paris.html">ПАРИЖ</a>
+          <a class="header__nav-link header__nav-link--active" href="/nice.html">НIЦЦА</a>
+          <a class="header__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+
+          <a class="header__nav-link header__nav-link--home header__nav-link--icon" href="/index.html">
+            НА ГОЛОВНУ <span class="header__nav-link-icon">${require('./assets/inline/menu-main-hover.svg')}</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="article-main">
+
+    <section class="article-intro article-intro--nice">
+      <div class="container article-intro__container">
+        <img class="article-intro__img hide--mobile" src="./assets/images/placeholders/nice/cover.png" alt="">
+        <img class="article-intro__img show--mobile" src="./assets/images/placeholders/nice/cover-mobile.png" alt="">
+
+        <div class="article-intro__info">
+          <h1 class="article-intro__title">НIцца</h1>
+
+          <div class="article-intro__subtitle">
+            <span class="article-intro__subtitle-line">Лазурний Берег,</span>
+            <span class="article-intro__subtitle-line">джаз</span>
+            <span class="article-intro__subtitle-line">і велопрогулянки</span>
+          </div>
+        </div>
+
+        <div class="article-intro__text columns">
+          <p>Бірюзове море, білосніжні яхти, прибережні ресторани — якою  Ніццу уявляють, такою вона і є. Одне «але»: розкішне життя міста можуть приміряти на себе не тільки завсідники списку Forbes і номінанти Каннського кінофестивалю, що проходить неподалік.</p>
+          <p> Ніцца, вона для всіх. З її пишнотою та уявною неприступністю місто лишається аристократом, який з усіма спілкується на рівних. Тут ви не відчуєте себе чужинцем, для вас відчинені всі двері, накриті всі столи, а в пішій досяжності — ті самі краєвиди, якими свого часу захоплювалися Гоголь та Герцен.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane article-pane--with-map">
+      <div class="container article-pane__container">
+        <img class="article-pane__map" src="./assets/images/placeholders/nice/map.png" alt="">
+        <div class="article-pane__content">
+          <h2>Де гуляти</h2>
+
+          <div class="columns">
+            <p>Як не дивно, головна визначна пам’ятка Ніцци та символ французької Рив’єри — Англійська набережна, що дістала назву в ті часи, коли її ділянки активно скуповували заможні англійці. Для прогулянок 6-кілометровою набережною візьміть напрокат велосипед та катайтеся між міськими пляжами й алеями розкидистих пальм, де життя вирує незалежно від сезону. Якщо все-таки робите моціон пішки, не соромтеся заглянути у фоє найстаріших готелів Ніцци: <span class="special">Le Méridien</span>, <span class="special">Westminster</span> і,&nbsp;звісно ж,&nbsp;<span class="special">Negresco</span> з&nbsp;рожевим куполом, викованим у майстерні Ейфеля. До туристів тут звикли і&nbsp;відвідувачам раді.
+
+            <p>У старій Ніцці — тільки піші прогулянки: вузькі вулички, що прямують вгору, можуть раптово закінчитися сходами — це явно не для велосипедистів. У якийсь момент в історичному центрі у вас може створитися оманливе враження, що ви в Італії. Не дивуйтеся цьому, адже будівлі тут здебільшого виконані в стилі італійського бароко. Та й обдурити вас можуть хіба що очі.</p>
+            <p>Стара Ніцца — район із концентрованим французьким духом, розсипом бутиків і типових прованських бістро.</p>
+
+            <p>прованских бистро. Дійдіть до палацу Ласкарі, найбільшої будівлі міста. Зараз у ньому зберігається колекція музичних інструментів генерала Антуана Готьє. Вхід туди, до речі, для всіх вільний.</p>
+            <p>Найкраще місце, щоби побачити стару Ніццу всю разом і без суєти, — Замковий пагорб. Піднятися на нього можна й ліфтом та, окрім чудової панорами міста, побачити ще й вежу Белланда або відвідати старовинний цвинтар Шато. Якщо близько полудня ви почуєте гучний ляск, не бійтеся: на Замковому пагорбі щорічно стріляють із гармати, віддаючи данину традиції, що завдяки випадковості почалася тут у далекому 1875 році.</p>
+            <p>Обов’язково дійдіть до вулиці  Кур Салея <span class="special">Cours Saleya</span>, де розташований знаменитий на всю Францію квітковий ринок. Серед гучних рядів із букетами, насінням, саджанцями та цибулинами продають місцеві овочі, фрукти, прованські трави, сири, варення та мед. Щопонеділка на зміну квітам та їжі на Кур Салея приходять антиквари та перекупники вінтажної краси, працює міський блошиний ринок.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/nice/figure-1-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/nice/figure-1-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/nice/figure-1.jpg')}">
+          <img loading="lazy" class="article-figure__img" src="${require('./assets/images/placeholders/nice/figure-1.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Що їсти</h2>
+
+          <div class="columns columns--two-images-in-footer">
+            <p>До приймання їжі у Франції підходять ґрунтовно, вечеря, що триває менше ніж три години, — марна трата часу, моветон. Однак у Ніцці є страва, яку не соромно вжити буквально на бігу: на кожному розі у вуличних торговців продається сока — хрусткий млинець з нутового борошна й оливкової олії з травами або сиром. Візьміть кілька сок і влаштуйте перекус із краєвидом на бухту Ангелів у Старому місті, а ще краще — у парку Променад дю Пайон.</p>
+            <p>Взагалі, готуйтеся до того, що в Ніцці доведеться їсти багато та часто, хоча б для того, щоби спробувати всі досягнення місцевої кулінарії. Два найвідоміших — овочеве рагу рататуй і салат «Нісуаз».</p>
+            <p>Втім, ресторанна культура Ніцци багата не тільки місцевими стравами. Надійний спосіб переконатися в цьому — влаштувати собі фестиваль дегустації в <span class="special">Gare du Sud</span>. У колишній будівлі залізничного вокзалу, звідки мали мчати поїзди в бік Альп, сьогодні розташована міська бібліотека, кінотеатр, а головне — величезний фуд-корт.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/nice/text-1.jpg" alt="">
+            </figure>
+
+
+            <p>Десятки ресторанів пропонують, наприклад, вуличну індійську кухню в <span class="special">Gare du Sud</span> і краще в місті тако, приготоване кухарями <span class="special">El Kitchen</span>. Приходьте сюди в обід, обирайте, куштуйте, а для повноцінної вечері забронюйте столик в одному з міських ресторанів з історією.</p>
+
+            <p>Вже не перше сторіччя одним із найбільш незвичайних ресторанів у всій Франції вважається <span class="special">Le Plongeoir</span>. Наприкінці XIX століття в підвішений між небом і водою рибальський човен збиралися на чай безтурботні представниці <span class="special">La Belle Époque</span>. Пізніше тут з’явилися закрутисті платформи в стилі ар-деко та навіть трампліни для стрибків у воду. У 2015 році Le Plongeoir відкрився після фундаментальної реконструкції. Його незвичайна тераса, що зависла в шести метрах над морем, як і раніше — одне з кращих місць для вечірнього коктейлю під джаз і вже точно для інстаграма.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/nice/text-2.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure hide--mobile">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/nice/figure-2-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/nice/figure-2-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/nice/figure-2.jpg')}">
+          <img loading="lazy" class="article-figure__img" src="${require('./assets/images/placeholders/nice/figure-2.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>А що з культурою?</h2>
+
+          <div class="columns columns--img-left">
+            <p>З 1990 року в Ніцці відкритий Музей сучасного мистецтва (MAMAC), який і сам нагадує фундаментальну інсталяцію. Будівлю ніби підпирають чотири 30-метрових куби, вкритих каррарським мармуром. Але головне все ж всередині: зібрання творів перших імен післявоєнного мистецтва Америки і Європи від доларів Енді Воргола і «Блакитної Венери» Іва Кляйна до робіт Нікі де Сен Фаль.</p>
+            <p>Навколо Національного музею Марка Шагала — величезні дуби, оливкові дерева, кипариси. Вся ця благодать і умиротворення розташовані в одному з найрозкішніших районів міста, Сім’є. У самому ж музеї представлені 17 живописних полотен і графіка Шагала на біблійні сюжети.</p>
+            <p>Простір <span class="special">Le 109</span> ви ​​знайдете далеко не в кожному міському путівнику — місце ще не настільки відоме серед туристів. А ось жителі Ніцци вподобали його відразу. Врятована від знесення величезна міська пристань тепер дихає духом свободи і творчості: у колишніх промислових рядах розташувалися майстерні художників, галерея <span class="special">La Station</span>, розсип місцевого нанобізнесу від магазинчиків з авторськими прикрасами до камерних кафе. У вихідні тут проходять живі концерти естетствуючих інді-груп і техно-вечірки.</p>
+            <p>Навіть якщо ви не знали, що Ніцца та весь регіон Лазурний Берег — це одна з європейських столиць джазу, то зрозумієте це після першої ж прогулянки центром. Поряд із традиційними кафе і їдальнями містом розтягнулася мережа джазових барів, звідки вечорами лунають хіти та імпровізації. Якщо будете на Рив’єрі в липні, не пропустіть відразу два знаменитих джазових фестивалі: один у Ніцці, а інший на курорті Жуан-ле-Пен. Перший відбувається з 1948 року, другий — з 1960-го, їхніми учасниками в різні часи були Рей Чарльз, Елла Фіцджеральд, Маркус Міллер і Майлз Девіс.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/nice/text-3.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <picture>
+          <source media="(max-width: 767px)" srcset="${require('./assets/images/placeholders/nice/figure-3-mobile.jpg')}">
+          <source media="(max-width: 1023px)" srcset="${require('./assets/images/placeholders/nice/figure-3-tablet.jpg')}">
+          <source media="(min-width: 1024px)" srcset="${require('./assets/images/placeholders/nice/figure-3.jpg')}">
+          <img loading="lazy" class="article-figure__img article-figure__img--to-right" src="${require('./assets/images/placeholders/nice/figure-3.jpg')}" alt="">
+        </picture>
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Поруч із Ніццою</h2>
+
+          <div class="columns columns--two-images-in-footer">
+            <p>Ймовірність зустріти персону з обкладинки журналу або кіноафіші на Лазурному Березі велика, а під час Каннського фестивалю від зірок і зовсім не сховатися. Отже, якщо ви не проти повечеряти у сусідстві з оскароносним режисером, власником заводів-пароплавів або нападником збірної Франції з футболу, бронюйте столик у ресторані <span class="special">Mamo Michelangelo</span> в містечку Антіб. Сюди приходять за чудовою їжею і сподіваючись зустріти відомих гостей. Для них, до речі, зробити фото з власником, сивочолим усміхненим Мамо, стало ритуалом. Зі вже наявних знімків можна скласти портретну галерею багатих і знаменитих.</p>
+            <p>Бйот — мальовниче містечко неподалік від Ніцци, відоме виробництвом скла, кераміки, а ще тим, що тут жив і створив більшість робіт живописець Фернан Леже. Музей його імені теж існує, але ми радимо заглянути в одну зі склодувних майстерень у центрі міста.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/nice/text-4.jpg" alt="">
+            </figure>
+
+            <p>Вибирайте з двох кращих — Pierini або Verrerie de Biot. Обидві відомі виробами з пухирчастого скла, що нагадує чи то хвилі Середземного моря, чи то шампанське. У цих майстернях є шанс приміряти на себе роль склодува та не боятися шахрайства: місцеві вироби славляться високою якістю та цінуються колекціонерами в усьому світі.</p>
+            <p>У Грасс варто заїхати, щоб остаточно закохатися в Лазурний Берег. Розташування міста між морем і південними Альпами створило ідеальний ґрунт для вирощування трав і квітів, якими знаменитий регіон. Пізніше вони стали основою для місцевої парфумерної традиції, а Грасс перетворився в столицю ароматів і ольфакторної моди. Його овіяний ароматами шлях можна простежити в Міжнародному музеї парфумерії, а заодно й відвідати найстаріші парфумерні будинку <span class="special">Fragonard</span> i <span class="special">Galimard</span>, де можна змішати духи власноруч.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/nice/text-5.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Це точно потрібно зробити в Ніцці</h2>
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-1-1.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Знайти православний Миколаївський собор. Так-так, Лазурний Берег став місцем зустрічі російської аристократії після переїзду на південь Франції вдови царя Миколи I. А після 1917 року сюди ринула друга хвиля наближених до російського імператорського двору. У Ніцці знайдеться безліч старих особняків російської знаті та навіть фамільні вулиці. А собор спорудили в пам’ять про цесаревича Миколу, який помер тут.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-1-2.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Побачити Тет Карре <span class="special">la Tete Carrée</span> — величезний бюст із кубічною головою. На перший погляд, це монументальна скульптура сучасного художника, але насправді — адміністративна будівля міської бібліотеки, всередині якої кипить документообіг.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-1-3.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Знайти серед експонатів Історичного музею золотий годинник Жозефіни Богарне та переконатися: хоча щасливі годинників не спостерігають, трапляються винятки.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-1-4.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Спробувати незвичайне морозиво в найстарішому кафе <span class="special">Fenocchio</span>. Крім класичних примірників є, наприклад, морозиво зі смаком томата, маку, пива, кактуса або папороті.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-1-5.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Якщо зважилися на поїздку в Бйот, обов’язково зайдіть у ресторан  <span class="special">Les Arcades</span>. Це сімейний заклад із місцевою кухнею, а головне в ньому — картина Шагала, яку художник колись подарував господарці. Свої роботи за прекрасне куховарство залишали скульптор Сезар, художник Жан-Мішель Фолон і культовий представник напряму оп-арт Віктор Вазарелі.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-1-6.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Посидіти на синьому стільці на Англійській набережній. Сині стільці є таким самим символом Ніцци, як Ейфелева вежа — символом Парижа. Ви знайдете їх будь-яких розмірів у кожному сувенірному магазині.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>І ще дещо важливе</h2>
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-2-1.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Як дістатися
+              </div>
+              <div class="icon-item__text">
+                Найшвидший спосіб — літаком <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a> з Києва з пересадкою в Парижі. Зі столиці Франції також можна доїхати до Ніцци поїздом (близько 6 годин).
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-2-2.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                На чому заощадити
+              </div>
+              <div class="icon-item__text">
+                <p>Неймовірно, але на дорозі з аеропорту, адже в Ніцці звідти в центр міста ходить трамвай! Вартість — 1,5 євро <a class="link" target="_blank" href="https://www.nice-facile.fr/en/tram/">nice-facile.fr</a>, задоволення — ціле море.</p>
+                <p>Ще один спосіб зберегти гроші з подвійним задоволенням — покататися електричкою, адже можна і все прибережні містечка подивитися, і майже нічого не заплатити. Наприклад, квиток із Ніцци до Канн коштує всього 5 євро. Квитки брати на сайті національного перевізника <a class="link" target="_blank" href="https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur">sncf.com</a></p>
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-2-3.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Корисні посилання
+              </div>
+              <div class="icon-item__text">
+                <p><a class="link" target="_blank" href="https://ru.france.fr/ru">france.fr</a> новини Франції та корисна інформація для туристів</p>
+                <p><a class="link" target="_blank" href="https://wwws.airfrance.ua/">wwws.airfrance.ua</a> бронювання та купівля авіаквитків найбільшої французької авіакомпанії</p>
+                <p><a class="link" target="_blank" href="https://www.nicetourisme.com/">nicetourisme.com</a> офіційний сайт Офісу туризму та конгресів Ніцци</p>
+                <p><a class="link" target="_blank" href="https://cotedazurfrance.fr/">cotedazurfrance.fr</a> фіційний сайт регіонального комітету з туризму.</p>
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-2-4.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Куди не запізнитися
+              </div>
+              <div class="icon-item__text">
+                Квітковий ринок Cours Saleya працює із&nbsp;6:00 до 17:30, а&nbsp;в&nbsp;неділю — до 13:30. Щопонеділка тут проходить «барахолка».
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-2-5.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Туристичні карти
+              </div>
+              <div class="icon-item__text">
+                Якщо плануєте провести в Ніцці і взагалі на Лазурному Березі більше ніж день, є сенс придбати картку  <span class="special">French Riviera Pass</span>. Картки відрізняються тим, що з однією доведеться встигнути скористатися безкоштовними проходами за 24, 48 або 72 години, а з другої ви зможете оглянути визначні пам’ятки три або п’ять разів протягом місяця. Спецпропозиції на картках дублюються, тому обирайте French Riviera, коли зберетеся пройти кількома музеями за один період (від однієї до трьох діб), а <span class="special">Cote d’Azur Card</span> — коли плануєте робити перерву в кілька днів і не хочете, щоби проходи згоріли.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/nice/icon-2-6.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Вартість перельоту
+              </div>
+              <div class="icon-item__text">
+                Вартість перельоту Київ — Ніцца — Київ з короткою пересадкою в Парижі починається від 175євро. Підписавшись на розсилку <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a> і&nbsp;<a class="link" target="_blank" href="https://ru.france.fr/ru">Atout&nbsp;France</a>, ви отримаєте не тільки унікальні гайди всіма регіонами Франції, а ще і промокод нна знижку 75 гривень на перельоти <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a>. Шукайте вікно підписки нижче.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-authors">
+      <div class="container article-authors__container">
+        <div class="article-authors__list">
+
+          <div class="article-authors__item">
+            <b>Iлюстрації:</b> Саша Барановская
+          </div>
+
+          <div class="article-authors__item">
+            <b>Aвтор тексту:</b> Полина Парыгина
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="article-form">
+      <div class="article-form__social">
+        <a href="#" class="article-form__social-link article-form__social-link--wa"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tw"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tg"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--fb"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--vk"></a>
+      </div>
+
+      <div class="article-form__nav">
+        <div class="article-form__nav-in">
+          <a class="article-form__nav-link" href="/lyon.html">ЛIОН</a>
+          <a class="article-form__nav-link" href="/bordeaux.html">БОРДО</a>
+          <a class="article-form__nav-link" href="/paris.html">ПАРИЖ</a>
+          <a class="article-form__nav-link article-form__nav-link--active" href="/nice.html">НIЦЦА</a>
+          <a class="article-form__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+        </div>
+      </div>
+
+      <div class="container article-form__container">
+
+        <div class="article-form__center">
+          <div class="article-form__title">
+            Щоб отримати PDF-гіди по регіонах Франції і промокод на знижку в 50 доларів на політ до Франції залиште вашу пошту. Умови - за <a href="pdf/01.pdf" download="download">посиланням</a>.
+    <!--         Підписавшись на розсилку <a href="https://wwws.airfrance.ua" target="_blank">Air France</a> и <a href="https://ru.france.fr/ru" target="_blank">Atout France</a>, ви отримаєте не тільки унікальні гайди усіма регіонами Франції, а ще і промокод на знижку у 50 доларів на перельоти Air France. -->
+          </div>
+
+          <form class="mainpage-form__form form__form" action="" novalidate>
+            <div class="mainpage-form__form-wrapper">
+              <label class="mainpage-form__label form__label">
+                <input class="mainpage-form__input form__input" type="email" name="email" placeholder="ваш email" data-error-msg="Некоректний email" required>
+                <div class="mainpage-form__msg form__msg"></div>
+              </label>
+
+              <button class="mainpage-form__btn form__btn" type="submit">Відправити</button>
+            </div>
+
+            <label for="mainpage-form__сheckbox" class="mainpage-form__label-checkbox form__label">
+              <input type="checkbox" class="form__input mainpage-form__input-checkbox" id="mainpage-form__checkbox" name="mainpage-form__checkbox" data-error-msg="Сheck me" required value="check">
+              <div class="mainpage-form__сheckbox-text">Я даю згоду на обробку моїх персональних даних та отримання інформаційних матеріалів про Францію і її регіони,  спецпропозиції і новини Air France.
+              <br><a href="pdf/Agreement_france-advisor.pdf" download="download" class="mainpage-form__сheckbox-link">Детальніше</a>
+              </div>
+              <div class="mainpage-form__msg form__msg form__msg-checkbox"></div>
+            </label>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__logos">
+        <a class="footer__logos-link footer__logos-link--explore" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-explore-france.png" alt="">
+        </a>
+
+        <a class="footer__logos-link footer__logos-link--airfrance" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-air-france.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

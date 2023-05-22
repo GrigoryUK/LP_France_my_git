@@ -1,0 +1,194 @@
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  margin-top: auto;
+
+  @include media('desktop') {
+    padding: toRem(42) 0;
+  }
+
+  @include media('tablet') {
+    padding: toRem(28) 0;
+  }
+
+  @include media('mobile') {
+    padding: toRem(17) 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @include media('desktop') {
+      width: toRem(1400);
+    }
+
+    @include media('tablet') {
+      margin-left: toRem(54);
+      margin-right: toRem(57);
+      flex-direction: column;
+
+    }
+
+    @include media('mobile') {
+      margin-left: toRem(20);
+      margin-right: toRem(20);
+      flex-direction: column;
+    }
+  }
+
+  &__logos {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: toRem(30);
+
+    @include media('tablet') {
+      flex-direction: column;
+      gap: toRem(20);
+      align-items: center;
+      width: 100%;
+    }
+
+    @include media('mobile') {
+      flex-direction: column;
+      gap: toRem(20);
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__logos-link {
+    display: block;
+    text-decoration: none;
+
+    @include media('desktop') {
+
+
+      &--explore {
+        width: toRem(204);
+      }
+      &--explore-france {
+        width: toRem(204);
+      }
+      &--airfrance {
+        width: toRem(234);
+      }
+
+      &--smaritaine {
+        width: toRem(125);
+      }
+
+      &--paris {
+        width: toRem(234);
+      }
+    }
+
+    @include media('tablet') {
+      margin: auto toRem(34) auto 0;
+
+      &--explore {
+        width: toRem(204);
+      }
+      &--explore-france {
+        width: toRem(177);
+      }
+      &--airfrance {
+        width: toRem(192);
+      }
+    }
+
+    @include media('mobile') {
+      //margin: auto toRem(14) auto 0;
+
+      &--explore {
+        width: toRem(204);
+      }
+      &--explore-france {
+        width: toRem(177);
+      }
+      &--airfrance {
+        width: toRem(192);
+      }
+    }
+  }
+
+  &__logos-img {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__prt {
+    display: flex;
+    margin-right: toRem(80);
+
+    @include media('desktop') {
+      width: toRem(242);
+      text-align: right;
+    }
+
+    @include media('tablet') {
+      width: toRem(168);
+      text-align: right;
+    }
+
+    @include media('mobile') {
+      width: 100%;
+      margin-right: toRem(0);
+      gap: toRem(10);
+      align-items: center;
+      margin-top: toRem(20);
+      text-align: center;
+    }
+  }
+
+  &__prt-link {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: toRem(6);
+    flex: 0 0 auto;
+    text-decoration: none;
+
+    @include media('desktop') {
+      width: toRem(55);
+    }
+
+    @include media('tablet') {
+      width: toRem(46);
+    }
+
+    @include media('mobile') {
+      width: toRem(36);
+      margin-right: 0;
+    }
+  }
+
+  &__prt-img {
+    display: block;
+    width: 100%;
+  }
+
+  &__prt-text {
+    flex: 1 1 auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include media('desktop') {
+      font-size: toRem(12);
+      line-height: 160%;
+    }
+
+    @include media('tablet') {
+      font-size: toRem(8);
+      line-height: 160%;
+    }
+
+    @include media('mobile') {
+      font-size: toRem(11);
+      line-height: 119%;
+    }
+  }
+}

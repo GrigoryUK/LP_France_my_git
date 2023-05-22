@@ -1,0 +1,374 @@
+.mainpage-form {
+  position: relative;
+  overflow: hidden;
+  margin-top: toRem(120);
+  @include tablet {
+    margin-top: toRem(58);
+  }
+
+  @include mobile {
+    margin-top: toRem(26);
+  }
+
+
+  //margin-bottom: toRem(58);
+
+  //margin-bottom: toRem(26);
+
+
+  &__papers {
+    display: block;
+
+    @include media('desktop') {
+      position: absolute;
+      top: toRem(147);
+      right: toRem(-10);
+      width: toRem(491);
+    }
+
+    @include media('tablet') {
+      position: absolute;
+      top: toRem(268);
+      right: toRem(-82);
+      width: toRem(373);
+    }
+
+    @include media('mobile') {
+      width: 100%;
+      margin-top: toRem(30);
+      margin-bottom: toRem(30);
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url('~images/image-357-1.svg') no-repeat center / contain;
+    }
+
+    @include media('desktop') {
+      width: toRem(1133);
+      min-height: toRem(938);
+      margin: 0 auto;
+      display: flex;
+    }
+
+    @include media('tablet') {
+      margin-left: toRem(48);
+      margin-right: toRem(48);
+      min-height: toRem(931);
+      display: flex;
+    }
+
+    @include media('mobile') {
+      margin-left: toRem(28);
+      margin-right: toRem(28);
+    }
+
+
+
+    @include media('desktop') {
+      //background: url('~images/placeholders/index/cloud-desktop.png') no-repeat top left / 100% auto;
+
+      //margin-top: toRem(-50);
+      //margin-bottom: toRem(250);
+      &:after {
+        top: toRem(10);
+        right: toRem(-70);
+        width: toRem(357);
+        height: toRem(200);
+      }
+    }
+
+    @include media('tablet') {
+      //background: url('~images/placeholders/index/cloud-tablet.png') no-repeat top left / auto 100%;
+      margin-bottom: toRem(100);
+      &:after {
+        top: toRem(150);
+        right: toRem(30);
+        width: toRem(273);
+        height: toRem(118);
+      }
+    }
+
+    @include media('mobile') {
+      //background: url('~images/placeholders/index/cloud-mobile.png') no-repeat bottom left / 100% auto;
+      padding-bottom: toRem(287);
+      margin-bottom: toRem(-50);
+
+      &:after {
+        left: toRem(-20);
+        bottom: toRem(114);
+        width: toRem(274);
+        height: toRem(117);
+      }
+    }
+  }
+
+  &__center {
+    @include media('desktop') {
+      width: toRem(1106);
+      //margin-top: auto;
+      //margin-bottom: auto;
+    }
+
+    @include media('tablet') {
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    line-height: 1.3;
+    max-width: 650px;
+
+    @include media('desktop') {
+      font-size: toRem(42);
+      margin-bottom: toRem(30);
+    }
+
+    @include media('tablet') {
+      font-size: toRem(34);
+      margin-bottom: toRem(50);
+      width: toRem(366);
+      margin-top: auto;
+    }
+
+    @include media('mobile') {
+      font-size: toRem(22);
+      margin-bottom: toRem(10);
+      padding-top: toRem(0);
+    }
+
+    &.blue {
+      color:rgba(44, 78, 141, 1);
+    }
+
+    a {
+      text-decoration: none;
+      color:rgba(44, 78, 141, 1);
+      @include hover {
+
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__subtitle {
+      font-size: toRem(30);
+      line-height: 130%;
+      font-weight: 300;
+      margin-bottom: toRem(100);
+      max-width: toRem(820);
+      @include media ('mobile') {
+        margin-bottom: toRem(32);
+        font-size: toRem(16);
+      }
+    }
+
+  &__content {
+    display: flex;
+
+
+    @include media('tablet') {
+      flex-direction: column;
+    }
+
+    @include media('mobile') {
+      flex-direction: column;
+    }
+
+    &-block {
+      max-width: 470px;
+      font-weight: 600;
+      font-size: toRem(30);
+      line-height: 130%;
+      border: 1px solid $color-black;
+      padding: toRem(107) toRem(73) toRem(101) toRem(183);
+      border-radius: toRem(100);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      @include media('tablet-and-mobile') {
+        max-width: 100%;
+      }
+      @include media('mobile') {
+        padding: toRem(20) toRem(10) toRem(20) toRem(50);
+        font-size: toRem(16);
+        line-height: 1rem;
+      }
+    }
+
+    &-block:first-child {
+      margin-right: toRem(85);
+      background-image: url('~images/placeholders/index/georgia-passport.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto toRem(200);
+      @include media('tablet-and-mobile') {
+        margin-right: 0;
+        margin-bottom: toRem(20);
+      }
+      @include media('mobile') {
+        background-size: auto toRem(50);
+        background-position-x: toRem(10);
+      }
+    }
+    &-block:last-child {
+      background-image: url('~images/placeholders/index/armeniya-passport.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto toRem(200);
+      @include media('mobile') {
+        background-size: auto toRem(50);
+        background-position-x: toRem(10);
+      }
+    }
+
+    &-answer {
+      display: none;
+    }
+
+    &-answer.show {
+      display: flex;
+      @include media ('tablet-and-mobile') {
+        flex-direction: column;
+      }
+    }
+
+    &-image {
+      max-width: toRem(430);
+      margin-right: toRem(55);
+      @include media ('tablet-and-mobile') {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: toRem(30);
+        max-width: 50%;
+      }
+    }
+
+    &-title {
+      font-weight: 800;
+      font-size: toRem(30);
+      line-height: 130%;
+      max-width: 600px;
+      margin-bottom: toRem(30);
+      position: relative;
+      @include media ('tablet') {
+        max-width: 100%;
+        margin-bottom: toRem(40);
+      }
+      @include media('mobile') {
+        font-size: toRem(20);
+        max-width: 100%;
+        margin-bottom: toRem(20);
+        padding-top: toRem(50);
+
+      }
+    }
+    &-link-back {
+      position: absolute;
+      right: 0;
+      top: toRem(10);
+      font-size: toRem(20);
+      font-weight: 400;
+      line-height: 100%;
+      color: $color-gray;
+      max-width: toRem(150);
+
+      &:after {
+        content: '';
+        width: toRem(30);
+        height: toRem(16);
+        display: block;
+        background: url('~images/placeholders/index/link-back.svg') no-repeat;
+        position: absolute;
+        left: toRem(-35);
+        top: toRem(5);
+        @include media ('mobile') {
+          background-size: auto 70%;
+          top: toRem(3);
+        }
+      }
+
+      @include media ('mobile') {
+        max-width: 100%;
+        left: 0;
+        top: toRem(0);
+        margin-left: toRem(45);
+        font-size: toRem(16);
+      }
+
+    }
+
+    &-button {
+      font-weight: 600;
+      font-size: toRem(22);
+      line-height: 100%;
+
+      width: toRem(220);
+      height: toRem(50);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      margin-right: toRem(53);
+
+      border: 2px solid #000000;
+      border-radius: 30px;
+
+      margin-top: toRem(50);
+      @include media('tablet') {
+        margin-right: toRem(10);
+        margin-top: toRem(10);
+        margin-bottom: toRem(20);
+      }
+
+      @include media('mobile') {
+        margin-top: toRem(25);
+        margin-right: toRem(15);
+        margin-bottom: toRem(25);
+        font-size: toRem(12);
+        height: toRem(30);
+        width: toRem(200);
+      }
+    }
+
+    &-text {
+      font-size: toRem(20);
+      line-height: 180%;
+      @include media('mobile') {
+        font-size: toRem(16);
+        line-height: 150%;
+      }
+    }
+  }
+
+  &__text {
+    line-height: 180%;
+
+    @include media('desktop') {
+      font-size: toRem(18);
+    }
+
+    @include media('tablet') {
+      font-size: toRem(16);
+    }
+
+    @include media('mobile') {
+      font-size: toRem(14);
+    }
+
+    p + p {
+      margin-top: 1em;
+    }
+  }
+
+}

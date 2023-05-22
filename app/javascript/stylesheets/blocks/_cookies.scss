@@ -1,0 +1,22 @@
+.cookies {
+  h2 {
+    font-size: toRem(38);
+    line-height: 130%;
+    font-weight: 800;
+    margin-bottom: toRem(70);
+  }
+  h3 {
+    margin-top: toRem(5);
+    margin-bottom: toRem(40);
+    font-weight: 600;
+    font-size: toRem(26);
+    &.general {
+      font-weight: 800;
+    }
+  }
+  p {
+    font-size: toRem(26);
+    line-height: toRem(40);
+    margin-bottom: toRem(30);
+  }
+}

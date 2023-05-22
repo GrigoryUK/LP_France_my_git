@@ -1,0 +1,267 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: #39838F;
+      --accent-text-color: #ffffff;
+      --accent-authors-color: #21454B;
+      --accent-special-color: var(--accent-background-color);
+      --menu-burger-background: #70AFB9;
+    }
+
+
+= render partial: 'shared/header'
+%main.article-main
+  %section.article-intro.article-intro--nice
+    .container.article-intro__container
+      %img.article-intro__img.hide--mobile{alt: "", src: asset_pack_url("media/images/placeholders/nice/cover.png")}/
+      %img.article-intro__img.show--mobile{alt: "", src: asset_pack_url("media/images/placeholders/nice/cover-mobile.png")}/
+      .article-intro__info
+        %h1.article-intro__title Nice
+        .article-intro__subtitle
+          %span.article-intro__subtitle-line Cote d'-Azur,
+          %span.article-intro__subtitle-line jazz music
+          %span.article-intro__subtitle-line and cycling
+      .article-intro__text.columns
+        %p Most people envision Nice as having a turquoise sea, whitewashed boats, and beach eateries. But there is one thing: those who get to taste the affluent life that this city has to offer are not limited to the regulars on the Forbes list or the nominees of the adjacent Cannes Film Festival. Nice is for everyone.
+        %p Despite its glimmer and seeming inaccessibility, the city continues to be an aristocrat who treats everyone as on par. You won't feel like a stranger here because all the doors are open, all the tables are set up for you to eat, and the places that Gogol and Herzen liked to visit are close enough for you to walk to them.
+
+  %section.article-block.article-pane.article-pane--with-map
+    .container.article-pane__container
+      %img.article-pane__map{alt: "", src: asset_pack_url("media/images/placeholders/nice/map-en.png")}/
+      .article-pane__content
+        %h2 Where to walk
+        .columns
+          %p
+            Strange as it may seem, Nice's most popular attraction and the icon of the French Riviera is the Promenade des Anglais, which received its name at a time when affluent Englishmen avidly purchased property along it. For walking along the 6-km embankment, rent a bike and cruise palm trees and city beaches, where people come and go year-round. If you still decide to take a walk, don't miss the foyers of Nice's oldest hotels:
+            = succeed "," do
+              %span.special Le Méridien
+            = succeed "," do
+              %span.special Westminster
+            and, of course
+            = succeed "," do
+              %span.special Negresco
+            with its pink dome created in the Eiffel workshop.
+          %p In Old Nice, the only way to get around is on foot, because the streets are too narrow and hilly to ride a bike on, and they sometimes end with steps. At some points in the historic centre, you may be followed by a misleading impression that you are in Italy. Not be surprised, most of the buildings in the area are in the Italian Baroque architectural style. Yes, and your eyes are the only thing that can deceive you. Old Nice has a strong French flavour, with a smattering of stores and traditional bistros a La Province. Make a point of walking till you reach Lascari Palace, the city's tallest building.
+          %p Now it is the storage of General Antoine Gautier's musical instruments collection. By the way, the entrance is for free for everyone. 
+          %p Castle Hill is without a doubt the most convenient and stress-free location from which to view all of historic Nice at once. Take the lift to the top, and you can see the Belland Tower, as well as a beautiful view of the city, and visit the historic Château cemetery. Don't be surprised if you hear a loud clap about midday: a cannon is fired every year atop Castle Hill to honour a tradition that originated here in 1875.
+          %p 
+            Don't forget to visit Cours Saleya, where the flower market, famous throughout France, is located. People offer local veggies, fruit, Provencal herbs, cheeses, jams, and honey among the busy rows of flowers, seeds, seedlings, and bulbs. The city's flea market takes the place of flowers and food on Mondays at
+            %span.special Cours Saleya
+            which is overrun with antiques and vintage beauty sellers.
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-1-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-1-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-1.jpg')}
+        %img.article-figure__img{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/nice/figure-1.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Cuisine
+        .columns.columns--two-images-in-footer
+          %p Going out to eat is a huge affair in France. In French, a supper that is over in less than three hours is referred to as a mauvais ton, which literally translates to "a waste of time." But in Nice, there is a dish that you can eat on the go without being embarrassed. On every corner, street vendors sell socca, which is a crispy pancake made from chickpea flour, olive oil, and herbs or curd cheese. Grab some soccas and have a snack with a view of the Baie des Anges (Bay of Angels) in the Old Town, or even better, spend your free time in the Parc Promenade du Payon.
+          %p In general, you should be ready to eat a lot and often in Nice. This way, you can try all the best local cuisine. The ratatouille stew and the salade Nicoise are two of the region's most well-known meals.
+          %p
+            Nice's restaurant scene, however, isn't limited to cuisine. A taste festival at
+            %span.special Gare du Sud
+            is a foolproof way to verify this.  The historic railway station building, where trains used to race towards the Alps, now houses the city library, the cinema, and, most significantly, a massive food court.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/text-1.jpg")}/
+          %p
+            Dozens of street-food eateries are available. 
+            %span.special Gare du Sud
+            serves Indian street cuisine, and 
+            = succeed "." do
+              %span.special El Kitchen
+            cooks, for example, provide the greatest tacos in town. Come here for lunch and choose what you want to try. For dinner, book a table at one of the city's old restaurants.
+          %p
+            %span.special Le Plongeoir
+            has had a reputation for being one of the most unusual restaurants in all of France for more than a hundred years. At the tail end of the 19th century, the bohemian ladies of the 
+            %span.special La Belle Époque
+            would get together for tea aboard a fishing boat that was suspended between the sky and the water. Art Deco-style platforms and diving springboards were later introduced. 
+            %span.special Le Plongeoir
+            reopened in 2015 following extensive renovations. Its distinctive patio, six meters above the sea, remains one of the greatest spots for an evening beverage with jazz, and surely for Instagram shots.
+
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/text-2-en.jpg")}/
+  %section.article-block.article-figure.hide--mobile
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-2-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-2-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-2.jpg')}
+        %img.article-figure__img{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/nice/figure-2.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 What about culture?
+        .columns.columns--img-left
+          %p Since its inception in 1990, Nice, France's Modern and Contemporary Art Museum (MAMAC) has been reminiscent of a very decent installation. The structure is supported by four 30-metre-high Carrara marble cubes. Anyway, the major attraction remains inside: a collection of works by the first names of postwar artists from America and Europe, ranging from Andy Warhol's dollars to Yves Klein's Blue Venus to Niki de Saint Phalle's sculptures.
+          %p Huge oak trees, olive trees, and cypresses surround the National Marc Chagall Museum. To find all of this elegance and serenity, head to the affluent neighborhood of Cimieux. The museum itself houses 17 of Chagall's biblical-themed paintings and graphics.
+          %p
+            You won't locate
+            %span.special Le 109
+            space in any city guide because the location isn't yet well-known among travellers. The residents of Nice, on the other hand, fell in love with it right away. The massive city quay was spared demolition. The former industrial rows are now alive with the spirit of freedom and creativity, with artists' studios, the
+            %span.special La Station
+            gallery, and a smattering of local nano businesses ranging from designer jewelry tiny stores to chamber cafés. This place hosts concerts. It hosts a broad mix of aesthetically conscious indie musicians and techno parties on weekends.
+          %p Even if you didn't know it before, the Côte d'Azur region, which includes Nice, is one of Europe's jazz capitals. You'll realize this after your first walk through the city center. A network of jazz establishments spreads around the city, where hits and improvisations may be heard in the evenings, in addition to the typical cafés and diners. If you're on the Riviera in July, don't miss two of the world's most renowned jazz festivals: one in Nice and the other in Juan-les-Pins. The first one has taken place since 1948, and the second one has gone on since 1960. Miles Davis, Ella Fitzgerald, Marcus Miller, and Ray Charles have all taken part in both of them at different times.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/text-3.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-3-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-3-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/nice/figure-3.jpg')}
+        %img.article-figure__img.article-figure__img--to-right{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/nice/figure-3.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Nice environs
+        .columns.columns--two-images-in-footer
+          %p
+            On the Côte d'Azur, there's a good chance you'll run across someone from a magazine cover or a film poster. There is no way to hide from the stars during the Cannes Film Festival. Book a reservation at  
+            %span.special Mamo Michelangelo
+            in Antibes if you don't mind dining next to an Oscar-winning director, a steamboat manufacturer owner, or a French national football team striker. Aside from the cuisine, many visitors flock here hoping to get a glimpse of the celebrities. Taking a photo with the owner, the grey-haired, smiling Mamo, has become a ritual for tourists. People's pictures of rich and famous people can be used to make a portrait gallery.
+          %p Biot is a picturesque town not far from Nice. It is known for making glass and ceramics, and it is also where the painter Fernand Léger lived and made most of his works. There is also a museum bearing his name. Another option is to visit one of the town's glassblowing shops. Choose from the two top glassblowing shops, Pierinior Verrerie de Biot. Both are known for their unique bubbly glasses that look like either the waves of the Mediterranean Sea or champagne. In these shops, you can pretend to be a glassblower without fear of being duped: local pieces are famous for their high quality and coveted by collectors all over the world.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/text-4.jpg")}/
+          %p
+            If you want to finally fall in love with the Côte d'Azur, you should pay Grasse a visit. The town's location between the sea and the southern Alps provides suitable soil for the cultivation of herbs and flowers, making the region notable for its abundance of these plants. Later, they eventually formed the foundation of the local perfume history, and Grasse became the centre of fragrance and olfactory style. You may follow its aromatic trail by visiting the International Perfumery Museum and the oldest perfume houses,
+            %span.special Fragonard
+            and
+            = succeed "," do
+              %span.special Galimard
+            where you can try mixing ingredients yourself making a perfume.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/text-5.jpg")}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Must-Do in Nice
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-1-2.png")}/
+            .icon-item__text
+              See La Tête Carrée. It's a huge bust with a cubist head. At first glance, it looks like a big sculpture made by a modern artist. In fact, though, it is the building where the city library's staff works. Inside, there is a great deal of paperwork activity.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-1-3.png")}/
+            .icon-item__text
+              If you can find Josephine Beauharnais' gold watch in the Historical Museum's collection, you'll see that there are exceptions to the rule that lucky people careless of time.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-1-6.png")}/
+            .icon-item__text
+              When you are on the Promenade des Anglais, take a seat on a blue chair. As much as the Eiffel Tower is a symbol of Paris, so are the blue chairs of Nice. Any gift shop will have them in a range of sizes.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-1-4.png")}/
+            .icon-item__text
+              Try a unique ice cream flavour at the oldest Café
+              = succeed "." do
+                %span.special Fenocchio
+              If you're looking for something different from the basic flavour, try an ice cream flavour inspired by cactus, fern, tomato, or poppy flavours.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-1-5.png")}/
+            .icon-item__text
+              If you're planning a trip to Biot, don't forget to dine at 
+              = succeed "." do
+                %span.special Les Arcades
+              The highlight is a Chagall painting that the artist once gave to the hostess as a gift. The restaurant is run by a family and serves local food. The restaurant is run by a family and serves local food. Artworks by sculptor César (Cesar Baldaccini), the painter Jean-Michel Folon, and legendary op-art artist Victor Vasarely were left as a thank you to the host for the delicious meal they had enjoyed.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-1-7.png")}/
+            .icon-item__text
+              %a{href: 'https://www.rugbyworldcup.com/2023?utm_source=france-advisor.com&utm_medium=link'}The 10th Rugby World Cup
+              will take place in 2023. Fans are waiting for 48 matches of the game of "knights of the oval ball", which is almost 200 years old. Part of the meetings will take place in Paris (in Lyon, in Marseille, in Nice, in Bordeaux).
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 One more item to consider
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-2-1.png")}/
+            .icon-item__title
+              How to get there
+            .icon-item__text
+              The quickest route is to fly Air France from Yerevan / Tbilisi to Paris. The railway connects Paris with Nice as well (about 6 hours).
+
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-2-2.png")}/
+            .icon-item__title
+              How to spend less
+            .icon-item__text
+              %p Unbelievable as it may sound, but taking the road from the airport will save you money! There is a tram that runs from there to the center of Nice. Taking the tram costs €1.50 but it's a lot of fun for that price. 
+              %p
+                Another option to save money while having twice as much fun is to ride the suburban train, as you can tour all the coastal towns for very little money. As an example, a ticket from Nice to Cannes costs only €5. You can buy tickets via the national carrier's website.
+                %a{href: 'https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur', target: "_blank"}
+
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-2-3.png")}/
+            .icon-item__title
+              Useful links
+            .icon-item__text
+              %p
+                %a.link{href: "https://ru.france.fr/ru ", target: "_blank"} France.fr
+                — french news and useful information for tourists
+              %p
+                %a.link{href: "https://wwws.airfrance.am/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.am
+                — Air France homepage for Armenian travelers
+              %p
+                %a.link{href: "https://www.airfrance.ge/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.ge
+                — Air France homepage for Georgian travelers
+              %p
+                %a.link{href: "https://www.explorenicecotedazur.com/", target: "_blank"} Nicetourisme.com
+                — official website of the Nice Tourism and Conference Office
+              %p
+                %a.link{href: "https://cotedazurfrance.fr/", target: "_blank"} Cotedazurfrance.fr
+                — official website of the regional tourism committee
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-2-4.png")}/
+            .icon-item__title
+              Open hours: don't be late
+            .icon-item__text
+              The Cours Saleya Flower Market is open from 6 a.m. to 5.30 p.m., with extended hours on Sundays until 1.30 p.m. Mondays are flea market days.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-2-5.png")}/
+            .icon-item__title
+              Tourist pass
+            .icon-item__text
+              If you intend to stay in Nice or on the Côte d'Azur for more than one day, buying the 
+              %span.special French Riviera Pass
+              or the
+              %span.special Cote d’Azur Card
+              is a good idea. A 24-, 48-, or 72-hour window of time is required for one card to be valid, while the other permits you to go sightseeing three or five times in one month. Card deals overlap, so choose French Riviera  if you want to go to several museums in one to three days and Cote d'Azur if you want to take a break for a few days and don't want your passes to expire.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/nice/icon-2-6.png")}/
+            .icon-item__title
+              Flight cost
+            .icon-item__text
+              The cost of a flight from Yerevan to Nice and back with a short stopover in Paris starts from
+              %a.link{href:"https://wwws.airfrance.am/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=EVN:A%3ENCE:A-NCE:A%3EEVN:A&bookingFlow=LEISURE", target: "_blank"} 230 EUR.
+              The cost of a flight from Tbilisi to Nice and back with a short stopover in Paris starts from
+              %a.link{href:"https://www.airfrance.ge/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=TBS:A%3ENCE:A-NCE:A%3ETBS:A&bookingFlow=LEISURE", target: "_blank"} 229 EUR.
+              To be the first to know about our special deals we advise you to subscribe to Air France newsletter in
+              %a.link{href: "https://www.airfrance.am/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Armenia
+              and
+              = succeed "." do
+                %a.link{href: "https://www.airfrance.ge/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"}  Georgia
+  %section.article-block.article-authors
+    .container.article-authors__container
+      .article-authors__list
+        .article-authors__item
+          %b Illustrations:  Polina Parygina 
+        .article-authors__item
+          %b Text: Andrey Sakov
+  = render partial: 'article_form'
+  = render partial: 'shared/footer'

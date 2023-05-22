@@ -1,0 +1,6 @@
+.article-main {
+  @include media('tablet') {
+    display: flex;
+    flex-direction: column;
+  }
+}

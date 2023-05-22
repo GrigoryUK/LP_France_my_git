@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    %link{rel: "shortcut icon", href: asset_pack_url("media/images/favicon.ico"), type:"image/x-icon"}
+    %link{rel: "icon", href: asset_pack_url("media/images/favicon.ico"), type:"image/x-icon"}
+
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title
+      = @open_graph_title
+
+    %meta{property:"og:title", content:@open_graph_title}
+    %meta{property:"og:description", content:@open_graph_description}
+    %meta{property:"og:image", content: asset_pack_url("media/images/og/#{@open_graph_images}")}
+
+
+    = yield :style
+
+    = stylesheet_pack_tag 'application', media: 'all'
+    = javascript_pack_tag 'application', defer: 'defer'
+
+    %script
+      window.csrftoken = "#{form_authenticity_token}"
+    = render partial: 'shared/google_tag'
+    = render partial: 'shared/yandex_metrica'
+    = render partial: 'shared/pixel'
+
+  %body{style: "background-color: var(--accent-background-color);"}
+    = render partial: 'shared/google_tag_manager_noscript'
+    = yield
+    

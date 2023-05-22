@@ -1,0 +1,171 @@
+.article-pane {
+  &--with-map {
+    @include media('mobile') {
+      margin-top: toRem(241);
+    }
+  }
+
+  &__container {
+    background-color: $color-white;
+    color: $color-black;
+    border-radius: toRem(6);
+
+    @include media('desktop') {
+      padding: toRem(60);
+      font-size: toRem(18);
+      line-height: 160%;
+    }
+
+    @include media('tablet') {
+      padding: toRem(36);
+      font-size: toRem(14);
+      line-height: 160%;
+    }
+
+    @include media('mobile') {
+      padding: toRem(15) toRem(15) toRem(20);
+      font-size: toRem(12);
+      line-height: 160%;
+    }
+  }
+
+  &__map {
+    @include media('desktop') {
+      position: absolute;
+      width: toRem(305);
+      bottom: 100%;
+      right: 0%;
+      transform: translate(toRem(73), toRem(228));
+    }
+
+    @include media('tablet') {
+      position: absolute;
+      width: toRem(187);
+      bottom: 100%;
+      right: 0%;
+      transform: translate(toRem(0), toRem(128));
+    }
+
+    @include media('mobile') {
+      position: absolute;
+      width: toRem(305);
+      bottom: 101%;
+      left: 0;
+      transform: translate(toRem(-5), toRem(76));
+    }
+  }
+
+  &__content {
+    .paris-title {
+      @include media('desktop') {
+        font-size: toRem(110);
+        letter-spacing: toRem(-1);
+      }
+      @include media('tablet') {
+        letter-spacing: toRem(-1);
+        font-size: toRem(70);
+      }
+      @include media('mobile') {
+       letter-spacing: toRem(-1);
+       font-size: toRem(38);
+      }
+    }
+    h2 {
+      font-family: $font-accent;
+      font-weight: normal;
+      .paris-title {
+        font-size: toRem(100);
+        letter-spacing: toRem(-1);
+      }
+      @include media('desktop') {
+        font-size: toRem(115);
+        line-height: toRem(156);
+        margin-top: toRem(-30);
+        margin-bottom: toRem(18);
+      }
+
+      @include media('tablet') {
+        font-size: toRem(76);
+        line-height: toRem(99);
+        margin-top: toRem(-28);
+        margin-bottom: toRem(10);
+        margin-left: toRem(-1);
+      }
+
+      @include media('mobile') {
+        font-size: toRem(42);
+        line-height: toRem(33);
+        margin-top: toRem(17);
+        margin-bottom: toRem(29);
+        margin-left: toRem(0);
+
+        .article-pane--with-map & {
+          margin-top: toRem(26);
+        }
+      }
+    }
+
+    p + p {
+      @include media('desktop') {
+        margin: 1em 0 0;
+      }
+
+      @include media('tablet') {
+        margin: 1.5em 0 0;
+      }
+
+      @include media('mobile') {
+        margin: 1.4em 0 0;
+      }
+    }
+
+    .figure {
+      display: block;
+      position: relative;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+
+      @include media('desktop') {
+        margin-top: toRem(20);
+
+        & + * {
+          margin-top: toRem(20);
+        }
+      }
+
+      @include media('tablet') {
+        margin-top: toRem(36);
+
+        & + * {
+          margin-top: toRem(36);
+        }
+      }
+
+      @include media('mobile') {
+        margin-top: toRem(20);
+
+        & + * {
+          margin-top: toRem(20);
+        }
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+      }
+
+      img {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

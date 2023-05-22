@@ -1,0 +1,18 @@
+.header--new
+  %header.header
+    .container.header__container
+      %button.header__nav-toggle
+        %span.header__nav-toggle-line
+      %nav.header__nav
+        .header__nav-in
+          %a.header__nav-link{href: occitania_ge_url, class: (params[:action] == 'occitania-ge' ? 'header__nav-link--active' : '')} OCCITANIA
+          
+          %a.header__nav-link{href: new_aquitaine_ge_url, class: (params[:action] == 'new-aquitaine-ge' ? 'header__nav-link--active' : '')} NEW AQUITAINE
+          
+          %a.header__nav-link{href: paris_region_ge_url, class: (params[:action] == 'paris-region-ge' ? 'header__nav-link--active' : '')} PARIS REGION
+          
+          %a.header__nav-link{href: loirevalley_ge_url, class: (params[:action] == 'loirevalley-ge' ? 'header__nav-link--active' : '')} LOIRE VALLEY
+          
+          %a.header__nav-link.header__nav-link--home.header__nav-link--icon{href: root_url}
+            MAIN PAGE
+            %span.header__nav-link-icon

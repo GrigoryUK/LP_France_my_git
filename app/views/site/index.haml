@@ -1,0 +1,213 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: #ffffff;
+      --accent-text-color: #ffffff;
+      --accent-special-color: #2D4E8D;
+      --font-georgian: 'Noto Sans Georgian', sans-sarif;
+      --font-georgian-serif: 'Noto Serif Georgian', sans-sarif;
+      --font-armanian: 'Noto Sans Armenian', sans-sarif;
+    }
+%body{style: "background-color: var(--accent-background-color);"}
+  .site-container
+    %section.intro-cover
+      .container.intro-cover__container
+        %img.intro-cover__heart{src: asset_pack_url("media/images/placeholders/index/heart.svg")}/
+        %h1.intro-cover__title
+          France invites you on 
+          %br/
+          an incredible journey!
+    %section.mainpage-form
+      .container.mainpage-form__container
+        .mainpage-form__center
+          .mainpage-form__info.form__base
+            #tickets.mainpage-form__title
+              Discover different parts of France this spring and summer
+              %span.blue
+                %a{href: "https://wwws.airfrance.fr/en/", target: "_blank"} Air France
+              can take you there in a blink of an eye!
+            .mainpage-form__subtitle
+              Embark on your French journey: Select a language to explore regional guides and discover Air France flights to France!
+            .mainpage-form__content
+              %a#georgia.mainpage-form__content-block{href: "#georgian"}
+                I am travelling from Georgia
+              %a#armenia.mainpage-form__content-block{href: "#armenian"}
+                I am travelling from Armenia
+    %div
+    #georgian.container-default.georgian.display-none{"data-country" => "georgia"}
+      .ContainerC.primary.one
+        .blockC.back
+          %button.btn-close.btn-close--answer
+            Back to language selection
+        .blockC.one
+          .titleC.primary
+            საფრანგეთი გიწვევთ დაუვიწყარ მოგზაურობაში!
+          .textC.primary
+            %p
+              სად ისურვებდით გამგზავრებას ამ ზაფხულს? რა თქმა უნდა, ქვეყანაში, სადაც ყველაფერია მშვენიერი დასვენებისთვის.
+              ქალაქებისა და რეგიონების განსაკუთრებული ატმოსფერო, გასტრონომია, მდიდარი კულტურული მემკვიდრეობა, მსოფლიო დონის
+              ღონისძიებები, მყუდრო სასტუმროები, საოცნებო შოპინგი, მთები, ზღვა და მრავალი სხვა. დიახ, არის ესეთი ქვეყანა და
+              ის მარტივად ამოიცნობა მეტროს ნიშნებით, ღია კაფეებით, ერთი კოშკის სილუეტით და დროშის ფერებით.
+            %p
+              დიახ! თქვენ ახლა საფრანგეთში ხართ: სამეფო ციხესიმაგრეების, ეიფელის კოშკის, მანეს და გოდარის, დიუმას და
+              უელბეკის, ღვინისა და ხამანწკების ქვეყანაში. ეს არის ადგილი სადაც სტუმრებს შეუძლიათ დააკმაყოფილონ თავიანთი
+              ლტოლვა მოულოდნელის, ახლისა და განსხვავებულის მიმართ.
+              %a{href: "https://www.france.fr/en", target: "_blank"} France.fr
+              საფრანგეთის ოფიციალურმა ტურისტულმა საინფორმაციო პორტალმა და
+              %a{href: "https://www.airfrance.ge/", target: "_blank"}
+                Air
+                France-მა
+              შეადგინა სახელმძღვანელო საფრანგეთის 13 რეგიონიდან 4-ისთვის, სადაც მოსახერხებელია მისვლა პარიზის
+              შარლ დე გოლის აეროპორტიდან. ესენია Paris-Ile-de-France, Aquitaine, Loire Chateaux Center და Occitanie
+        .blockC.two
+          .block__links
+            %a.linkC.primary{href: "https://www.airfrance.ge/deals?originCode=TBS&originType=AIRPORT&tripType=ALL&cabin=ECONOMY", target: "_blank"}
+              ✈️ 🇬🇪 BEST DEALS
+            %a.linkC.primary{href: "https://www.airfrance.ge/subscription/subscribe", target: "_blank"}
+              ✈️ 🇬🇪 NEWSLETTER
+          .block__texts
+            .subtitleC.primary
+              ფრენები საქართველოდან
+            .textC.primary
+              %p
+                ეარფრანსი გთავაზობთ კვირაში 5-მდე პირდაპირ რეისს თბილისიდან პარიზის მიმართულებით, პარტნიორი ავიაკომპანიის
+                რეისების ჩათვლით. ფრენის ხანგძლივობა 5სთ და 15 წთ -ია და ყველა რეისი სრულდება თანამედროვე Airbus A320-321
+                ტიპის თვითმფრინავებით. ორმხრივი ბილეთის ღირებულება 316 ევროდან იწყება. ჩვენი
+                %a{href: "https://www.airfrance.ge/deals?originCode=TBS&originType=AIRPORT&tripType=ALL&cabin=ECONOMY", target: "_blank"} საუკეთესო შეთავაზებები
+                შეგიძლიათ იხილოთ სპეციალურ გვერდზე. იმისათვის, რომ პირველმა გაიგოთ
+                სპეციალური შემოთავაზებების შესახებ, გირჩევთ გამოიწეროთ ჩვენი
+                %a{href: "https://www.airfrance.ge/subscription/subscribe", target: "_blank"} სიახლეების გვერდი
+                ქართველი მომხმარებლებისთვის.
+      %section.intro-end
+        .container.intro-end__container
+          .intro-end__pane
+            .intro-end__pane-in
+              .intro-end__img-wrap
+                %img.intro-end__img{alt: "", src: asset_pack_url("media/images/placeholders/index/text-1.jpg")}/
+              .intro-end__text
+                თქვენ ნახავთ, რომ გზამკვლევები ილუსტრაციებულია თანამედროვე ფრანგული გრაფიკული რომანებით რომელიც ამჟამად
+                ერთ-ერთი ყველაზე პოპულარული ხელოვნებაა საფრანგეთში. ილუსტრაციები, რომლებიც შექმნილია თანამედროვე
+                ილუსტრატორების მიერ, გზამკვლევებს სიღრმეს და ინტრიგას მატებს.
+      %section.guides
+        .container.guides__container
+          .guides__title
+            გაეცნობით შემდეგ თემებს:
+          %ol.guides__list
+            %li.guides__item რომელ ქალაქს აქვს მუზეუმი, რომელიც მთლიანად ღვინოს მიუძღვნეს?
+            %li.guides__item
+              საფრანგეთის რომელ რეგიონში შეგიძლიათ ნახოთ ყველაზე მაღალი, უძველესი რომაული
+              აკვედუკი?
+            %li.guides__item
+              საფრანგეთის რომელი ქალაქი იყო შთაგონებული მექსიკის ტეოტიუაკანის პირამიდებითა და
+              ბრაზილიელი არქიტექტორის ოსკარ ნიმეიერის მოდერნისტული შენობებით?
+            %li.guides__item სად არის საფრანგეთში უზარმაზარი ზოოპარკი სადაც 35000 ცხოველი ბინადრობს?
+            %li.guides__item რა ჰქვია ევროპაში ყველაზე დიდ ქვიშის დიუნს და სად მდებარეობს ის საფრანგეთში?
+      %section.cities
+        .container.cities__container
+          .cities__swiper-container.cities__swiper-container-one.swiper-container
+            .cities__swiper-wrapper.swiper-wrapper
+              %a.cities__swiper-slide.cities__swiper-slide--paris.swiper-slide{href: paris_region_ge_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-1.png")}/
+                .cities__title Paris region
+              %a.cities__swiper-slide.cities__swiper-slide--marselle.swiper-slide{href: loirevalley_ge_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-2.png")}/
+                .cities__title The Loire Valley
+              %a.cities__swiper-slide.cities__swiper-slide--bordeaux.swiper-slide{href: occitania_ge_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-3.png")}/
+                .cities__title Occitania
+              %a.cities__swiper-slide.cities__swiper-slide--lyon.swiper-slide{href: new_aquitaine_ge_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-4.png")}/
+                .cities__title New Aquitaine
+            .cities__swiper-nav-list
+              .cities__swiper-nav.cities__swiper-nav--prev.swiper-button-prev
+              .cities__swiper-nav-like
+              .cities__swiper-nav.cities__swiper-nav--next.swiper-button-next
+      .ContainerC.decor
+        .ContainerC.primary.two
+          .subtitleC.primary
+            აღმოაჩინეთ საფრანგეთის სხვადასხვა კუთხეები.
+            %a{href: "https://www.airfrance.ge/", target: "_blank"} Air France — ით
+            კი იქ თვალის
+            დახამხამებაში მოხვდებით.
+          .imageC.primary
+            %img{alt: "", src: asset_pack_url("media/images/image-357-1.svg")}/
+    #armenian.container-default.display-none.armenian{"data-country" => "armenia"}
+      .ContainerC.primary.one
+        .blockC.back
+          %button.btn-close.btn-close--answer
+            Back to language selection
+        .blockC.one
+          .titleC.primary
+            Ֆրանսիան հրավիրում է անհավանական ճանապարհորդու թյան:
+          .textC.primary
+            %p
+              Ու՞ր կցանկանայիք գնալ այս ամառ կամ աշուն: Իհարկե այն երկիր, որտեղ ամեն ինչ կա լավ հանգստի համար՝ քաղաքների և մարզերի յուրահատուկ մթնոլորտ, համեղ ուտեստներ, հարուստ մշակութային ժառանգություն, համաշխարհային մակարդակի իրադարձություններ, հարմարավետ հյուրանոցներ, երազանքի գնումներ, լեռներ, ծով և շատ ավելին: Այո՛, կա երկիր, որը համապատասխանում է այս նկարագրությանը: Այն հեշտ է ճանաչել մետրոյի ցուցանակներով, սրճարանների աթոռներով, աշտարակներից մեկի ուրվագծով և նույնիսկ դրոշի գույներով:
+            .videoC.primary
+              %iframe{allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen: "", frameborder: "0", height: "480", src: "https://www.youtube.com/embed/8f5WvRWp7W4", title: "France is waiting for you!", width: "100%"}
+            %p
+              Այո՛: Այժմ դուք Ֆրանսիայում եք՝ արքայական դղյակների, Էյֆելյան աշտարակի, Մանեի և Գոդարի, Դյումայի և Ուելբեկի, գինու և ոստրեների երկրում: Սա այն վայրն է, որտեղ այցելուները կարող են բավարարել անսպասելիի, ամեն անկյունում նորի և անսովորի հանդեպ իրենց ձգտումները: Ֆրանսիայի զբոսաշրջության պաշտոնական տեղեկատվական
+              %a{href: "https://www.france.fr/en", target: "_blank"} France.fr
+              պորտալը և
+              %a{href: "https://wwws.airfrance.am/deals?originCode=EVN&originType=CITY&tripType=ALL&cabin=ECONOMY", target: "_blank"} Air France
+              ավիաընկերությունը կազմել են ուղեցույցներ ֆրանսիական մարզերից չորսի մասին, ուր հարմար է հասնել Փարիզի Շառլ-դը-Գոլ օդանավակայանից: Դրանք են՝ Փարիզ-Իլ-դը-Ֆրանսը (Ile-de-France), Ակվիտանիան (New Aquitaine), Օքսիտանիան (Occitania) և Կենտրոնում՝ Լուարայի դղյակները (Loire Valley):
+        .blockC.two
+          .block__links
+            %a.linkC.primary{href: "https://wwws.airfrance.am/deals?originCode=EVN&originType=CITY&tripType=ALL&cabin=ECONOMY", target: "_blank"}
+              ✈️ 🇦🇲 BEST DEALS
+            %a.linkC.primary{href: "https://wwws.airfrance.am/subscription/subscribe", target: "_blank"}
+              ✈️ 🇦🇲 NEWSLETTER
+          .block__texts
+            .subtitleC.primary
+              Թռիչքներ Հայաստանից
+            .textC.primary
+              %p
+                Հայաստանում հաճախորդների համար մենք առաջարկում ենք շաբաթական մինչև 7 չվերթ Երևանից դեպի Փարիզ: Թռիչքի տևողությունը 5 ժամ 20 րոպե է, բոլոր թռիչքներն իրականացվում են ժամանակակից Airbus A320/321 ինքնաթիռներով։ Երկկողմանի ավիատոմսի արժեքն սկսվում է 397 եվրոյից։ Լավագույն առաջարկները կարող եք գտնել մեր հատուկ էջում։ Հատուկ առաջարկների մասին առաջինն իմանալու համար խորհուրդ ենք տալիս բաժանորդագրվել Հայաստանում հաճախորդների համար նախատեսված մեր տեղեկագրին։
+      %section.intro-end
+        .container.intro-end__container
+          .intro-end__pane
+            .intro-end__pane-in
+              .intro-end__img-wrap
+                %img.intro-end__img{alt: "", src: asset_pack_url("media/images/placeholders/index/text-1.jpg")}/
+              .intro-end__text
+                Դուք կտեսնեք, որ ուղեցույցները զարդարված են նկարազարդումներով՝ որպես հարգանքի տուրք ֆրանսիական գրաֆիկական վեպին, որն այժմ Ֆրանսիայի ամենահայտնի արվեստի ձևերից մեկն է: Նկարազարդումները՝ բոլորն էլ ստեղծված սկսնակ նկարազարդողների կողմից, ուղեցույցներին փոխանցում են խորություն և ինտրիգ:
+      %section.guides
+        .container.guides__container
+          .guides__title
+            Որոշ բաներ կսովորեք ուղեցույցներից:
+          %ol.guides__list
+            %li.guides__item Ո՞ր քաղաքում է բացվել գինուն նվիրված մի ամբողջ թանգարան:
+            %li.guides__item
+              Ֆրանսիայի ո՞ր շրջանում կարելի է տեսնել պահպանված հին հռոմեական ջրատարներից ամենաբարձրը:
+            %li.guides__item
+              Ֆրանսիական ո՞ր քաղաքի կառուցողներն են ոգեշնչվել Մեքսիկայի Տեոտիուականի բուրգերով և բրազիլացի ճարտարապետ Օսկար Նիմեյերի մոդեռնիստական շենքերով:
+            %li.guides__item Որտե՞ղ է Ֆրանսիայում գտնվում հսկայական կենդանաբանական այգին, ուր ապրում են 35,000 կենդանիներ:
+            %li.guides__item Ինչպե՞ս է կոչվում Եվրոպայի ամենամեծ ավազաթումբը և Ֆրանսիայում որտե՞ղ է այն գտնվում:
+      %section.cities
+        .container.cities__container
+          .cities__swiper-container.cities__swiper-container-two.swiper-container
+            .cities__swiper-wrapper.swiper-wrapper
+              %a.cities__swiper-slide.cities__swiper-slide--paris.swiper-slide{href: paris_region_ar_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-1.png")}/
+                .cities__title Paris region
+              %a.cities__swiper-slide.cities__swiper-slide--marselle.swiper-slide{href: loirevalley_ar_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-2.png")}/
+                .cities__title The Loire Valley
+              %a.cities__swiper-slide.cities__swiper-slide--bordeaux.swiper-slide{href: occitania_ar_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-3.png")}/
+                .cities__title Occitania
+              %a.cities__swiper-slide.cities__swiper-slide--lyon.swiper-slide{href: new_aquitaine_ar_url}
+                %img.cities__img{alt: "", src: asset_pack_url("media/images/sliders/slider-4.png")}/
+                .cities__title New Aquitaine
+            .cities__swiper-nav-list
+              .cities__swiper-nav.cities__swiper-nav--prev.swiper-button-prev
+              .cities__swiper-nav-like
+              .cities__swiper-nav.cities__swiper-nav--next.swiper-button-next
+      .ContainerC.decor
+        .ContainerC.primary.two
+          .subtitleC.primary
+            Բացահայտեք ձեզ համար Ֆրանսիայի տարբեր անկյունները այս ամռանն ու աշնանը։
+            %a{href: "https://wwws.airfrance.am/deals?originCode=EVN&originType=CITY&tripType=ALL&cabin=ECONOMY", target: "_blank"} Air France
+            ավիաընկերությունը արագ կհասցնի ձեզ այնտեղ:
+          .imageC.primary
+            %img{alt: "", src: asset_pack_url("media/images/image-357-1.svg")}/
+    = render partial: 'shared/footer_main'       

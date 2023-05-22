@@ -1,0 +1,24 @@
+%header.header
+  .container.header__container
+    .header__social
+      %a.header__social-link.header__social-link--tw{href: "#", "data-share": "tw"}= svg('social-tw-hover')
+      %a.header__social-link.header__social-link--fb{href: "#", "data-share": "fb"}= svg('social-fb-hover')
+
+    %button.header__nav-toggle
+      %span.header__nav-toggle-line
+    %nav.header__nav
+      .header__nav-in
+        %a.header__nav-link{href: lyon_url, class: (params[:action] == 'lyon' ? 'header__nav-link--active' : '')}
+          LYON
+        %a.header__nav-link{href: bordeaux_url, class: (params[:action] == 'bordeaux' ? 'header__nav-link--active' : '')}
+          BORDEAUX
+        %a.header__nav-link{href: paris_url, class: (params[:action] == 'Paris' ? 'header__nav-link--active' : '')}
+          PARIS
+        %a.header__nav-link{href: nice_url, class: (params[:action] == 'nice' ? 'header__nav-link--active' : '')}
+          NICE
+        %a.header__nav-link{href: marselle_url, class: (params[:action] == 'marselle' ? 'header__nav-link--active' : '')}
+          MARSEILLE
+
+        %a.header__nav-link.header__nav-link--home.header__nav-link--icon{href: root_url}
+          MAIN PAGE
+          %span.header__nav-link-icon= svg('menu-main-hover')

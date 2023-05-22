@@ -1,0 +1,245 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: #7D7369;
+      --accent-text-color: #ffffff;
+      --accent-authors-color: #4F4842;
+      --accent-special-color: var(--accent-background-color);
+      --menu-burger-background: #AC9885;
+    }
+
+
+= render partial: 'shared/header'
+%main.article-main
+  %section.article-intro.article-intro--lyon
+    .container.article-intro__container
+      %img.article-intro__img.hide--mobile{alt: "", src: asset_pack_url("media/images/placeholders/lyon/cover.png")}/
+      %img.article-intro__img.show--mobile{alt: "", src: asset_pack_url("media/images/placeholders/lyon/cover-mobile.png")}/
+      .article-intro__info
+        %h1.article-intro__title Lyon
+        .article-intro__subtitle
+          %span.article-intro__subtitle-line paradise for gourmands,
+          %span.article-intro__subtitle-line non-stop festivals and
+          %span.article-intro__subtitle-line a chance to meet the Little Prince
+      .article-intro__text.columns
+        %p When compared to other French cities, Lyon is like the most secretive snob at a loud party. It won't brag about himself, and keeps the distance, but if you get to know it better, you might be enchanted and even fall in love with its beauty. Lyon, after all, has an abundance of everything we love about France. The country's spirit is revealed here in undertones and every detail.
+
+        %p Lyon is France's third most populated city, located between the Rhone and Saône rivers. Even the French are actively relocating here. For many years, numerous
+        %p rankings have identified Lyon as the best location for this purpose. Pensioners stroll leisurely along the promenade, while businessmen and college and university students ride their bikes along the bike paths to the business centre. Notably, Lyon is known as the student capital of France, so if you go to a bar at night, you might run into a loud group of teenagers from different parts of the world. Anyway, let's go step-by-step. 
+  %section.article-block.article-pane.article-pane--with-map
+    .container.article-pane__container
+      %img.article-pane__map{alt: "", src: asset_pack_url("media/images/placeholders/lyon/map-en.png")}/
+      .article-pane__content
+        %h2 Cuisine
+        .columns
+          %p Lyon is a must-visit destination for foodies who appreciate the best of French cuisine, but it is also a landmark for gourmets. Although the Michelin-starred restaurants that comprise the city's constellation map can literally devour your brain, gourmet gastronomy can be found in every bakery in Lyon. Crispy sausages in a bun and andouille will be served here just as Lyonnais cook would have done a hundred years ago. 
+
+          %p Every culinary guide includes information on Michelin-starred establishments. However, we recommend that you visit one of the twenty licensed bouchons situated throughout the old city. These small, low-cost Lyon restaurants are steeped in history and culture. The proof is in the enormous, hearty quantities of grilled meats, crispy sausages, flavorful cheeses, fresh bread with garlic butter, and the nonstop clinking of wine glasses from the renowned vineyards located north of the city.
+          %br
+          %p 
+            Be sure to stop by the indoor Les Halles de Lyon Paul Bocuse market on your way through the city. It has been named after the famous chef and creator of the new cuisine, Paul Bocuse, since 2006. It's not uncommon to see top-tier chefs of the city's finest restaurants hanging out with housewives and foodies in
+            %span.special Les Halles de Lyon-Paul Bocusee
+            first thing in the morning. This market is a must-stop for all of these people. Stroll around the aisles and grab a bite to eat at one of the cafés serving regional specialties: Lyon pike-perch dumpling, Cervelle de canut (or claqueret) curd nibble on sour cream and white wine, or Lyon-style brioche sausages. And, naturally, some freshly shucked oysters.
+        
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-1-mobile-en.png')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-1-tablet-en.png')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-1-en.png')}
+        %img.article-figure__img{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/lyon/figure-1-en.png')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Where to walk
+        .columns.columns--img-right
+          %p
+            Make a point of spending a day in the Old Town, which has long been designated as a UNESCO World Heritage Site. The 
+            %span.special Vieux Lyon
+            district appears to have remained dormant for hundreds of years. Be ready to use online maps to find your way, because the mediaeval streets are set up like a maze that only locals can get out of. 
+          %p
+            If you discover an open door leading to a long, dark passageway, do not hesitate to peek inside. This is most likely the entrance of Lyon's famous traboules, which are systems of passages between buildings and streets that date back to the 4th century. They often connect the courtyards of old silk merchants. But sometimes the traboules can make a whole courtyard with different levels, like in the famous 
+            %span.special La Cour des Voraces
+            A special app called
+            %span.special Traboules
+            has been released by Lyon's tourism office to help visitors locate all of the city's traboules.
+          %p
+            In the
+            %span.special Confluence
+            neighborhood, you can see a very different side of Lyon and France as a whole. There are glass and concrete skyscrapers, solar-powered homes, and experimental driverless public transportation.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/text-1.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-2-mobile.jpg')}
+        %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-2-tablet.jpg')}
+        %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-2.jpg')}
+        %img.article-figure__img.article-figure__img--to-left{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/lyon/figure-2.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Sightseeing
+        .columns.columns--two-images-in-footer
+          %p Lyon was the birthplace of film as we know it today. The Lumière brothers began their experiments with moving images on a screen here. The brothers left behind a trove of artifacts ranging from the first film set drawings to the world's first cinematograph. All of this is carefully put together in the Lumiere Brothers Museum, which is in the old family factory. Film school students and kids who like Pixar cartoons will find it interesting.
+
+          %p Le Musée des Confluences (the Museum of the Convergence) is a futuristic building at the point where the Rhone and Sonne rivers meet. The building looks like a starship that was hit by a meteorite. If you get stuck there, you can stay there for a long time, because there are more than two million exhibits about the mysteries and history of mankind. There are the remains of dinosaurs and meteorites, as well as masks used in African religious ceremonies and samurai armor. There's also an anthology of Eskimo edged weapons on display, for example.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/text-2.jpg")}/
+          %p
+            The observation deck that sits above the modern art center
+            %span.special La Sucrière
+            is often considered to be among the most breathtaking of its kind. There, you can get a wonderful panoramic view of Lyon while also tickling your nerves. It is also host to one of the most prestigious art events in Europe, La Biennale de Lyon (the Biennale of Lyon). But there are also temporary exhibits and a permanent display that is open on other days.
+          %p The Parc de la Tête d'or is also a great place to spend the day. In the 1800s, when the park was built, the Bois de Boulogne in Paris was used as inspiration. This can be seen in the size of the park. Aside from the park itself, which has a large lake on the banks of which to picnic, there's also the Lyon Botanical Garden, which has 200 species of peonies and even a zoo. The latter was originally intended to be a farm where guests might have a visual introduction to the local fauna. Today, the zoo has expanded to include animals that are no longer found in their original habitat.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/text-3.jpg")}/
+  %section.article-block.article-figure
+    %figure.article-figure__wrap
+      %picture
+        %source{media: "(max-width: 767px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-3-mobile.jpg')}
+          %source{media: "(max-width: 1023px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-3-tablet.jpg')}
+            %source{media: "(min-width: 1024px)", srcset: asset_pack_url('media/images/placeholders/lyon/figure-3.jpg')}
+              %img.article-figure__img{alt: "", loading: "lazy", src: asset_pack_url('media/images/placeholders/lyon/figure-3.jpg')}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        .columns.columns--two-images-in-footer
+          %p On top of that, Lyon's public transportation system is one of the city's best-known features. So, for example, you can visit the city by taking the famous Lyon trolleybus (a rarity in France!) on the first line. Do you have a free day and a driving license? Then we suggest that you rent a car and drive to Saint-Uze, where the Revol plant, one of the most well-known factories in the country, is located. You've surely seen the renowned crumpled coffee cups, which can last for almost a century. No, we're not talking about plastic; rather, every one of Revol's items is crafted from ceramic and strikes the ideal balance between contemporary design and time-honoured craftsmanship.
+          %p Do you still have enough energy and time? After that, proceed to Firminy by going back the way you came. Firminy is a little provincial town about an hour's drive from Lyon.  A high-rise flat building, a sports complex with a stadium, and a swimming pool are all nearby. 
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/text-4.jpg")}/
+          %p
+            There is also a church designed by Le Corbusier, the famed architect.
+          %p
+            Check to see what kinds of events are going to be held in the city before you leave Lyon; the locals there are festival fans who know how to put on a good show. You may attend the Biennial of Contemporary Art,
+            = succeed "," do
+              %span.special Nuits Sonores
+            electronic music festival, beer, jazz, silk, or even Chinese gastronomy festivals (why not?).
+          %p The Fête des Lumières (Festival of Lights), held every year in the beginning of December, is possibly Lyon's most famous festival. For three days, multimedia artists from all around the world will occupy the central façade and dozens of bridges. They beam video onto the houses, revealing whatever has been hidden inside, transforming the city into a gigantic digital kaleidoscope that will change your impressions in a way that they won't be the same as they were before.
+          %figure.figure
+            %img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/text-5.jpg")}/
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 Must-Do in Lyon
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-1-1.png")}/
+            .icon-item__text
+              Look for a monument to Antoine de Saint-Exupéry and his most recognizable character. Antoine de Saint-Exupéry grew up in Lyon and went on to become a writer, journalist, and military pilot before penning The Little Prince.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-1-2.png")}/
+            .icon-item__text
+              See a shortened version of the Eiffel Tower, or rather, the very top tier of its. In 1894, Pierre Gay, a local citizen, built the tower atop the Fourvière hill with his own money and founded the restaurant on the site. The tower's observation deck is currently inaccessible.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-1-3.png")}/
+            .icon-item__text.unexpected-mod-1
+              Take a drive around the rural areas surrounding Lyon. Include Pérouges, a charming village that is a member of the association of the country's most attractive villages,
+              = succeed "." do
+                %span.special Le Plus Beaux Villages de France
+              Don't forget to make a pit stop in the Beaujolais region on your way through, as this is the area where the extremely young wines are produced that are meant to be consumed in November in celebration of 
+              = succeed "." do
+                %span.special Le Beaujolais Nouveau est arrivé.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-1-4.png")}/
+            .icon-item__text
+              Before heading to Lyon, learn the term "muralism," which refers to the monumental painting method employed on buildings. Notably, Lyon is the centre of mural art as well as the festival and food capital of France. The most remarkable mural is the 800 square metre 
+              = succeed "." do
+                %span.special Fresque des Lyonnais Celedres
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-1-5.png")}/
+            .icon-item__text
+              Reread the phantasmagoria novel with the difficult-to-pronounce title Gargantua and Pantagruel. It was written in the Hôtel-Dieu, which is today a listed building but was an orphanage and a hospital during the time the novel was written in the 16th century. The great satirist François Rabelais worked as a doctor there.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-1-6.png")}/
+            .icon-item__text
+              %a.link{href: "https://www.rugbyworldcup.com/2023?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} The 10th Rugby World Cup
+              will take place in 2023. Fans are waiting for 48 matches of the game of "knights of the oval ball", which is almost 200 years old. Part of the meetings will take place in Paris (in Lyon, in Marseille, in Nice, in Bordeaux).
+  %section.article-block.article-pane
+    .container.article-pane__container
+      .article-pane__content
+        %h2 One more item to consider
+        .columns.icon-item__list
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-2-1.png")}/
+            .icon-item__title
+              How to get there
+            .icon-item__text
+              The fastest way to get to Lyon is to fly with Air France from Yerevan / Tbilisi with a stopover in Paris. From Paris you can also get to Lyon by train, a journey time of about 2 hours.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-2-2.png")}/
+            .icon-item__title
+              Open hours: don't be late
+
+            .icon-item__text
+              %span.special Les Halles Paul Bocuse
+              market is open Monday through Saturday from 7 a.m. to 7 p.m., with a shorter schedule on Sunday until 1 p.m. Most restaurants close at 10:30 p.m., and on Sundays, they close at 4:30 p.m.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-2-3.png")}/
+            .icon-item__title
+              Useful links
+            .icon-item__text
+              %p
+                %a.link{href: "https://ru.france.fr/ru", target: "_blank"} France.fr
+                — French news and useful information for tourists
+              %p
+                %a.link{href: "https://wwws.airfrance.am/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.am
+                — Air France homepage for Armenian travelers
+              %p
+                %a.link{href: "https://www.airfrance.ge/?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Airfrance.ge
+                — Air France homepage for Georgian travelers
+              %p
+                %a.link{href: "https://www.lyon-france.com/", target: "_blank"} Lyon-france.com
+                — Lyon locals and visitors can find information on everything from history to gastronomy courses and festivals in the surrounding area.
+              %p
+                %a.link{href: "https://www.auvergnerhonealpes-tourisme.com/", target: "_blank"} Auvergnerhonealpes-tourisme.com
+                — Regional Tourism Committee website. 
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-2-4.png")}/
+            .icon-item__title
+              Where to stay
+            .icon-item__text
+              Like Paris, Lyon is divided into city districts called "arrondissements." Now there are nine arrondissements, and the first and second are thought to be the heart of Lyon.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-2-5.png")}/
+            .icon-item__title
+              How to spend less
+            .icon-item__text
+              If you plan to stay in Lyon for more than one day, it makes sense to buy a Lyon City Card from the Lyon City Card website for €24.90. It lets you ride public transportation for free, get into many museums for free, and get discounts at restaurants.
+          .icon-item
+            .icon-item__icon
+              %img.icon-item__icon-img{alt: "", loading: "lazy", src: asset_pack_url("media/images/placeholders/lyon/icon-2-6.png")}/
+            .icon-item__title
+              Flight cost
+            .icon-item__text
+              The cost of a flight from Yerevan to Lyon and back with a short stopover in Paris starts from
+              %a.link{href: "https://wwws.airfrance.am/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=EVN:A%3ELYS:A-LYS:A%3EEVN:A&bookingFlow=LEISURE", target: "_blank"} 210 EUR.
+              The cost of a flight from Tbilisi to Lyon and back with a short stopover in Paris starts from
+              %a.link{href: "https://www.airfrance.ge/search/open-dates?pax=1:0:0:0:0:0:0:0&cabinClass=ECONOMY&activeConnection=0&connections=TBS:A%3ELYS:A-LYS:A%3ETBS:A&bookingFlow=LEISURE", target: "_blank"} 220 EUR.
+              To be the first to know about our special deals we advise you to subscribe to Air France newsletter in
+              %a.link{href: "https://www.airfrance.am/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Armenia
+              and
+              = succeed "." do
+                %a.link{href: "https://www.airfrance.ge/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"}  Georgia
+  -# %section.article-block.article-authors
+  -#   .container.article-authors__container
+  -#     .article-authors__list
+  -#       .article-authors__item
+  -#         %b Iлюстрації:
+  -#         Саша Барановская
+  -#       .article-authors__item
+  -#         %b Aвтор тексту:
+  -#         Полина Парыгина
+  = render partial: 'article_form'
+  = render partial: 'shared/footer'

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<style>
+  body {
+    --accent-background-color: #444A55;
+    --accent-text-color: #ffffff;
+    --accent-authors-color: #000000;
+    --accent-special-color: #CC4D47;
+    --menu-burger-background: #737C8B;
+  }
+</style>
+
+<body style="background-color: var(--accent-background-color);">
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__social">
+        <a href="#" class="header__social-link header__social-link--wa">${require('./assets/inline/social-wa-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tw">${require('./assets/inline/social-tw-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--tg">${require('./assets/inline/social-tg-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--fb">${require('./assets/inline/social-fb-hover.svg')}</a>
+        <a href="#" class="header__social-link header__social-link--vk">${require('./assets/inline/social-vk-hover.svg')}</a>
+      </div>
+
+      <button class="header__nav-toggle">
+        <span class="header__nav-toggle-line"></span>
+      </button>
+
+      <nav class="header__nav">
+        <div class="header__nav-in">
+          <a class="header__nav-link" href="/lyon.html">ЛIОН</a>
+          <a class="header__nav-link" href="/bordeaux.html">БОРДО</a>
+          <a class="header__nav-link header__nav-link--active" href="/paris.html">ПАРИЖ</a>
+          <a class="header__nav-link" href="/nice.html">НIЦЦА</a>
+          <a class="header__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+
+          <a class="header__nav-link header__nav-link--home header__nav-link--icon" href="/index.html">
+            НА ГОЛОВНУ <span class="header__nav-link-icon">${require('./assets/inline/menu-main-hover.svg')}</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="article-main">
+
+    <section class="article-intro article-intro--paris">
+      <div class="container article-intro__container">
+        <img class="article-intro__img hide--mobile" src="./assets/images/placeholders/paris/cover.png" alt="">
+        <img class="article-intro__img show--mobile" src="./assets/images/placeholders/paris/cover-mobile.png" alt="">
+
+        <div class="article-intro__info">
+          <h1 class="article-intro__title">Париж</h1>
+
+          <div class="article-intro__subtitle">
+            <span class="article-intro__subtitle-line">Він такий один</span>
+          </div>
+        </div>
+
+        <div class="article-intro__text columns">
+          <p>Романи Дюма, графіка Тулуз-Лотрека, пісні Піаф, покази Готьє та нескінченна фільмотека великих режисерів — навіть ті, хто ніколи не був у Парижі, мають про нього своє уявлення. А ось писати докладний путівник цим містом — завдання складне, якщо тільки ви не готові прочитати багатотомник розміром із Велику радянську енциклопедію. Адже обов’язкова програма-мінімум для тих, хто приїздить сюди вперше, включає безліч пунктів: відвідати «Джоконду» в Луврі, подивитися на хід реставрації Собору Паризької Богоматері на острові Сіте, здолати 237 сходинок до базиліки Сакре-Кер, побачити інсталяцію чергового сучасного художника навпроти Центру Помпіду, заблукати серед алей Люксембурзького саду, як це робили Дідро і Бродський.</p>
+          <p>Але, складаючи список, пам’ятайте: Париж не місто-квест, де треба квапливо добігти від місця до місця, Париж — це атмосфера, яку відчуваєш саме десь між пунктами призначення. Тому краще трохи пригальмувати, розслабитися та поглянути на місто не очима туриста, що шукає знайомі кадри із фільмів французької нової хвилі та чепурні краєвиди, а очима його мешканців.</p>
+          <p>Однак, і тут є складнощі. Жителі районів-арондісманів готові до останнього сперечатися про те, що таке справжній Париж — буржуазний Сен-Жермен, ліберальний Маре або безтурботний Латинський квартал. Попри те, що місто з населенням у 2,5 мільйони людей досить невелике (навіть менше за Київ), у ньому вміщується стільки, що вистачило б на цілу європейську країну. Тому Париж здається безмежним.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane article-pane--with-map">
+      <div class="container article-pane__container">
+        <img class="article-pane__map" src="./assets/images/placeholders/paris/map.png" alt="">
+        <div class="article-pane__content">
+          <h2>Культурний код Парижа</h2>
+
+          <div class="columns columns--wide-image-in-footer">
+            <p>Якщо вірити відомій приказці, то побачивши Париж і померти можна. Можливо, мова йшла про відвідування музеїв у туристичний сезон. Тому не забувайте просту істину: усі квитки у великі інституції бронюйте онлайн. А ще не забувайте, що майже всі художники, музиканти та письменники, що жили в Парижі, залишили після себе музейні простори. Так, у будинку-музеї Сальвадора Далі на Монмартрі зберігаються скульптури тонконогих слонів, а в районі Менільмонтан <span class="special">Ménilmontant</span> відкрите для відвідування помешкання Едіт Піаф. У музеї Іва Сен-Лорана сподобається шанувальникам моди, а фундаментальним будинком-музеєм Бальзака зацікавляться не тільки літературознавці.</p>
+
+            <p>Салон незалежних, інтернаціональна колонія художників «Вулик», перша виставка сюрреалістів — Париж завжди був світовим центром сучасного мистецтва. Причому неважливо, про яку сучасність йдеться — сьогодення або події двохсотрічної давнини. Річ у тім, що Париж із дійсно французькою граціозністю підтримує баланс нового та вічного. Тут є все від традиційного мистецтва в Луврі до абстрактної чуттєвості в Музеї романтичного життя.  У музеях д’Орсе і Гран Пале проходять виставки, що зображають новий погляд на класичні твори,</p>
+
+            <p>наприклад «Темношкірі моделі: від Жеріко до Матісса» про історію темношкірих людей у мистецтві. Фонд «Луї Віттон» та Центр Помпіду цінні не тільки як культурні та музейні майданчики, а й як міські домінанти. Ну, а кожногожовтня саме в Парижі проходить одна з найважливіших подій світу сучасного мистецтва — ярмарок FIAC.</p>
+
+            <p>Усе ще мало? Спустіться в лячну прохолоду паризьких катакомб або спробуйте вгадати, що є що в Музеї підробок: поряд із творами мистецтва і брендовими товарами там виставлений митний і поліцейський конфіскат. Заховайтеся від полудневої спеки в грандіозному зимовому саду біля Музею Жакмар-Андре або розкрутіть велосипедну карусель у Музеї ярмаркового мистецтва, де є справжній цирк із дерев’яними кіньми. Якщо не вистачає романтики, то вам на Монмартр, в обитель художників періоду <span class="special">La Belle Epoque</span>, нічних метеликів із Пляс Пігаль та легендарного кабаре «Мулен Руж». Не полінуйтеся, розшукайте на вулиці Оршан будинок і бюст співачки Даліди. Кажуть, її груди приносять удачу.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/paris/text-1.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <img loading="lazy" class="article-figure__img article-figure__img--to-right" src="./assets/images/placeholders/paris/figure-1.jpg" alt="">
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Архітектура — візитна картка Парижа</h2>
+
+          <div class="columns columns--wide-image-in-footer">
+            <p>Металоконструкції Ейфелевої вежі, гаргуйлі Нотр-Дам-де-Парі, барокові віньєтки Опера Гарньє — архітектура Парижа так добре знайома за книжними і кінематографічними сюжетами, що місто здається туристам чимось на кшталт музею просто неба. За великим рахунком, так воно і є. Першим за вигляд міста взявся в XIX столітті барон Жорж Ежен Осман, людина, яка створила Париж, зруйнувавши його середньовічну частину.</p>
+            <p>Барон не тільки надав Парижу новий вигляд, а й повністю змінив його організацію, провів каналізацію і водопровід. Після його перетворень у місті майже не залишилося дерев’яних будівель (знайдете кілька в Маре — вважайте, пощастило), зате з’явилися неповторні перспективи і термін «османівскій будинок». Це ті самі будинки, які ви неодноразово бачили на знімках: з великими вікнами, високими стелями, балконами на третьому поверсі, грубим облицюванням рустом і кімнатою для прислуги на даху. Зараз ці крихітні приміщення знімають студенти, користуючись однією ванною із сусідами, — такий собі варіант комуналки по-французьки.</p>
+            <p>Архітектурний ансамбль Парижа еклектичний, але водночас цілком гармонійний. Піраміди Лувру комфортно почувають себе в периметрі палацу й саду Тюїльрі, а Центр Помпіду, хоч і виглядає дуже яскраво, зате відповідає настрою кварталу Маре.</p>
+
+            <p>Паризька мечеть затишно влаштувалася в Латинському кварталі, а Тріумфальна арка немов підморгує єгипетському обеліску на площі Згоди. Опера Бастій та Паризька філармонія не поступаються масштабністю своїй більш дорослій колежанці Опері Гарньє, а готель «Молітор» у стилі ар-деко — результат реставрації однойменного культового басейну, який у дев’яності стояв занедбаним і перетворився в полотно для графіті-художників. Водночас «Молітор» розташований у багатому архітектурними шедеврами районі Булонь-Біянкур і сусідує з новими кортами «Ролан Гаррос», бруталістським стадіоном <span class="special">Parc des Princes</span>, на якому грає «Парі Сен-Жермен», і Містом музики на острові Сеген.</p>
+
+            <p>Так, французи — майстри поєднувати непоєднуване, знов і знов доводячи, що важливо не тільки шанувати традиції, а і вміти йти в ногу з часом. Хоча тут досі не забули скандал через появу Ейфелевої вежі у 1889-му: парижани вважали, що залізна леді не вписується у естетику міста і виставляє смаки жителів у поганому світлі. Хай там як, але паризька архітектура передає свої скарби з покоління в покоління, періодично змінюючи форму та ніколи — зміст.</p>
+            <figure class="figure">
+              <img loading="lazy" class="article-figure__img--to-right" src="./assets/images/placeholders/paris/text-2.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <img loading="lazy" class="article-figure__img article-figure__img--to-left" src="./assets/images/placeholders/paris/figure-2.jpg" alt="">
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2 class="paris-title">Прогулянки — головний спосіб зрозуміти місто</h2>
+
+          <div class="columns columns--two-images-in-footer">
+            <p>Як найзручніше оглядати архітектурні скарби міста? Відповідь одна — гуляти ним пішки. Це ще в XIX столітті з’ясував Оноре де Бальзак, який написав есе «Теорія ходи», а головний герой Оуена Уїлсона в мелодрамі «Опівночі в Парижі» прогулювався містом, подорожуючи в часі. Маючи уяву, це може зробити кожен, тож звертайте в провулки подалі від туристичних стежок, вибирайте найбільш мальовничий (хоч би і вигадливий) шлях і знайте: для пошуку піднесених ідей і натхнення немає нічого кращого за фланування.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/paris/text-3.jpg" alt="">
+            </figure>
+            <p>
+              Чудове французьке слово <span class="special">flâner</span> означає прогулянки містом без особливої ​​мети. Французи вважають за краще фланувати статечно і благородно, тому міська адміністрація постійно модернізує та покращує середовище, збільшуючи число не тільки велодоріжок, а і тротуарів. У місті величезна кількість парків, і в кожного своя специфіка. Наприклад, Люксембурзький сад, де сховалася одна з чотирьох столичних статуй Свободи, люблять і туристи, і місцеві жителі, а у Бютт-Шомон немовби не пускають туристів та іноземців, але в парк Монсо, здається, спеціально приходять тільки з дітьми.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/paris/text-4.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Гастрономія — друге ім’я Парижа</h2>
+
+          <div class="columns">
+            <p>Флануючи вулицями та парками, ви вже добряче зголодніли. Не поспішайте сканувати поглядом простір у пошуках кафе, а зайдіть у найближчий супермаркет. Безліч видів сиру, правильні багети із товстою скоринкою, свіжі овочеві салати, органічний шоколад, відмінний вибір вин — ви ж пам’ятаєте, що у Франції добре розвинене сільське господарство? Можна піти на ринок <span class="special">Montorgueil</span> або у гурме-корнер <span class="special">La Grande Epicerie</span> придбати камамберу та свіжих морепродуктів, а вином запастися у місцевих кавістів. Не дивуйтеся високим цінам: французи звикли платити за якість, тому ринки тут іноді дорожчі за магазини.</p>
+
+            <p>Щоб синхронізуватися з життям місцевих жителів, доведеться переглянути режим харчування, адже французи їдять у строго визначені години. Так, перші партії свіжих круасанів у Парижі з’являються до сьомої ранку. З 12:00 до 14:00 вийде пообідати в бістро, а на 19:00 треба б замовити столик у ресторані для вечері.</p>
+
+            <p>Якщо хочеться не тільки хліба, а й видовищ, бронюйте місце в плавучому ресторані культового шеф-кухаря Алена Дюкасса. Поки гастролодка йде річковим маршрутом, гості насолоджуються краєвидами нічного міста і стравами, які неодноразово схвалювали мішленівські критики. Вважаєте, це розвага тільки для туристів? Зовсім ні. Парижани своїх героїв шанують, шеф-кухарів прирівнюють до лицарів, а місцева кухня, звісно, удостоїлася звання культурної спадщини ЮНЕСКО.</p>
+
+            <p>Всупереч стереотипам, жаб’ячі лапки, на відміну від равликів, французи їдять рідко. Тому пробувати їх треба в перевіреному місці, де знають, як їх смачно приготувати, наприклад, в <span class="special">Roger la Grenouille.</span>. Класика в кращому виконанні — в <span class="special">La poule au Pot</span>, зі срібним посудом та найніжнішим пюре, яскравою історією та знаменитим шефом.</p>
+
+            <p>Для самостійного гастрономічного занурення найкраще підходить старовинний квартал Маре. Якщо ж ви в Парижі постійний гість, загляньте в 11-й район. Одне з найцікавіших місць тут — ресторан високої кухні <span class="special">Pianovins</span>, його відкрили шеф-кухар і сомельє після 25 років спільної роботи в зоряному <span class="special">Guy Savoy</span>.</p>
+
+            <p>Тільки не думайте, що з властивим французам снобізмом паризькі шефи зневажають кухні світу. На початку нульових легендарний кухар Жоель Робюшон ввів моду на японську та азійську кухню, і відтоді вона тільки набирає обертів. Тутешні страви здивують навіть японців, чи то буде буржуазний <span class="special">RAN</span> з інтер’єром у стилі бароко, чи один із двох демократично-автентичних Kodawari, черга до котрих є в будь-який час.
+
+
+            <p>В італійських ресторанах найчастіше готують вихідці з цієї країни, що заполонили Париж. У заклади демократичної мережі <span class="special">Mamma Group</span> черги стоять навіть у серпні, коли весь Париж їде у відпустку. А один із ресторанів Pink Mama став зіркою інстаграма завдяки інтер’єрам. Любителям витончених італійських закладів можна порадити улюблений ресторан Оуена Уїлсона La Stresa або венеціанський <span class="special">Mori Venice Bar</span> згаданий у гіді «Мішлен».</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <img loading="lazy" class="article-figure__img" src="./assets/images/placeholders/paris/figure-3.jpg" alt="">
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Шопінг у столиці моди</h2>
+
+          <div class="columns columns--img-right">
+
+            <p>Звучить банально, але факт: Париж — столиця шопінгу, до того ж багато магазинів тут мають насичену історію. Найвідомішим був, звісно ж, <span class="special">Colette</span> на вулиці Сент-Оноре, де можна було купити й окуляри за 30 євро, і футболку з колаборації з Chanel. Вийшовши на пенсію, мадам Колетт не захотіла продати бутик або залишити його своїм онукам, бувши вельми по-французьки впевненою, що ніхто не зможе зберегти концепцію. Тому жінка здає легендарне приміщення в оренду дому <span class="special">Saint Laurent</span>, й Ентоні Ваккарелло відкриває там флагманський магазин із сувенірною продукцією, вінтажними меблями та кафе.</p>
+
+            <p>Любителям незвичайного та ексклюзивного найкраще займатися шопінгом у Маре. В магазині <span class="special">Frankie Shop</span> є ймовірність першим придбати те, що буде модним наступного тижня, а&nbsp;в&nbsp;<span class="special">Rouje</span> варто йти за жіночними речами з легким нальотом сексуальності, щоб виглядати як місцеві мешканки.</p>
+
+            <p>Продавці <span class="special">Maison Kitsune</span> в саду Тюїльрі продають по-японськи зручний одяг і готують ідеальний матча. Одначе, люксові авеню Монтень та Сент-Оноре ніхто не скасовував, як і великі універмаги. Один із них — історичний <span class="special">Le Bon Marche</span>, про який ще Еміль Золя писав у романі «Дамське щастя». Зараз там продають молоді та поки мало кому відомі французькі бренди. Якщо цього недостатньо, загляньте в&nbsp;<span class="special">Le BHV Marais</span> або «Галереї Лафаєт», або й зовсім вирушайте у величезний аутлет <span class="special">La Vallée Village</span>, він розташований поруч із паризьким Діснейлендом.</p>
+
+            <p>Кращі сувеніри — не в газетних кіосках і не на вуличних розкладках, а в магазинах біля музеїв. Ну, і, звісно, ​​найкращий подарунок від незнайомого міста — книга, яку купили в букініста на березі Сени. «Свято, яке завжди з тобою» або «Маленький принц», може, і банально, але дуже <span class="special">comme il faut</span>.</p>
+            <figure class="figure">
+              <img loading="lazy" src="./assets/images/placeholders/paris/text-5.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-figure">
+      <figure class="article-figure__wrap">
+        <img loading="lazy" class="article-figure__img" src="./assets/images/placeholders/paris/figure-4.jpg" alt="">
+      </figure>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Навколо Парижа</h2>
+
+          <div class="columns">
+            <p>У французькій мові є слово <span class="special">comme il faut</span>, воно означає «втеча від суєти великого міста». Це дуже французька традиція і, можливо, навіть риса характеру. Радимо її перейняти.</p>
+
+            <p>Так, обов’язкова частина приміської програми — Версаль, але хочеться здивувати вас і чимось менш очевидним. Наприклад, у годині їзди від столиці, щоправда, вже в Нормандії, є невелике містечко Живерні, де творив і прожив свої останні роки Клод Моне. Дивлячись на його оселю й сад, ви одразу зрозумієте, звідки метр черпав натхнення.</p>
+
+            <p>Шантії відомий тим, що тут винайшли збиті вершки, які й назвали на честь міста (вітаємо, тепер ви можете зробити замовлення французькою!).</p>
+
+
+            <p>Але найголовніше, тут розташований середньовічний замок із галереєю, яку критики вважають найкращою  у Франції після Лувру. Метрдотелем замку був сам Франсуа Ватель (про нього ще зняли приголомшливий фільм із Жераром Депардьє та Умою Турман), а території та навколишньому саду могли б позаздрити ландшафтні дизайнери Версаля.</p>
+
+            <p>Париж, як і раніше, вабить, а точніше переманює, великих і талановитих. В одному з передмість столиці актор і мім Слава Полунін відкрив культурний центр «Жовтий млин» і живе тут зі своїми однодумцями-аскетами. Творча лабораторія періодично відчинена для відвідувачів, дати відвідувань можна дізнатися на сайті та здобути унікальний досвід і заряд позитиву.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>Це точно потрібно зробити в Парижі</h2>
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-1.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                З’їсти морозиво <span class="special">Bertillon</span> на острові Сен-Луї. Загалом в асортименті 90 смаків, але, оскільки морозиво роблять із натуральних інгредієнтів, наявність сортів залежить від сезону.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-2.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Купити щось цікаве для себе або своїх близьких у магазинчику на Place Pigalle.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-3.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Відвідати блошиний ринок Saint Ouen і купити антикваріат.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-4.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Поцілуватися на тлі стіни <span class="special">Le Mur des je t'aime</span> , де фраза «Я тебе люблю» написана всіма офіційними мовами світу та навіть шрифтом Брайля.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-5.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Сходити в <span class="special">Opéra Garnier</span> на спектакль або хоча б екскурсію, щоб побачити купол, розписаний Марком Шагалом.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-6.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Випити келих вина в одному з літературних кафе, наприклад, <span class="special">Café des fleurs</span>. Багато великих розумів минулого століття пили і творили саме тут!
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-7.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Випити кави та з’їсти свіжий круасан на найстарішій площі столиці <span class="special">Place des Vosges</span>.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-8.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Пограти в петанк та випити келих розе в Пале Рояль або на площі Дофіна.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-9.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Купити смажених каштанів та влаштувати пікнік на набережній Сени.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-1-10.png" alt="">
+              </div>
+              <div class="icon-item__text">
+                Поєднати шопінг, смачний обід та туристичну програму, відвідавши <span class="special">Passage des Panoramas</span> — старовинний пасаж із фантастичними французькими бістро (Canard & Champagne для аперо або Aster на вечерю).
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-pane">
+      <div class="container article-pane__container">
+        <div class="article-pane__content">
+          <h2>І ще дещо важливе</h2>
+          <div class="columns icon-item__list">
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-2-1.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Як дістатися
+              </div>
+              <div class="icon-item__text">
+                Найшвидший спосіб — літаком <a href="https://wwws.airfrance.ua/" target="_blank" class="link">Air&nbsp;France</a> із Києва. Час у дорозі — близько трьох із половиною годин.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-2-4.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Де жити
+              </div>
+              <div class="icon-item__text">
+                Паризьку атмосферу та розмірене життя варто шукати в 5, 6 і 7-му округах. Платани, кафе з терасами, чудова площа Контрескарп, де жив Хемінгуей, — це все 5-й округ. Люксембурзький сад із тихими алеями, парадні кафе, галереї (там парижани, як із кіно) — у 6-му. Ейфелева вежа у вікні, паризький шик і дома в стилі ар-нуво шукайте в 7-му. Модну молодь, класні бари, магазини коміксів і студентський дух — в 10-му, на каналі Сен-Мартен.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-2-5.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                Вартість перельоту
+              </div>
+              <div class="icon-item__text">
+                Вартість перельоту Київ — Париж — Київ починається від 315 євро. Підписавшись на розсилку <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a> i <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Atout France</a>, ви отримаєте не тільки унікальні гайди всіма регіонами Франції, а ще і промокод нна знижку 75 гривень на перельоти <a class="link" target="_blank" href="https://wwws.airfrance.ua/">Air&nbsp;France</a>. Шукайте вікно підписки нижче.
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-2-2.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                На чому заощадити
+              </div>
+              <div class="icon-item__text">
+                <p>На музеях та заходах із допомогою Паризького офіційного сіті-пасу Paris Passlib  <a href="https://booking.parisinfo.com/404.aspx?aspxerrorpath=/il4-offer_i147-paris-passlib.aspx." class="link" target="_blank">booking.parisinfo.com</a>. Його вартість починається від 45 євро за один день, але з обмеженим доступом (без проїзду громадським транспортом) і сягає 165 євро на п’ять днів. Якщо під час купівлі додасте ще 20 євро, то заощадите на квитку в Ейфелеву вежу.</p>
+
+                <p>Paris Région Pass <a href="https://www.visitparisregion.com/fr/a-voir-a-faire/musees-et-monuments/les-pass/paris-region-pass" class="link" target="_blank">visitparisregion.com</a> дасть також можливість відвідати визначні пам’ятки в паризькому регіоні. Вартість починається від 43 євро.</p>
+              </div>
+            </div>
+
+            <div class="icon-item">
+              <div class="icon-item__icon">
+                <img loading="lazy" class="icon-item__icon-img" src="./assets/images/placeholders/paris/icon-2-3.png" alt="">
+              </div>
+              <div class="icon-item__title">
+                 Корисні посилання
+              </div>
+              <div class="icon-item__text">
+                <p><a href="https://ru.france.fr/ru" target="_blank" class="link">france.fr</a> новости Франции и полезная информация для туристов</p>
+                <p><a href="https://wwws.airfrance.ua/" target="_blank" class="link">airfrance.ua</a> бронирование и покупка авиабилетов крупнейшей французской авиакомпании</p>
+                <p><a href="https://www.parisinfo.com/" target="_blank" class="link">parisinfo.com</a> все для туристов в Париже на русском языке: путеводители, рекомендации по районам, City Pass.</p>
+                <p><a href="https://www.visitparisregion.com/" target="_blank" class="link">visitparisregion.com</a> — региональный комитет по туризму Paris Région.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-block article-authors">
+      <div class="container article-authors__container">
+        <div class="article-authors__list">
+
+          <div class="article-authors__item">
+            <b>Iлюстрації:</b> Александра Барановская
+          </div>
+
+          <div class="article-authors__item">
+            <b>Aвтор тексту:</b> Мария Кожуховская, Андрей Саков
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="article-form">
+      <div class="article-form__social">
+        <a href="#" class="article-form__social-link article-form__social-link--wa"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tw"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--tg"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--fb"></a>
+        <a href="#" class="article-form__social-link article-form__social-link--vk"></a>
+      </div>
+
+      <div class="article-form__nav">
+        <div class="article-form__nav-in">
+          <a class="article-form__nav-link" href="/lyon.html">ЛIОН</a>
+          <a class="article-form__nav-link" href="/bordeaux.html">БОРДО</a>
+          <a class="article-form__nav-link article-form__nav-link--active" href="/paris.html">ПАРИЖ</a>
+          <a class="article-form__nav-link" href="/nice.html">НIЦЦА</a>
+          <a class="article-form__nav-link" href="/marselle.html">МАРСЕЛЬ</a>
+        </div>
+      </div>
+
+      <div class="container article-form__container">
+
+        <div class="article-form__center">
+          <div class="article-form__title">
+           Щоб отримати PDF-гіди по регіонах Франції і промокод на знижку в 50 доларів на політ до Франції залиште вашу пошту. Умови - за <a href="pdf/01.pdf" download="download">посиланням</a>.
+          </div>
+
+        <form class="mainpage-form__form form__form" action="" novalidate>
+          <div class="mainpage-form__form-wrapper">
+            <label class="mainpage-form__label form__label">
+              <input class="mainpage-form__input form__input" type="email" name="email" placeholder="ваш email" data-error-msg="Некоректний email" required>
+              <div class="mainpage-form__msg form__msg"></div>
+            </label>
+
+            <button class="mainpage-form__btn form__btn" type="submit">Відправити</button>
+          </div>
+
+          <label for="mainpage-form__сheckbox" class="mainpage-form__label-checkbox form__label">
+            <input type="checkbox" class="form__input mainpage-form__input-checkbox" id="mainpage-form__checkbox" name="mainpage-form__checkbox" data-error-msg="Сheck me" required value="check">
+            <div class="mainpage-form__сheckbox-text">Я даю згоду на обробку моїх персональних даних та отримання інформаційних матеріалів про Францію і її регіони, спецпропозиції і новини Air France.
+              <br><a href="pdf/Agreement_france-advisor.pdf" download="download" class="mainpage-form__сheckbox-link">Детальніше</a>
+            </div>
+            <div class="mainpage-form__msg form__msg form__msg-checkbox"></div>
+          </label>
+
+        </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__logos">
+        <a class="footer__logos-link footer__logos-link--explore" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-explore-france.png" alt="">
+        </a>
+
+        <a class="footer__logos-link footer__logos-link--airfrance" href="#">
+          <img loading="lazy" class="footer__logos-img" src="./assets/images/logo-air-france.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

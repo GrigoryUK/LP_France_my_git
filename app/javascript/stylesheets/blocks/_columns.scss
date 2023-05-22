@@ -1,0 +1,168 @@
+.columns {
+  @include media('desktop') {
+    columns: 2;
+    column-gap: toRem(48);
+  }
+
+  @include media('tablet') {
+    columns: 2;
+    column-gap: toRem(20);
+  }
+
+  &--img-right {
+    @include media('desktop-and-tablet') {
+      position: relative;
+      columns: unset;
+
+      .figure {
+        &:first-of-type {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 0;
+        }
+
+        &:nth-of-type(n + 2) {
+          display: none;
+        }
+      }
+    }
+
+    @include media('desktop') {
+      padding-right: toRem(528);
+      min-height: toRem(480);
+
+      .figure:first-of-type {
+        width: toRem(480);
+      }
+    }
+
+    @include media('tablet') {
+      padding-right: toRem(330);
+      min-height: toRem(310);
+
+      .figure:first-of-type {
+        width: toRem(310);
+      }
+    }
+  }
+
+  &--img-left {
+    @include media('desktop-and-tablet') {
+      position: relative;
+      columns: unset;
+
+      .figure {
+        &:first-of-type {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: 0;
+        }
+
+        &:nth-of-type(n + 2) {
+          display: none;
+        }
+      }
+    }
+
+    @include media('desktop') {
+      padding-left: toRem(528);
+      min-height: toRem(480);
+
+      .figure:first-of-type {
+        width: toRem(480);
+      }
+    }
+
+    @include media('tablet') {
+      padding-left: toRem(330);
+      min-height: toRem(310);
+
+      .figure:first-of-type {
+        width: toRem(310);
+      }
+    }
+  }
+
+  &--two-images-in-footer {
+    @include media('desktop-and-tablet') {
+      position: relative;
+
+      .figure {
+        &:nth-of-type(1) {
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+          left: 0;
+        }
+
+        &:nth-of-type(2) {
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+          right: 0;
+          left: auto;
+        }
+
+        &:nth-of-type(n + 3) {
+          display: none;
+        }
+      }
+
+    }
+
+    @include media('desktop') {
+      padding-bottom: toRem(555);
+
+      .figure {
+        width: toRem(499);
+      }
+    }
+
+    @include media('tablet') {
+      padding-bottom: toRem(346);
+
+      .figure {
+        width: toRem(310);
+      }
+    }
+  }
+
+  &--wide-image-in-footer {
+    @include media('desktop-and-tablet') {
+      position: relative;
+
+      .figure {
+        &:nth-of-type(1) {
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+          left: 0;
+          width: 100%;
+        }
+
+        &:nth-of-type(n + 2) {
+          display: none;
+        }
+      }
+
+    }
+
+    @include media('desktop') {
+      padding-bottom: toRem(555);
+
+      .figure {
+        height: toRem(499);
+      }
+    }
+
+    @include media('tablet') {
+      padding-bottom: toRem(346);
+
+      .figure {
+        height: toRem(310);
+      }
+    }
+  }
+}

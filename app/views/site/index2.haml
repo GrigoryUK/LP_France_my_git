@@ -1,0 +1,151 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: #ffffff;
+      --accent-text-color: #ffffff;
+      --accent-special-color: #2D4E8D;
+    }
+
+%section.intro-cover
+  .container.intro-cover__container
+    %img.intro-cover__heart{alt: "", src: asset_pack_url("media/images/placeholders/index/heart.svg")}/
+    %h1.intro-cover__title
+      France is waiting
+      %br>/
+      for you!
+%section.intro-info
+  .container.intro-info__container
+    %h2.intro-info__title France has been missing you for a while. Now it’s time to return!
+    %p Where do you want to go this summer? Certainly to a country that has everything you've been missing for so long: mountains and sea, museums and clubs, wine and gastronomy, atmosphere and spirit. Yes, there is a country that fits this description. It is easily recognized by subway signs, café chairs, the silhouette of one tower, and even the flag colours.
+    .intro-info__video
+      .intro-info__video-text
+        .show--desktop
+          %span.intro-info__video-text-line The locals, who in the recent
+          %span.intro-info__video-text-line past thought their country was
+          %span.intro-info__video-text-line full of tourists, miss them and
+          %span.intro-info__video-text-line are eagerly awaiting visitors
+        .show--tablet
+          %span.intro-info__video-text-line The locals, who in the recent
+          %span.intro-info__video-text-line past thought their country was
+          %span.intro-info__video-text-line full of tourists, miss them and
+          %span.intro-info__video-text-line are eagerly awaiting visitors
+        .show--mobile
+          %span.intro-info__video-text-line The locals, who in the recent
+          %span.intro-info__video-text-line past thought their country was
+          %span.intro-info__video-text-line full of tourists, miss them and
+          %span.intro-info__video-text-line are eagerly awaiting visitors
+      .intro-info__video-container-holder
+        .intro-info__video-container
+          %iframe{allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen: "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/8f5WvRWp7W4", width: "560"}
+    .intro-info__text
+      %a.intro-info__text-link{href:"#tickets"}
+        Useful flight information from Air France
+      %p
+        Yes! You’re in France now: the land of the Alps and the Côte d'Azur, Manet and Godard, Dumas and Houellebecq, wine and oysters. This is where visitors can satisfy their cravings for the unexpected, the new, and the out of the ordinary in every corner.
+        = succeed "," do
+          %a.link{href: "https://ru.france.fr/ru?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} France.fr
+        the official media portal of tourism in France, and Air France have compiled five guides to cities across the country in an effort to speed up the search process. These aren't your typical guidebooks; instead, they focus on the most important, interesting, and timeless aspects of
+        = succeed "," do
+          %a.special{href: paris_url} Paris
+        = succeed "," do
+          %a.special{href: marselle_url} Marseille
+        = succeed "," do
+          %a.special{href: bordeaux_url} Bordeaux
+        %a.special{href: lyon_url} Lyon
+        and
+        = succeed "." do
+          %a.special{href: nice_url} Nice
+%section.intro-end
+  .container.intro-end__container
+    .intro-end__pane
+      .intro-end__pane-in
+        .intro-end__img-wrap
+          %img.intro-end__img{alt: "", src: asset_pack_url("media/images/placeholders/index/text-1.jpg")}/
+        .intro-end__text
+          %b You'll see that the guides are adorned with illustrations
+          our homage to the French graphic novel, which is one of the most popular arts in France right now. The illustrations, all created by upcoming modern illustrators, add depth and intrigue to the guides.
+%section.guides
+  .container.guides__container
+    .guides__title
+      Some things you'll learn from the guides
+    %ol.guides__list
+      %li.guides__item What the traboules in Lyon are
+      %li.guides__item What city has opened a whole museum about wine (sure, you can taste wine there)
+      %li.guides__item How you can get to the art center that opened in Le Corbusier's house
+      %li.guides__item Where you can find a family restaurant that has a Chagall painting
+      %li.guides__item Why you should not only wander around iconic landmarks in Paris, but also visit modern neighborhoods like Boulogne-Billancourt
+%section.cities
+  .container.cities__container
+    .cities__swiper-container.swiper-container
+      .cities__swiper-wrapper.swiper-wrapper
+        %a.cities__swiper-slide.cities__swiper-slide--paris.swiper-slide{href: paris_url}
+          %img.cities__img{alt: "", src: asset_pack_url("media/images/placeholders/index/city-paris.png")}/
+          .cities__title Paris
+        %a.cities__swiper-slide.cities__swiper-slide--marselle.swiper-slide{href: marselle_url}
+          %img.cities__img{alt: "", src: asset_pack_url("media/images/placeholders/index/city-marselle.png")}/
+          .cities__title Marseille
+        %a.cities__swiper-slide.cities__swiper-slide--bordeaux.swiper-slide{href: bordeaux_url}
+          %img.cities__img{alt: "", src: asset_pack_url("media/images/placeholders/index/city-bordeaux.png")}/
+          .cities__title Bordeaux
+        %a.cities__swiper-slide.cities__swiper-slide--lyon.swiper-slide{href: lyon_url}
+          %img.cities__img{alt: "", src: asset_pack_url("media/images/placeholders/index/city-lyon.png")}/
+          .cities__title Lyon
+        %a.cities__swiper-slide.cities__swiper-slide--nice.swiper-slide{href: nice_url}
+          %img.cities__img{alt: "", src: asset_pack_url("media/images/placeholders/index/city-nice.png")}/
+          .cities__title Nice
+      .cities__swiper-nav-list
+        .cities__swiper-nav.cities__swiper-nav--prev.swiper-button-prev
+        .cities__swiper-nav-like
+        .cities__swiper-nav.cities__swiper-nav--next.swiper-button-next
+%section.mainpage-form
+  .container.mainpage-form__container
+    .mainpage-form__center
+      .mainpage-form__info.form__base
+        .mainpage-form__title#tickets
+          Discover different parts of France this summer and autumn, 
+          %span.blue Air France
+          can take you there in a blink of an eye
+        .mainpage-form__subtitle
+          For detailed information about the flights, select the country you plan to travel from.
+
+        .mainpage-form__content
+          %a.mainpage-form__content-block{href:"#", "data-country": "georgia"}
+            I am travelling from Georgia
+          %a.mainpage-form__content-block{href:"#", "data-country": "armenia"}
+            I am travelling from Armenia
+        .mainpage-form__content-answer#georgia
+          %img.mainpage-form__content-image{alt: "", src: asset_pack_url("media/images/placeholders/index/answer-georgia.png")}/
+          .mainpage-form__content-wrapper
+            .mainpage-form__content-title
+              Flights from Georgia
+              %a.mainpage-form__content-link-back{href:"#"} Back to country selection
+            .mainpage-form__content-text
+              For Georgian customers we have 2 flights per week from Tbilisi to Paris on Wednesdays and Sundays till October 2022. The duration of the flight is 5 hours 10 minutes, all flights are operated using modern Airbus A320 aircraft. The price for a return ticket starts from €312. You can find the best deal offers on
+              = succeed "." do
+                %a{href:"https://www.airfrance.ge/deals?originCode=TBS&originType=AIRPORT&tripType=ALL&cabin=ECONOMY&zoneCode=EUR", target:"_blank"} our special page
+              To be the first to know about our special deals we advise you to subscribe to
+              %a{href:"https://www.airfrance.ge/subscription/subscribe", target: "_blank"}our newsletter
+              for Georgian customers.
+
+            %div{style: "display: flex"}
+              %a.mainpage-form__content-button.uppercase{href: "https://www.airfrance.ge/deals?originCode=TBS&originType=AIRPORT&tripType=ALL&cabin=ECONOMY&zoneCode=EUR&utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Best Deals 🇬🇪
+              %a.mainpage-form__content-button.uppercase{href: "https://www.airfrance.ge/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Newsletter 🇬🇪
+        .mainpage-form__content-answer#armenia
+          %img.mainpage-form__content-image{alt: "", src: asset_pack_url("media/images/placeholders/index/answer-armenia.png")}/
+          .mainpage-form__content-wrapper
+            .mainpage-form__content-title
+              Flights from Armenia
+              %a.mainpage-form__content-link-back{href:"#"} Back to country selection
+            .mainpage-form__content-text
+              For Armenian customers we have one flight per day from Yerevan to Paris till October 2022. The duration of the flight is 5 hours 20 minutes, all flights are operated using modern Airbus A320 aircraft. The price for a return ticket starts from €390. You can find the best deal offers on
+              = succeed "." do
+                %a{href:"https://wwws.airfrance.am/deals?originCode=EVN&originType=CITY&tripType=ALL&cabin=ECONOMY&zoneCode=EUR", target:"_blank" } our special page
+              To be the first to know about our special deals we advise you to subscribe to
+              %a{href:"https://wwws.airfrance.am/subscription/subscribe", target:"_blank"} our newsletter
+              for Armenian customers.
+
+
+
+              %div{style: "display: flex"}
+                %a.mainpage-form__content-button.uppercase{href: "https://www.airfrance.am/deals?originCode=TBS&originType=AIRPORT&tripType=ALL&cabin=ECONOMY&zoneCode=EUR&utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Best Deals 🇦🇲
+                %a.mainpage-form__content-button.uppercase{href: "https://www.airfrance.am/subscription/subscribe?utm_source=france-advisor.com&utm_medium=link", target: "_blank"} Newsletter 🇦🇲

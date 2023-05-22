@@ -1,0 +1,78 @@
+.article-authors {
+  color: $color-white;
+  color: var(--accent-authors-color);
+
+  @include media('desktop') {
+    margin-top: toRem(-34);
+    margin-bottom: toRem(-12);
+    height: 0;
+
+  }
+
+  @include media('tablet') {
+    order: 4;
+    height: 0;
+    margin-top: toRem(-31);
+    margin-bottom:toRem( 31);
+  }
+
+  @include media('mobile') {
+    margin-top: toRem(-4);
+    margin-bottom:toRem( 16);
+  }
+
+  &__container {
+    @include media('tablet') {
+      transform: translateY(-100%);
+    }
+  }
+
+  &__list {
+    @include media('desktop') {
+      width: toRem(410);
+      padding-right: toRem(60);
+      margin-left: auto;
+      font-size: toRem(16);
+      line-height: 120%;
+    }
+
+    @include media('tablet') {
+      width: toRem(266);
+      margin-left: auto;
+      font-size: toRem(14);
+      line-height: 120%;
+    }
+
+    @include media('mobile') {
+      display: flex;
+      justify-content: space-between;
+      font-size: toRem(12);
+      line-height: 120%;
+      margin-left: toRem(10);
+      margin-right: toRem(10);
+    }
+  }
+
+  &__item {
+    @include media('desktop') {
+      margin-bottom: toRem(7);
+    }
+
+    @include media('tablet') {
+      margin-bottom: toRem(4);
+    }
+
+    @include media('mobile') {
+      padding-right: toRem(10);
+      flex: 1 1 auto;
+    }
+  }
+
+  b {
+    font-weight: 600;
+
+    @include media('mobile') {
+      display: block;
+    }
+  }
+}

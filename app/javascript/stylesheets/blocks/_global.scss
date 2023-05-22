@@ -1,0 +1,595 @@
+.ContainerC {
+  margin: 0 auto;
+
+  &.author {
+
+    .author-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 16px;
+
+      @include mobile {
+        margin-bottom: 12px;
+      }
+
+      span {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+
+        @include mobile {
+          font-size: 12px;
+        }
+        &:first-child {
+          font-weight: 600;
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+
+
+  &.primary {
+    max-width: 1306px;
+    padding: 0 toRem(28);
+
+    @include mobile {
+      padding: 0 toRem(10);
+    }
+
+    &.one {
+      margin-top: 22px;
+    }
+
+  }
+
+  &.max-1140 {
+    max-width: 1196px;
+    padding: 0 toRem(28);
+
+    @include mobile {
+      padding: 0 toRem(10);
+    }
+
+
+  }
+
+  &.max-1280 {
+    max-width: 1336px;
+    padding: 0 toRem(28);
+
+    @include mobile {
+      padding: 0 toRem(10);
+    }
+  }
+
+  &.max-1014 {
+    max-width: 1014px;
+  }
+
+  &.padding-60 {
+    margin: 0;
+    padding: 0 60px;
+
+    @include tablet {
+      padding: 0 30px;
+    }
+
+    @include mobile {
+      padding: 0 15px;
+    }
+  }
+
+  &.padding-30 {
+    margin: 0;
+    padding: 0 30px;
+
+    @include tablet {
+      padding: 0 15px;
+    }
+  }
+}
+
+.descC {
+
+  &.withoutFon {
+    padding-left: 60px;
+    color: $color-white;
+
+    @include tablet {
+      padding: 0 30px;
+    }
+
+
+    @include mobile {
+      padding: 0 8px;
+    }
+
+
+
+  }
+
+  &.withImg {
+    position: relative;
+
+    @include mobile {
+      padding-top: 5rem !important;
+    }
+
+    .image-map {
+      position: absolute;
+      right: -4rem;
+      top: -12rem;
+
+      @include tablet {
+        max-width: 250px;
+        right: -2rem;
+      }
+
+      @include mobile {
+        max-width: 100%;
+        width: 90%;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -13rem;
+      }
+    }
+
+
+  }
+
+  &.whiteFon {
+    background: $color-white;
+    border-radius: 6px;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+    @include tablet {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    @include mobile {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+
+.blockC {
+
+  &.features {
+    display: grid;
+    grid-template-columns: repeat(2, 490px);
+    column-gap: 44px;
+    row-gap: 40px;
+
+    @include tablet {
+      column-gap: 0px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include mobile {
+      row-gap: 20px;
+    }
+    .blocC__item {
+      display: flex;
+      align-items: flex-start;
+      img {
+        margin-right: 1rem;
+
+        @include mobile {
+          max-width: 90px;
+        }
+      }
+      p {
+        max-width: 350px;
+        font-family: var(--font-primary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+
+
+
+
+        @include tablet {
+          max-width: 100%;
+          font-size: toRem(18);
+        }
+
+        @include mobile {
+          font-size: toRem(12);
+        }
+      }
+    }
+  }
+
+  &.main {
+    display: flex;
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &.back {
+    display: flex;
+    justify-content: flex-end;
+
+    .btn-close {
+      padding: 0;
+      margin-right: -3rem;
+      background: none;
+      cursor: pointer;
+      border: none;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 100%;
+      max-width: 227px;
+      position: relative;
+      text-align: left;
+      text-underline-offset: 3px;
+      @include hover {
+        text-decoration: underline;
+      }
+
+      @include tablet {
+        margin-right: 0;
+      }
+
+      @include mobile {
+        font-size: 16px;
+        max-width: 130px;
+      }
+
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        background: url("~images/icon-arrow-back.svg") no-repeat center;
+        background-size: cover;
+        width: 26px;
+        height: 26px;
+        left: -32px;
+
+        @include mobile {
+          height: 20px;
+          width: 20px;
+          left: -24px;
+        }
+      }
+    }
+  }
+}
+
+.titleC {
+
+  &.main {
+    font-family: 'Six Hands', sans-serif;
+    color: $color-white;
+
+    h1 {
+      margin: 0;
+      font-size: 200px;
+      line-height: 1;
+      font-weight: 400;
+
+      @include mobile {
+        font-size: 130px;
+      }
+
+
+    }
+  }
+
+  &.primary {
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 130%;
+
+    @include tablet {
+      font-size: toRem(34);
+      line-height: 130%;
+    }
+
+    @include mobile {
+      font-size: toRem(22);
+      line-height: 130%;
+    }
+  }
+}
+
+.subtitleC {
+
+  &.max-975 {
+    max-width: 975px;
+  }
+
+  &.max-640 {
+    max-width: 650px;
+  }
+
+  &.max-860 {
+    max-width: 860px;
+  }
+
+  &.max-700 {
+    max-width: 700px;
+  }
+
+  &.max-950 {
+    max-width: 920px;
+  }
+
+  &.secondary {
+    font-family: var(--font-secondary);
+    @include mbAll(60, 40, 32);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 115%;
+
+    @include tablet {
+      font-size: 36px;
+    }
+
+    @include mobile {
+      font-size: 28px;
+    }
+
+  }
+
+  &.main {
+    color: $color-white;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 1.5;
+
+    @include mobile {
+      font-size: 46px;
+
+    }
+  }
+
+  &.premain {
+    color: $color-white;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.5;
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+
+  &.primary {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+    font-family: var(--font-primary);
+
+    @include tablet {
+      font-size: toRem(28);
+      line-height: 130%;
+    }
+
+    @include mobile {
+      font-size: toRem(20);
+      line-height: 130%;
+    }
+
+    a {
+      color: $color-footnote;
+
+      @include hover {
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+.textC {
+  strong {
+    font-family: var(--font-primary);
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+  }
+
+
+  &.rowW {
+    max-width: 745px;
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+
+
+    @include tablet {
+      font-size: toRem(18);
+    }
+
+    @include mobile {
+      font-size: toRem(14);
+    }
+
+    p + p {
+      margin-top: 2em;
+
+      @include tablet {
+        margin-top: 1em;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      @include hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+
+  &.columnW {
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 3rem;
+
+
+    @include mobile {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 1rem;
+    }
+
+    p {
+      max-width: 480px;
+    }
+
+    @include tablet {
+      font-size: toRem(18);
+    }
+
+    @include mobile {
+      font-size: toRem(14);
+    }
+
+    p + p {
+      margin-top: 2em;
+
+      @include tablet {
+        margin-top: 1rem;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      @include hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.primary {
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 160%;
+
+    @include tablet {
+      font-size: toRem(16);
+    }
+
+    p + p {
+      margin-top: 2em;
+    }
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      @include hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.imageC {
+
+  &.big {
+    padding: 64px 0;
+
+    @include tablet {
+      padding: 56px 0;
+    }
+
+    @include mobile {
+      padding: 44px 0;
+    }
+
+    .image-desk {
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .image-mobile {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+    img {
+      width: 100vw;
+      height: auto;
+
+    }
+  }
+}
+
+
+.linkC {
+
+  &.primary {
+    font-family: var(--font-armanian);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    display: inline-block;
+    background: $color-footnote;
+    color: $color-white;
+    border-radius: 100px;
+    position: relative;
+    text-align: center;
+    width: 356px;
+    padding: 30px 0;
+    text-underline-offset: 6px;
+    text-decoration: none;
+
+    @include tablet {
+      padding: 20px;
+      font-size: 1.6rem;
+      width: 100%;
+    }
+
+    @include mobile {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+
+
+    @include hover {
+      text-decoration: underline;
+    }
+
+  }
+}
+
+
+
+

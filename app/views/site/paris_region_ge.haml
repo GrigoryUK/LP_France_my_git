@@ -1,0 +1,219 @@
+- content_for(:style) do
+  :css
+    body {
+      --accent-background-color: var(--color-brown);
+      --accent-text-color: #ffffff;
+      --accent-special-color: var(--color-brown);
+      --font-georgian: 'Noto Sans Georgian', sans-sarif;
+      --font-georgian-serif: 'Noto Serif Georgian', sans-sarif;
+      --font-armanian: 'Noto Sans Armenian', sans-sarif;
+      --menu-burger-background: #695a53;
+    }
+%body{style: "background-color: var(--accent-background-color);"}
+  .site-container
+    .header--new
+      %header.header
+        .container.header__container
+          %button.header__nav-toggle
+            %span.header__nav-toggle-line
+          %nav.header__nav
+            .header__nav-in
+              %a.header__nav-link{href: occitania_ge_url} OCCITANIA
+              %a.header__nav-link{href: new_aquitaine_ge_url} NEW AQUITAINE
+              %a.header__nav-link.header__nav-link--active{href: paris_region_ge_url} PARIS REGION
+              %a.header__nav-link{href: loirevalley_ge_url} LOIRE VALLEY
+              %a.header__nav-link.header__nav-link--home.header__nav-link--icon{href: root_url}
+                MAIN PAGE
+                %span.header__nav-link-icon
+    .container-secondary.container-paris.paris-ge.lang-ge
+      .ContainerC.max-1140.one
+        .blockC.main.paris--main.main-ge
+          .blockC__texts
+            .titleC.main
+              %h1
+                %span Paris Region
+            .subtitleC.main
+              %span
+                რეგიონი- პარიზი
+            .subtitleC.premain
+              %span სამეფო სასახლეები,
+              %span თემატური პარკები
+          %img.image-main{alt: "", src: asset_pack_url("media/images/ParisRegion/image-main-1.png")}/
+      .ContainerC.max-1140.two
+        .descC.withoutFon.descC-1
+          .textC.columnW
+            .colC
+              %p
+                Ile-de-France — ის რეგიონი, საფრანგეთის კულტურული ცენტრია. აქ ჩაეყარა საფუძველი საფრანგეთის სახელმწიფოს და მოხდა ისეთი მოვლენები, რამაც გავლენა მოახდინა მსოფლიო ისტორიაზე.
+            .colC
+              %p
+                ხშირად ეს რეგიონი ასოცირდება მხოლოდ პარიზთან, თუმცა თავად რეგიონშიც ბევრი რამ არის საინტერესო: დიდებული სასახლეები და პარკები, გოთური სააბატოები, შუა საუკუნეების ციხესიმაგრეები, ავთენტური ქალაქები და თვალწარმტაცი ტყეები.
+      .ContainerC.max-1140.three
+        .descC.whiteFon.withImg.descC-1
+          .ContainerC.padding-60
+            %img.image-map{alt: "", src: asset_pack_url("media/images/icons/icon-map.png")}/
+            .subtitleC.secondary.max-640.subtitleC-1
+              რეგიონის აეროპორტები
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  %strong Ile-de-France-ში
+                  სამი საერთაშორისო აეროპორტია: ბურჟე, ორლი და შარლ-დე-გოლი. სწორედ ეს უკანასკნელი ემსახურება მსოფლიოს მსხვილი ავიაკომპანიების, მათ შორის
+                  %strong
+                    %a{href: "https://www.airfrance.ge/", target: "_blank"} Air France-ის
+                  თბილისი-პარიზის ფრენებს.
+              .ColC
+                %p
+                  %strong Charles de Gaulle
+                  \-ის აეროპორტი პარიზიდან 25 კილომეტრში მდებარეობს. აეროპორტიდან ქალაქში მოძრაობს მეტროსთან დაკავშირებული ელექტრო მატარებლები (RER + მეტრო) ავტობუსები და ტაქსი.
+            .subtitleC.secondary.subtitleC-2
+              რომელი ქალაქებია საცხოვრებლად ყველაზე კომფორტული
+            .textC.columnW.textC-2
+              .ColC
+                %p
+                  %strong>
+                    %a{href: paris_url, target: "_blank"} Paris
+                   — არის არა მხოლოდ მოგზაურობის საბოლოო დანიშნულების პუნქტი, არამედ საწყისი წერტილიც. ქალაქში არის ნებისმიერი გემოვნების და ბიუჯეტის უამრავი სასტუმრო. გამართული სატრანსპორტო სისტემა მარტივად დაგაკავშირებთ ნებისმიერ მიმდებარე ქალაქს. პარიზის ირგვლივ არის ბევრი ლამაზი ქალაქი და სასახლე, რომელთა მონახულებაც ღირს.
+                %p
+                  გირჩევთ, თქვენი ყურადღება გაამახვილოთ 4-ვარსკვლავიან სასტუმრო
+                  %strong
+                    %a{href: "https://www.paris-hotel-mayfair.com/en/"} Mayfair Paris-ზე,
+                  რომელიც მდებარეობს პარიზის ისტორიულ ცენტრში, Place de la Concorde-ს, Place Vendôme-სა და Place de la Madeleine-ს შორის.
+                %p
+                  %strong> Versailles
+                   — სახელი, რომელიც ხშირად «მეფე მზეს», ლუი მე 14-ის ბრძანებით აშენებულ დიდებულ სასახლესთან ასოცირდება.სასახლეში შეგიძლიათ დაესწროთ ოპერასა და სპექტაკლებს. ახლოს არის ვერსალის თავლებიც, სადაც იმართება საცხენოსნო წარმოდგენები. მაგრამ ვერსალი არ არის მხოლოდ სასახლისა და პარკების კომპლექსი; ასევე ეს არის წყნარი ქალაქი,
+              .ColC
+                %p
+                  სადაც შეგიძლიათ დარჩეთ რამოდენიმე დღით და მოინახულოთ, მაგალითად, ანტიკვარიატი დილერების ქუჩა. ლანჩისთვის გაემგზავრეთ ქალაქის ერთ-ერთ ლამაზ რესტორანში.
+                %p
+                  %strong> Fontainebleau
+                   — ქალაქი, რომელსაც აქვს ამავე სახელწოდების სასახლე და ტყე. მე-11-დან მე-19 საუკუნეებამდე Fontainebleau-ს სასახლე ფრანგი მონარქების რეზიდენციას წარმოადგენდა, ხოლო მის გარშემო არსებული უზარმაზარი ტყე, მეფეების სანადირო ადგილს. Fontainebleau-ოს ტყე მშვენიერია კლდოვანი პეისაჟების მოყვარულებისთვის, თუმცა დღესდღეობით როგორც ტურისტული ადგილი დიდი პოპულარობით არ სარგებლობს. ტყის პირას არის სოფელი
+                %p
+                  %strong Barbizon
+                  \-ი რომელიც ცნობილი გახდა იმპრესიონისტების წინამორბედი მე-19 საუკუნის პეიზაჟების მხატვრების დამსახურებით. ქალაქიდან არც თუ ისე შორს არის Vaux-le-Vicomte Chateau ციხესიმაგრე და Gatineau Français-ის ნაკრძალი.
+      .ContainerC.four
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/ParisRegion/image-big-1.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/ParisRegion/image-big-1-mobile.jpg")}/
+      .ContainerC.max-1140.five
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-975.subtitleC-1
+              შესაძლო მარშრუტები:
+            .textC.rowW.textC-1
+              %p
+                %strong გრძელი მარშრუტი:
+                Paris → Saint-Germain-en-Laye → Versailles → Melun → Fontainebleau → Sancy-le-Provin → Disneyland → Noisy-le-Grand → Paris.
+              %p
+                %strong მოკლე მარშრუტი:
+                Paris → Saint-Germain-en-Laye → Versailles → Melun → Fontainebleau → Disneyland → Paris.
+              %p
+                Ile-de-France ძალიან პატარა რეგიონია, და ბევრი საინტერესო ატრაქციონები გელოდებათ მის საზღვართან ახლოს. აუცილებლად შეისწავლეთ ილ-დე-ფრანსის მეზობელ რეგიონების გზამკვლევები: Hauts-de-France, Normandy, Grand Est, Burgundy — Franche-Comté, Centre — Loire Valley, ეს დაგეხმარებათ დაგეგმოთ ყველაზე დატვირთული და დასამახსოვრებელი მარშრუტი.
+        .descC.whiteFon.descC-2
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-650.subtitleC-1
+              აქტივობები
+            .textC.rowW.textC-1
+              %p
+                %strong ნავით გასეირნება Seine ან Marne-ზე.
+              %p
+                სენაზე ნავით გასეირნება ძალიან პოპულარული ტურისტული აქტივობაა პარიზში. კიდევ უფრო საინტერესოა კრუიზი მდინარე Marne -ის გასწვრივ, თავისი წყნარი სანაპიროებით და მდინარისპირა კაფეებით, რომლებიც ოდესღაც მონეს, პისაროს, კაიბოტეს და სხვა იმპრესიონისტების შთაგონების წყარო იყო. გამგზავრების საწყის პუნქტად შეგიძლიათ აირჩიოთ ბურჯი ბასტილიის ოპერა, საიდანაც მარშრუტი გადაჭიმულია პარიზის აღმოსავლეთნაწილიდან Saint-Martin არხის გავლით და სცდება ქალაქის საზღვრებს.
+              %p
+                %strong გაეცანით Proven’s -ის შუასაუკუნეების მემკვიდრეობას.
+              %p
+                ქალაქში, რომელიც თავდაპირველად დაარსდა, როგორც ბაზრობა, სადაც ვაჭრები ჩრდილოეთ ევროპიდან და ხმელთაშუა ზღვის ქვეყნებიდან ვაჭრობდნენ საქონლით, შენარჩუნებულია შუა საუკუნეების ევროპული არქიტექტურის საუკეთესო ნიმუშები. აუცილებლად მოინახულეთ Caesar’s Tower-ი რომელიც აშენდა მე-9 საუკუნეში. წელიწადის თბილ სეზონზე აქ იმართება რეკონსტრუქციის ფესტივალები რაინდული ტურნირებით, აღლუმებით — და დიახ — ბაზრობებით.
+      .ContainerC.six
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/ParisRegion/image-big-2.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/ParisRegion/image-big-2-mobile.jpg")}/
+      .ContainerC.max-1140.seven
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-650.subtitleC-1
+              აქტივობები
+            .textC.rowW.textC-1
+              %p
+                %strong გართობა მთელი ოჯახისთვის.
+              %p
+                დისნეილენდი — წრის ფორმის სამი კილომეტრის დიამეტრით. იყოფა ორ თემატურ პარკად — Disneyland Park და Walt Disney Studios Park. პირველი არის «დისნეილენდი პარიზი " ცენტრში მძინარე მზეთუნახავის ციხესიმაგრე და მის გარშემო თემატური ზონები. ეს პარკი უფრო განკუთვნილია ბავშვებისთვის. მეორე- უოლტ დისნეის სტუდიის პარკი, სტილიზებულია როგორც ფილმების გადასაღები მოედანი და მოეწონება მოზარდებს. ეს შესანიშნავი ადგილია ბლოკბასტერული ფილმის გმირად იგრძნოთ თავი. დისნეილენდთან ახლოს არის Outlet La Vallée Village და შესანიშნავი ადგილი საყიდლებისთვის. და არ დაგავიწყდეთ, პარიზის გარეუბანში არის კიდევ Asterix Park ჩვენი საყვარელი ფრანგული გალიერი პერსონაჟების თემატიკით (თუმცა, ის მეზობელ Hauts-de-France-ის რეგიონშია). ის სავსეა ექსტრემალური და წყლის ატრაქციონებით, ღიაა მხოლოდ წლის თბილ პერიოდში. იგი განკუთვნილია მოზრდილებისთვის და უფროსი ასაკის ბავშვებისთვის.
+              %p
+                %strong შოპინგი მოდის დედაქალაქში
+              %p
+                ბანალურად ჟღერს, მაგრამ ფაქტია: პარიზი შოპინგის დედაქალაქია და ბევრ მაღაზიას აქ მდიდარი ისტორია აქვს: უჩვეულობისა და ექსკლუზივის მოყვარულთათვის უმჯობესია შოპინგი მარეში. მაგალითად, რუჟე არის ადგილი, რომელსაც უმჯობესია ეწვიოთ ფემინური, ოდნავ სექსუალური ჩაცმულობით, რათა მეტად გამოიყურებოდეთ, ადგილობრივების მსგავსად.
+              %p
+                აგრეთვე, შეგიძლიათ ეწვიოთ მსხვილი უნივერმაღებსა და ისეთ მდიდრული გამზირებს, როგორიცაა Montaigne და Saint-Honoré. ლუვრთან მიახლოებისას შეგიძლიათ მოინახულოთ ახლახანს გახსნილი უნივერმაღი —
+                %strong Samaritaine,
+                რომელიც იდეალურია როგორც მოდის შოპინგისთვის — განთავსებულია 600-ზე მეტი ძვირადღირებული ბრენდი, ასევე მდიდრულ სპა-ცენტრებში დასვენებისა და ადგილობრივ მაღალი კლასის რესტორანში შეუდარებელი სადილისთვის,
+              %p
+                საფრანგეთის Flea- ბაზრები დიდი ხანია ლეგენდად იქცა და და მათი მონახულება კი კულტურული გამოცდილებად. პარიზში ღირს მინიმუმ ორი marché aux puces ნახვა — და არა მხოლოდ ნახვა, არამედ ანტიკვარიატის, ძველი წიგნების, მუსიკალური ინსტრუმენტების ან ჩანაწერების შეძენა. ყველაზე დიდი ბაზარია
+                = succeed "," do
+                  %strong Sainte-Ouen (Porte de Clignancourt)
+                = succeed "-\u10E8\u10D8." do
+                  %strong Porte de Vanves
+                %strong Port de Clignancourt
+                სადგურთან. სხვათა შორის, ეს ბაზარი წარმოდგენილი იყო ვუდი ალენის ფილმში შუაღამეში პარიზში.
+      .ContainerC.eight
+        .imageC.big
+          %img.image-desk{alt: "", src: asset_pack_url("media/images/ParisRegion/image-big-3.jpg")}/
+          %img.image-mobile{alt: "", src: asset_pack_url("media/images/ParisRegion/image-big-3-mobile.jpg")}/
+      .ContainerC.max-1140.nine
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60
+            .subtitleC.secondary.max-700.subtitleC-1
+              კიდევ რა არის სანახავი?
+            .textC.columnW.textC-1
+              .ColC
+                %p
+                  %strong> Vaux-le-Vicomte
+                   — მეჩვიდმეტე საუკუნეში აშენებული მარკიზ ნიკოლას ფუკეს სასახლე. ის სახელმწიფო ქონების გაფლანგვისთვის სასახლის პომპეზური გახსნისთანავე დააპატიმრეს .სწორედ Vaux-le-Vicomte იყო შთაგონების წყარო ვერსალისა და ფრანგი თავადაზნაურობის სხვა ცნობილი სასახლეების არქიტექტორები. მიუხედავად ამისა, ეს ადგილი განსაკუთრებული პოპულარობით არ სარგებლობს ტურისტებისთვის.
+                %p
+                  %strong> Saint-Germain-en-Laye
+                   — ულამაზესი ქალაქი სამეფო რეზიდენციით პარიზიდან 20 კილომეტრში. აქ მოდიან Palais Saint-Germain-სა და მისი პარკის გარშემო სეირნობისთვის, თეატრში ვიზიტისთვის და მაღაზიებისთვის რომელიც აქ ასობით არის. ქალაქის ცენტრში თანამედროვე არქიტექტურა შერწყმულია ისტორიულ სახლებსა და ულამაზეს ბაღებთან.
+              .ColC
+                %p
+                  %strong «Abraxas Spaces»
+                  \-არქიტექტორ რიკარდო ბოფილის მიერ დაპროექტებული ფუტურისტული საცხოვრებელი კომპლექსი Noisy-le-Grand-ის კომუნა, რომელიც 1980-იან წლებში აშენდა. მისი «დასახლებული ძეგლის» შექმნისას.
+            .subtitleC.secondary.max-700.subtitleC-2
+              კვება Ile de France- ში
+            .textC.columnW.textC-2
+              .ColC
+                %p
+                  Ile-de-France –სი საფრანგეთის მეფეების საყვარელი რეზიდენცია იყო და ადგილობრივი სამზარეულო ძალიან აქტიურად ვითარდებოდა გვირგვინოსანი გურმანების მოთხოვნების დასაკმაყოფილებლად. ამიტომ სწორედ ამ რეგიონში ბევრი
+                  %strong French Michelin
+                  რესტორანია. რაც შეეხება პროდუქტებს, ადგილობრივი «სახელგანთქმული» არის ბრი-ს ყველი, განსაკუთრებით bries de Meaux bries de Melun სახეობის. ასევე გირჩევთ დააგემოვნოთ პარიზული სოსისები და ლორი, ქათმის და ცხვრის კერძები, დესერტად კი კი ბრიოში და კრუასანი.
+              .ColC
+                %p
+                  საინტერესო ფაქტია რომ ფრანგული სამზარეულოს განვითარებაზე დიდი გავლენა იქონია მეფე ლუი XIV-მ, რომელმაც ბრძანა ბაღის გაშენება ვერსალში, სადაც მთელი წლის განმავლობაში იზრდებოდა 300-ზე მეტი სახეობის ბოსტნეული, ხილი და მწვანილი, მათ შორის ბანანი, ლეღვი, ყავის მარცვლები. ბაღი დღემდე შემორჩენილია და მასთან განთავსებულ მაღაზიაში შეგიძლიათ შეიძინოთ სუვენირები და ადგილობრივი პროდუქტები.
+      .ContainerC.max-1140.ten
+        .descC.whiteFon.descC-1
+          .ContainerC.padding-60.ContainerC-1
+            .subtitleC.secondary.max-700.subtitleC-1
+              შემაჯამაბელის სია
+          .ContainerC.padding-30.ContainerC-2
+            .blockC.features
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-croissant.svg")}/
+                %p
+                  იგრძენით თავი ადგილობრივად: ადექით ადრე, იყიდეთ ახალი კრუასანი და შეიარეთ ბაზარში ახალი პროდუქტებისთვის.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-bike.svg")}/
+                %p
+                  დაათვალიერეთ რეგიონის ერთ-ერთი ქალაქი ველოსიპედით ან სკუტერით.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-baby.svg")}/
+                %p
+                  მიესალმე მიკი მაუსს და ვარსკვლავური ომებიდან მოერიშეს დისნეილენდში.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-hanger.svg")}/
+                %p
+                  შეიძინეთ წვრილმანი ნივთი flea-ს ბაზარში.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-radish.svg")}/
+                %p
+                  იპოვეთ ბოსტნეულის ბოლქვები ვერსალში.
+              .blocC__item
+                %img{alt: "", src: asset_pack_url("media/images/icons/icon-wine.svg")}/
+                %p
+                  მიირთვით ჭიქა შამპანური მდინარე Marne -ზე გასეირნებისას.
+    = render partial: 'shared/footerGe'
+    = render partial: 'shared/footer_main_ge'               

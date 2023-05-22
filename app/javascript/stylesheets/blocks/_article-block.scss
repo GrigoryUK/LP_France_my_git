@@ -1,0 +1,13 @@
+.article-block {
+  @include media('desktop') {
+    margin-bottom: toRem(60);
+  }
+
+  @include media('tablet') {
+    margin-bottom: toRem(36);
+  }
+
+  @include media('mobile') {
+    margin-bottom: toRem(20);
+  }
+}
